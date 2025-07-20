@@ -1,12 +1,24 @@
-:root {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
 
-  color-scheme: light dark;
-  color: rgb(255, 255, 255);
-  background-color: #272727;
+:root {
+  --background-color: #272727;
+  --text-color: #FFFFFF;
+  --accent-color: #FAFAFA;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+[data-theme="dark"] {
+  --background-color: #272727;
+  --text-color: #FFFFFF;
+  --accent-color: #FAFAFA;
+}
+
+[data-theme="light"] {
+  --background-color: #FFFFFF;
+  --text-color: #1A1A1A;
+  --accent-color: #FAFAFA;
 }

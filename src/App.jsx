@@ -1,26 +1,17 @@
-import './App.css'
-import { useTranslation } from 'react-i18next'
-import i18next from 'i18next';
+import React, { useState } from 'react'
 
-function App() {
-  const { t } = useTranslation();
+import './App.css'
+
+export const App = () => {
+  const [isDarkMode, setIsDarkModa] = useState(true);
 
   return (
-    <>
-      <h1>Alphaz TV+</h1>
-      <p>{t('Home')}</p>
-      <p>{t('Songs')}</p>
-      <p>{t('About')}</p>
+    <div className='App' data-theme={isDarkMode ? 'dark' : 'light'}>
+      <h1 className='title'>Alphaz APP +</h1>
 
-      <button onClick={() => i18next.changeLanguage('pt-BR')}>
-        Portugues
+      <button onClick={() => setIsDarkModa(!isDarkMode)}>
+        Trocar tema
       </button>
-      <br />
-      <button onClick={() => i18next.changeLanguage('en-US')}>
-        Ingles
-      </button>
-    </>
+    </div>
   )
 }
-
-export default App
