@@ -6,7 +6,7 @@ import ptBr from './pt-br.json'
 
 export default i18n.use(LanguageDetector).use(initReactI18next).init({
   compatibilityJSON: 'v3',
-  lng: 'en-US',
+  lng: 'pt-BR',
   resources: {
     'en-US': enUs,
     'pt-BR': ptBr,

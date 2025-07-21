@@ -3,6 +3,13 @@
     "Home": "Início",
     "Songs": "Músicas",
     "Varieties": "Variedades",
-    "About": "Sobre"
+    "About": "Sobre",
+    "Language": "Idioma",
+    "Footer": {
+      "Description": "O Alphaz TV+ é um site feito de fãs para fãs, que visa reunir e divulgar o trabalho do XG. Todo conteúdo apresentado respeita o direto de propriedade da XGALX.",
+      "XG Accounts": "Canais oficiais do XG",
+      "Contact": "Contato",
+      "All rights reserved": "{{year}} © Todos os diretios reservados"
+    }
   }
 }
