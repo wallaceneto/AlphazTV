@@ -5,7 +5,6 @@
   transition: background-color 250ms ease-in-out;
 }
 
-.title {
-  color: var(--text-primary-color);
-  margin-bottom: 200px;
+.content {
+  padding: 55px 60px;
 }
