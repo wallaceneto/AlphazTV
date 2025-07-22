@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import ContrastIcon from '@mui/icons-material/Contrast'
 import styles from './Header.module.css'
 
-export const Header = ({ theme, setTheme }) => {
+const Header = ({ theme, setTheme }) => {
   const { t } = useTranslation();
   const [selectedTab, setSelectedTab] = useState('home');
 
@@ -60,3 +60,5 @@ export const Header = ({ theme, setTheme }) => {
     </div>
   )
 }
+
+export default Header

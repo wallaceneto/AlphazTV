@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './Banner.module.css'
-import { Header } from '../Header/Header'
+import Header from '../Header'
 
 import darkBanner from '../../assets/dark_banner.png'
 import lightBanner from '../../assets/light_banner.png'
 
-export const Banner = ({ isDarkMode, setIsDarkMode }) => {
+const Banner = ({ isDarkMode, setIsDarkMode }) => {
 
   return (
     <div className={styles.bannerContainer}>
@@ -22,3 +22,5 @@ export const Banner = ({ isDarkMode, setIsDarkMode }) => {
     </div>
   )
 }
+
+export default Banner

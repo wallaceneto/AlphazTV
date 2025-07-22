@@ -21,9 +21,8 @@
 .title {
   color: #FFF;
   font-size: 70px;
-  top: 80%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+  bottom: 15%;
+  left: 5%;
   z-index: 2;
   position: absolute;
 }

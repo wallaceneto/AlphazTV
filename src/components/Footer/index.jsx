@@ -5,7 +5,7 @@ import { faYoutube, faInstagram, faXTwitter, faTiktok, faBluesky } from '@fortaw
 import styles from './Footer.module.css'
 import { toggleLanguage, URLs } from './lib';
 
-export const Footer = () => {
+const Footer = () => {
   const { t } = useTranslation();
   const { i18n } = useTranslation('Home');
 
@@ -70,3 +70,5 @@ export const Footer = () => {
     </>
   )
 }
+
+export default Footer
