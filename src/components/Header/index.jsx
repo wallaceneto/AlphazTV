@@ -1,26 +1,26 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import ContrastIcon from '@mui/icons-material/Contrast'
 import styles from './Header.module.css'
+import { ThemeContext } from '../../contexts'
 
-const Header = ({ theme, setTheme }) => {
-  const { t } = useTranslation();
-  const [selectedTab, setSelectedTab] = useState('home');
+const Header = () => {
+  const { theme, setTheme } = useContext(ThemeContext)
+  const { t } = useTranslation()
+  const [selectedTab, setSelectedTab] = useState('home')
 
   const toggleTab = (tab) => {
     setSelectedTab(tab)
-  }
-
-  const toggleTheme = () => {
-    setTheme(!theme)
   }
 
   return (
     <div className={styles.container}>
       <div className={styles.background}>
         <div className={styles.content}>
-
-          <button className={styles.button} onClick={() => toggleTheme()}>
+          <button
+            className={styles.button}
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          >
             <ContrastIcon className={styles.icon} />
           </button>
 

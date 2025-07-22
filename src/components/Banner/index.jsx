@@ -1,17 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './Banner.module.css'
 import Header from '../Header'
+import { ThemeContext } from '../../contexts'
 
 import darkBanner from '../../assets/dark_banner.png'
 import lightBanner from '../../assets/light_banner.png'
 
-const Banner = ({ isDarkMode, setIsDarkMode }) => {
+const Banner = () => {
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div className={styles.bannerContainer}>
-      <Header theme={isDarkMode} setTheme={setIsDarkMode} />
+      <Header />
       <img
-        src={isDarkMode ? darkBanner : lightBanner}
+        src={theme === 'dark' ? darkBanner : lightBanner}
         className={styles.image}
         alt='imagem do grupo XG'
       />

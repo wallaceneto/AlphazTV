@@ -1,28 +1,17 @@
 import React, { useState } from 'react'
 import './App.css'
-import Footer from './components/Footer';
-import Banner from './components/Banner';
+import { ThemeContext } from './contexts';
+import Home from './pages/Home';
+import Songs from './pages/Songs';
 
 export const App = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [theme, setTheme] = useState('dark');
 
   return (
-    <div className='App' data-theme={isDarkMode ? 'dark' : 'light'}>
-      <Banner isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-
-      <div className='content'>
-        <p>
-          O Alphaz TV+ é um site feito de fãs para fãs, que visa reunir e divulgar o trabalho do XG. Todo conteúdo apresentado respeita o direto de propriedade da XGALX.
-        </p>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <div className='App' data-theme={theme}>
+        <Songs />
       </div>
-
-      <div className='content'>
-        <p>
-          O Alphaz TV+ é um site feito de fãs para fãs, que visa reunir e divulgar o trabalho do XG. Todo conteúdo apresentado respeita o direto de propriedade da XGALX.
-        </p>
-      </div>
-
-      <Footer />
-    </div>
+    </ThemeContext.Provider>
   )
 }

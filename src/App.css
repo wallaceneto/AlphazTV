@@ -4,7 +4,3 @@
   background-color: var(--background-color);
   transition: background-color 250ms ease-in-out;
 }
-
-.content {
-  padding: 55px 60px;
-}
