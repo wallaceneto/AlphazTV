@@ -1,0 +1,51 @@
+.container {
+  padding: 20px 0px;
+}
+
+.background {
+  background-color: var(--text-primary-color);
+  opacity: 85%;
+  border-radius: 40px;
+  justify-self: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 40px;
+  gap: 40px
+}
+
+.icon {
+  color: var(--text-secondary-color);
+  margin-top: 5px;
+}
+
+.title {
+  color: var(--text-secondary-color);
+  font-weight: 600;
+}
+
+.button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.selectedTab {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+  border-radius: 28px;
+  margin-top: -5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.selectedTabText {
+  color: var(--text-primary-color);
+  font-weight: 600;
+}

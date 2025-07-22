@@ -26,7 +26,6 @@
   align-items: flex-end;
 }
 
-/* background: 'none', border: 'none', padding: 0, cursor: 'pointer' */
 .flagButton {
   background: none;
   border: none;
