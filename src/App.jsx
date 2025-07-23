@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
+import { RouterProvider } from 'react-router-dom';
 import './App.css'
 import { ThemeContext } from './contexts';
-import Home from './pages/Home';
-import Songs from './pages/Songs';
+import routes from './routes/routes';
 
 export const App = () => {
   const [theme, setTheme] = useState('dark');
@@ -10,7 +10,7 @@ export const App = () => {
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <div className='App' data-theme={theme}>
-        <Songs />
+        <RouterProvider router={routes} />
       </div>
     </ThemeContext.Provider>
   )

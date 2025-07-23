@@ -5,7 +5,6 @@ import { ThemeContext } from '../../contexts'
 
 import darkBanner from '../../assets/dark_banner.png'
 import lightBanner from '../../assets/light_banner.png'
-
 const Banner = () => {
   const { theme } = useContext(ThemeContext);
 
