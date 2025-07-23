@@ -1,7 +1,12 @@
-.container {
-  padding: 55px 60px
+.content {
+  padding-left: 60px;
 }
 
-.title {
-  color: var(--text-primary-color);
+.firstCarousel {
+  margin-top: -100px;
+  margin-bottom: 40px;
+}
+
+.carousel {
+  margin-bottom: 40px;
 }

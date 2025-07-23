@@ -1,25 +1,26 @@
 import React, { useContext } from 'react'
-import styles from './Banner.module.css'
+import classes from './Banner.module.css'
 import Header from '../Header'
 import { ThemeContext } from '../../contexts'
 
 import darkBanner from '../../assets/dark_banner.png'
 import lightBanner from '../../assets/light_banner.png'
+
 const Banner = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className={styles.bannerContainer}>
+    <div className={classes.bannerContainer}>
       <Header />
       <img
         src={theme === 'dark' ? darkBanner : lightBanner}
-        className={styles.image}
+        className={classes.image}
         alt='imagem do grupo XG'
       />
 
-      <div className={styles.overlay} />
+      <div className={classes.overlay} />
 
-      <h1 className={styles.title}>Alphaz TV+</h1>
+      <h1 className={classes.title}>Alphaz TV+</h1>
     </div>
   )
 }

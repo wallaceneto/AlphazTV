@@ -1,12 +1,21 @@
 import React from 'react'
-import styles from './Home.module.css'
 import { HomepageLayout } from '../../layout'
+import { VideoCarousel } from '../../components/VideoCarousel'
+import classes from './Home.module.css'
+
+import mockvideos from '../../mock/mvs_playlist.json'
 
 export default function Home() {
+
   return (
     <HomepageLayout>
-      <div className={styles.container}>
-        <h1 className={styles.title}>Tela inicial</h1>
+      <div className={classes.content}>
+        <div className={classes.firstCarousel}>
+          <VideoCarousel playlist={mockvideos} hideLabel />
+        </div>
+        <div className={classes.carousel}>
+          <VideoCarousel playlist={mockvideos} />
+        </div>
       </div>
     </HomepageLayout>
   )

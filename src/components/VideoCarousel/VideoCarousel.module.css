@@ -1,0 +1,15 @@
+.textContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: var(--text-primary-color);
+}
+
+.buttonLink {
+  color: var(--text-primary-color);
+  margin-right: 30px;
+  font-weight: 500;
+}

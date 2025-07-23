@@ -5,11 +5,13 @@
     "Varieties": "Varieties",
     "About": "About",
     "Language": "Language",
+    "Show all": "Show all",
     "Footer": {
       "Description": "Alphaz TV+ is a website made by fans with the objective to gather and share the work of XG. All content in the website respect the copyright ownership from XGALX.",
       "XG Accounts": "XG Social Network",
       "Contact": "Contact",
       "All rights reserved": "{{year}} © All rights reserved"
     }
-  }
+  },
+  "Show all": ""
 }

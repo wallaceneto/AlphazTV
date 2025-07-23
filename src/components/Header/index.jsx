@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import ContrastIcon from '@mui/icons-material/Contrast'
-import styles from './Header.module.css'
+import classes from './Header.module.css'
 import { ThemeContext } from '../../contexts'
 import { useLocation, useNavigate } from 'react-router-dom'
 
@@ -14,55 +14,55 @@ const Header = () => {
   const currentPath = location.pathname
 
   return (
-    <div className={styles.container}>
-      <div className={styles.background}>
-        <div className={styles.content}>
+    <div className={classes.container}>
+      <div className={classes.background}>
+        <div className={classes.content}>
           <button
-            className={styles.button}
+            className={classes.button}
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           >
-            <ContrastIcon className={styles.icon} />
+            <ContrastIcon className={classes.icon} />
           </button>
 
-          <div className={currentPath === '/' ? styles.selectedTab : undefined}>
+          <div className={currentPath === '/' ? classes.selectedTab : undefined}>
             <button
-              className={styles.button}
+              className={classes.button}
               onClick={() => navigate('/')}
             >
-              <h4 className={currentPath === '/' ? styles.selectedTabText : styles.title}>
+              <h4 className={currentPath === '/' ? classes.selectedTabText : classes.title}>
                 {t('Home')}
               </h4>
             </button>
           </div>
 
-          <div className={currentPath === '/musicas' ? styles.selectedTab : undefined}>
+          <div className={currentPath === '/musicas' ? classes.selectedTab : undefined}>
             <button
-              className={styles.button}
+              className={classes.button}
               onClick={() => navigate('/musicas')}
             >
-              <h4 className={currentPath === '/musicas' ? styles.selectedTabText : styles.title}>
+              <h4 className={currentPath === '/musicas' ? classes.selectedTabText : classes.title}>
                 {t('Songs')}
               </h4>
             </button>
           </div>
 
-          <div className={currentPath === '/variedades' ? styles.selectedTab : undefined}>
+          <div className={currentPath === '/variedades' ? classes.selectedTab : undefined}>
             <button
-              className={styles.button}
+              className={classes.button}
               onClick={() => navigate('/variedades')}
             >
-              <h4 className={currentPath === '/variedades' ? styles.selectedTabText : styles.title}>
+              <h4 className={currentPath === '/variedades' ? classes.selectedTabText : classes.title}>
                 {t('Varieties')}
               </h4>
             </button>
           </div>
 
-          <div className={currentPath === '/sobre' ? styles.selectedTab : undefined}>
+          <div className={currentPath === '/sobre' ? classes.selectedTab : undefined}>
             <button
-              className={styles.button}
+              className={classes.button}
               onClick={() => navigate('/sobre')}
             >
-              <h4 className={currentPath === '/sobre' ? styles.selectedTabText : styles.title}>
+              <h4 className={currentPath === '/sobre' ? classes.selectedTabText : classes.title}>
                 {t('About')}
               </h4>
             </button>
