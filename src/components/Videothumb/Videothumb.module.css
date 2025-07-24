@@ -31,3 +31,26 @@
   overflow: hidden;
   text-align: left;
 }
+
+.modalBg {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalText {
+  color: #FFF;
+  text-decoration: underline;
+  font-size: large;
+}
+
+.modalButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

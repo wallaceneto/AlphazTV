@@ -53,6 +53,7 @@ export const VideoCarousel = ({ playlist, hideLabel }) => {
                 key={video.videoId}
                 videoName={video.name}
                 videoId={video.videoId}
+                videoLink={video.link}
                 hideLabel={hideLabel}
               />
             </SwiperSlide>
