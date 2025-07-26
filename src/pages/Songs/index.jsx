@@ -33,7 +33,7 @@ export default function Songs() {
             {singles.map((single) => 
               <Grid key={single.name} size={{ xs: 6, md: 3 }}>
                 <a href={single.link} target='_blank'>
-                  <img src={single.cover} className={styles.image} />
+                  <img src={single.cover} className={styles.image} alt={'Capa da música ' + single.name} />
                 </a>
               </Grid>
             )}
