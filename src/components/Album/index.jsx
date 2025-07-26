@@ -23,7 +23,9 @@ export const Album = ({ album }) => {
           <p className={styles.tracksTitle}>{t('Tracks')}</p>
           <div className={styles.tracksContainer}>
             {album.tracks.map((track, index) =>
-              <p className={styles.tracksText}>{`${index + 1}. ${track}`}</p>
+              <p key={index} className={styles.tracksText}>
+                {`${index + 1}. ${track}`}
+              </p>
             )}
           </div>
         </div>
