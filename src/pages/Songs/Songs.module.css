@@ -1,7 +1,16 @@
 .container {
-  padding: 55px 60px
+  padding: 55px 0px
 }
 
 .title {
   color: var(--text-primary-color);
+}
+
+.album {
+  padding: 0px 60px;
+  margin-bottom: 55px;
+}
+
+.carousel {
+  padding-left: 60px;
 }
