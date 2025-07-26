@@ -1,9 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faSpotify, faApple } from '@fortawesome/free-brands-svg-icons'
+import { useTranslation } from 'react-i18next'
 import styles from './Album.module.css'
 
 export const Album = ({ album }) => {
+  const { t } = useTranslation()
+
   return (
     <div className={styles.container}>
       <div className={styles.leftContent}>
@@ -17,7 +20,7 @@ export const Album = ({ album }) => {
             {album.name}
           </h4>
 
-          <p className={styles.tracksTitle}>Faixas:</p>
+          <p className={styles.tracksTitle}>{t('Tracks')}</p>
           <div className={styles.tracksContainer}>
             {album.tracks.map((track, index) =>
               <p className={styles.tracksText}>{`${index + 1}. ${track}`}</p>
