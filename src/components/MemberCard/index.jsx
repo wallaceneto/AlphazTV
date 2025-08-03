@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './MemberCard.module.css'
 
-export default function MemberCard({ name, memberImage }) {
+const MemberCard = ({ name, memberImage }) => {
   return (
     <a
       className={styles.container}
@@ -20,3 +20,5 @@ export default function MemberCard({ name, memberImage }) {
     </a>
   )
 }
+
+export default MemberCard

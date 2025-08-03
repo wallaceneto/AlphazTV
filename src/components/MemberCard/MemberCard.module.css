@@ -1,4 +1,5 @@
 .container {
+  width: 285px;
   background-color: #FAFAFA;
   border-radius: 10px;
   display: flex;

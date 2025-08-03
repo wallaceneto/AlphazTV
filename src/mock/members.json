@@ -1,0 +1,107 @@
+[
+  {
+    "id": 0,
+    "name": "jurin",
+    "iconName": "Jurin 🦋",
+    "page": {
+      "fullName": "Asaya Jurin",
+      "citation": "J-U-R-I-N Looks deceiving what i am",
+      "curiosities": [
+        "Date of Birth: June 19th, 2002",
+        "MBTI: XXXX"
+      ],
+      "galleryLength": 5,
+      "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    }
+  },
+  {
+    "id": 1,
+    "name": "chisa",
+    "iconName": "Chisa ☀️",
+    "page": {
+      "fullName": "Kondou Chisa",
+      "citation": "Reach for the stars when you follow the light",
+      "curiosities": [
+        "Date of Birth: January 17th, 2002",
+        "MBTI: XXXX"
+      ],
+      "galleryLength": 5,
+      "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    }
+  },
+  {
+    "id": 2,
+    "name": "hinata",
+    "iconName": "Hinata 💎",
+    "page": {
+      "fullName": "Sohara Hinata",
+      "citation": "Take me to the other side",
+      "curiosities": [
+        "Date of Birth: June 11th, 2002",
+        "MBTI: XXXX"
+      ],
+      "galleryLength": 5,
+      "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    }
+  },
+  {
+    "id": 3,
+    "name": "harvey",
+    "iconName": "Harvey 🦄",
+    "page": {
+      "fullName": "Amy Jannet Harvey",
+      "citation": "Amy got a flow, send a penny for your thoughts",
+      "curiosities": [
+        "Date of Birth: December 18th, 2002",
+        "MBTI: XXXX"
+      ],
+      "galleryLength": 5,
+      "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    }
+  },
+  {
+    "id": 4,
+    "name": "juria",
+    "iconName": "Juria 🐿️",
+    "page": {
+      "fullName": "Ueda Juria",
+      "citation": "Levitate up to the sky",
+      "curiosities": [
+        "Date of Birth: November 28th, 2004",
+        "MBTI: XXXX"
+      ],
+      "galleryLength": 5,
+      "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    }
+  },
+  {
+    "id": 5,
+    "name": "maya",
+    "iconName": "Maya 🐶",
+    "page": {
+      "fullName": "Kawachi Maya",
+      "citation": "Maya be on the come up while they goin' down",
+      "curiosities": [
+        "Date of Birth: August 10th, 2005",
+        "MBTI: XXXX"
+      ],
+      "galleryLength": 5,
+      "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    }
+  },
+  {
+    "id": 6,
+    "name": "cocona",
+    "iconName": "Cocona 🍄",
+    "page": {
+      "fullName": "Akiyama Cocona",
+      "citation": "C to the O-C-O-N-A be poppin' on them 808s",
+      "curiosities": [
+        "Date of Birth: December 6th, 2005",
+        "MBTI: XXXX"
+      ],
+      "galleryLength": 5,
+      "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    }
+  }
+]
