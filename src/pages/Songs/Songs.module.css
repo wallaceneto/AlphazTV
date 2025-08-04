@@ -1,5 +1,5 @@
 .container {
-  padding: 55px 0px
+  padding-block: 55px;
 }
 
 .title {
@@ -7,7 +7,7 @@
 }
 
 .album {
-  padding: 0px 60px;
+  padding-inline: 60px;
   margin-bottom: 55px;
 }
 
@@ -16,7 +16,8 @@
 }
 
 .singleContainer {
-  padding: 60px 55px;
+  padding-inline: 60px;
+  padding-top: 55px;
 }
 
 .singleTitle {
