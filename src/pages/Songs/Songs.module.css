@@ -1,7 +1,38 @@
 .container {
-  padding: 55px 60px
+  padding-block: 55px;
 }
 
 .title {
   color: var(--text-primary-color);
+}
+
+.album {
+  padding-inline: 60px;
+  margin-bottom: 55px;
+}
+
+.carousel {
+  padding-left: 60px;
+}
+
+.singleContainer {
+  padding-inline: 60px;
+  padding-top: 55px;
+}
+
+.singleTitle {
+  color: var(--text-primary-color);
+  margin-bottom: 10px;
+}
+
+.image {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.image:hover {
+  height: 205px;
+  width: 205px;
 }

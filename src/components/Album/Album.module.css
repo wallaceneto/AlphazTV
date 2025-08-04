@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftContent {
+  display: flex;
+}
+
+.cover {
+  margin-right: 50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.albumInfo {
+  padding: 30px 0px;
+}
+
+.albumInfoTitle {
+  color: var(--text-primary-color);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.albumInfoSubtitle {
+  color: var(--text-primary-color);
+  font-size: 32px;
+  margin-top: -10px;
+}
+
+.tracksTitle {
+  margin-top: 10px;
+  color: var(--text-primary-color);
+}
+
+.tracksContainer {
+  max-height: 120px;
+  column-width: 90px;
+  margin-left: 10px;
+}
+
+.tracksText {
+  color: var(--text-primary-color);
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.linkButton {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+}
+
+.linkIcon {
+  color: var(--text-primary-color);
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.linkText {
+  color: var(--text-primary-color);
+  font-weight: bold;
+  font-size: 16px;
+}
