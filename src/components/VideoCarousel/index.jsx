@@ -29,7 +29,7 @@ const VideoCarousel = ({ playlist, hideLabel }) => {
     <div>
       <div className={classes.textContainer}>
         <h2 className={classes.title}>
-          {playlist.name}
+          {t(playlist.name)}
         </h2>
         <Link className={classes.buttonLink}>
           {t('Show all')}

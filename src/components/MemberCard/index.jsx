@@ -1,11 +1,14 @@
 import React from 'react'
 import styles from './MemberCard.module.css'
+import { useNavigate } from 'react-router-dom'
 
-const MemberCard = ({ name, memberImage }) => {
+const MemberCard = ({ route, name, memberImage }) => {
+  const navigation = useNavigate()
+
   return (
     <a
       className={styles.container}
-      onClick={() => {}}
+      onClick={() => navigation(route)}
     >
       <div className={styles.textContainer}>
         <h1 className={styles.mainTitle}>

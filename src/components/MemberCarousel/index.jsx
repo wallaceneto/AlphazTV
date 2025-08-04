@@ -29,11 +29,11 @@ const MemberCarousel = () => {
         slidesPerView={slidePerView}
       >
         {members.map((member) =>
-          <SwiperSlide>
+          <SwiperSlide key={member.id}>
             <MemberCard
-              key={member.id}
+              route={`/member/${member.id}`}
               name={member.iconName}
-              memberImage={`src/assets/members/${member.name}/profile.jpg`}
+              memberImage={`/members/${member.name}/profile.jpg`}
             />
           </SwiperSlide>
         )}
