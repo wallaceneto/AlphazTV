@@ -1,0 +1,42 @@
+[
+  {
+    "name": "NEW DNA",
+    "order": "1",
+    "type": "mini",
+    "cover": "src/assets/songs/new_dna.png",
+    "tracks": [
+      "HESONOO",
+      "X-GENE",
+      "GRL GVNG",
+      "TGIF",
+      "NEW DANCE",
+      "PUPPET SHOW"
+    ],
+    "links": {
+      "youtube": "https://youtube.com/playlist?list=OLAK5uy_kDAmyOE9kWCexTbQqvibmJTP8Bd-OWrR0&si=1D4bJMqQwBFRPUjS",
+      "spotify": "https://open.spotify.com/album/5ltOyfF29bg84gvBJPLOgj",
+      "apple": "https://music.apple.com/album/new-dna-apple-music-edition-ep/1703356590"
+    }
+  },
+  {
+    "name": "AWE",
+    "order": "2",
+    "type": "mini",
+    "cover": "src/assets/songs/awe.png",
+    "tracks": [
+      "HOWL",
+      "HOWLING",
+      "SPACE MEETING Skit",
+      "IYKYK",
+      "SOMETHING AIN'T RIGHT",
+      "IN THE RAIN",
+      "WOKE UP REMIXX",
+      "IS THIS LOVE"
+    ],
+    "links": {
+      "youtube": "https://youtube.com/playlist?list=OLAK5uy_nB3J9uoRAmvfmxbChAQVp7EmBICFXs-Lk&si=kv4WOiRp5tjVG047",
+      "spotify": "https://open.spotify.com/album/1eS784kXLyL0YpDz5E7AuV",
+      "apple": "https://music.apple.com/album/awe/1775445626"
+    }
+  }
+]
