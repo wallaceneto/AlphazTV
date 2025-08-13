@@ -1,10 +1,12 @@
 import React from 'react'
+import { Grid } from '@mui/material'
 import styles from './Varieties.module.css'
+import VarietyCard from './components/VarietyCard'
+import OriginalSeriesCard from './components/OriginalSeriesCard'
 import { HomepageLayout } from '../../layout'
 
 import realityShows from '../../mock/reality_shows.json'
-import { Grid } from '@mui/material'
-import { VarietyCard } from './components/VarietyCard'
+import originalSeries from '../../mock/original_series.json'
 
 export default function Varieties() {
   return (
@@ -21,6 +23,23 @@ export default function Varieties() {
                   description={show.description}
                   cover={show.cover}
                   link={show.link}
+                />
+              </Grid>
+            )}
+          </Grid>
+        </div>
+
+        <div>
+          <h2 className={styles.title}>Séries originais</h2>
+
+          <Grid container>
+            {originalSeries.map((item, index) =>
+              <Grid key={index} size={{ xs: 12 }}>
+                <OriginalSeriesCard
+                  cover={item.cover}
+                  title={item.name}
+                  description={item.description}
+                  link={item.link}
                 />
               </Grid>
             )}
