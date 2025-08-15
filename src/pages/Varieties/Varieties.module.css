@@ -1,8 +1,13 @@
 .container {
-  padding: 55px 60px
+  padding-left: 60px;
+  padding-block: 20px;
 }
 
 .title {
   color: var(--text-primary-color);
   margin-bottom: 5px;
+}
+
+.contentDiv {
+  margin-block: 30px;
 }
