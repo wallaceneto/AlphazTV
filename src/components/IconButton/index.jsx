@@ -13,7 +13,8 @@ const IconButton = ({ icon, text, link, color }) => {
 
       <p
         className={styles.text}
-        style={{ color: color || null  }}>
+        style={{ color: color || null }}
+      >
         {text}
       </p>
     </a>
