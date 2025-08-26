@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.image {
+  width: 339px;
+  height: 480px;
+  border-radius: 10px;
+}
+
+.cardOverlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 339px;
+  height: 480px;
+  border-radius: 10px;
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  opacity: 0;
+}
+
+.cardOverlay:hover {
+  opacity: 1;
+}
+
+.text {
+  color: #FFF;
+  text-align: center;
+}

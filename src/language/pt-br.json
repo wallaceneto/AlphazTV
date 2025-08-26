@@ -11,11 +11,21 @@
     "Date of Birth": "Nascimento:",
     "Videos": "Vídeos",
     "Tracks": "Faixas:",
+    "Original series": "Séries originais",
+    "Watch on Youtube": "Assistir no Youtube",
+    "Watch all episodes": "Assistir todos os episódios",
     "Footer": {
       "Description": "O Alphaz TV+ é um site feito de fãs para fãs, que visa reunir e divulgar o trabalho do XG. Todo conteúdo apresentado respeita o direto de propriedade da XGALX.",
       "XG Accounts": "Canais oficiais do XG",
       "Contact": "Contato",
       "All rights reserved": "{{year}} © Todos os diretios reservados"
+    },
+    "Realities": {
+      "XG Three Meals a Day": "As meninas precisam preparar três refeições todos os dias. Para isso, toda manhã elas devem participar de uma prova, que vai determinar os ingredientes que vão ter disponível pelo resto do dia.",
+      "X OR GO": "As meninas participam de provas que vão determinar as experiências que cada uma vai ter que passar, nessa viagem pelo interior da Coreia do Sul."
+    },
+    "Series": {
+      "XTRA XTRA": "Um documentário em 9 episódios que acompanha a criação do grupo XG, desde o processo seletivo, treinos, ensaios e conflitos internos."
     }
   }
 }

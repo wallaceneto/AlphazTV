@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 400px;
+  height: 224px;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.title {
+  color: var(--text-primary-color);
+}
+
+.description {
+  color: var(--text-primary-color);
+}
