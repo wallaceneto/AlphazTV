@@ -2,7 +2,7 @@ import React from 'react'
 import ArrowIcon from '@mui/icons-material/ArrowBack'
 import { useNavigate } from 'react-router-dom'
 import styles from './Header.module.css'
-import { Button } from '../../../../components/Button'
+import Button from '../../../../components/Button'
 
 export const Header = ({ title }) => {
   const navigation = useNavigate()

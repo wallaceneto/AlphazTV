@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import classes from './VideoCarousel.module.css'
+import styles from './VideoCarousel.module.css'
 import Videothumb from '../Videothumb'
 import { handleSlideResize } from '../../global/lib'
 
@@ -27,11 +27,11 @@ const VideoCarousel = ({ playlist, hideLabel }) => {
 
   return (
     <div>
-      <div className={classes.textContainer}>
-        <h2 className={classes.title}>
+      <div className={styles.textContainer}>
+        <h2 className={styles.title}>
           {t(playlist.name)}
         </h2>
-        <Link className={classes.buttonLink}>
+        <Link className={styles.buttonLink}>
           {t('Show all')}
         </Link>
       </div>

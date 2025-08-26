@@ -2,7 +2,7 @@ import { Grid } from '@mui/material';
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faXTwitter, faTiktok, faBluesky } from '@fortawesome/free-brands-svg-icons'
-import classes from './Footer.module.css'
+import styles from './Footer.module.css'
 import { toggleLanguage, URLs } from './lib';
 
 const Footer = () => {
@@ -11,58 +11,58 @@ const Footer = () => {
 
   return (
     <>
-      <div className={classes.background}>
+      <div className={styles.background}>
         <Grid container>
           <Grid size={{ xs: 12, md: 8 }}>
-            <h1 className={classes.title}>ALPHAZ TV+</h1>
-            <p className={classes.description}>
+            <h1 className={styles.title}>ALPHAZ TV+</h1>
+            <p className={styles.description}>
               {t('Footer.Description')}
             </p>
           </Grid>
 
           <Grid size={{ xs: 12, md: 0 }}><br /></Grid>
 
-          <Grid size={{ xs: 12, md: 4 }} className={classes.socialContainer}>
-            <p className={classes.socialText}>{t('Footer.XG Accounts')}</p>
-            <div className={classes.socialGroup}>
+          <Grid size={{ xs: 12, md: 4 }} className={styles.socialContainer}>
+            <p className={styles.socialText}>{t('Footer.XG Accounts')}</p>
+            <div className={styles.socialGroup}>
               <a href={URLs.xgYoutube} target='_blank'>
-                <FontAwesomeIcon icon={faYoutube} className={classes.socialIcon} />
+                <FontAwesomeIcon icon={faYoutube} className={styles.socialIcon} />
               </a>
               <a href={URLs.xgInstagram} target='_blank'>
-                <FontAwesomeIcon icon={faInstagram} className={classes.socialIcon} />
+                <FontAwesomeIcon icon={faInstagram} className={styles.socialIcon} />
               </a>
               <a href={URLs.xgTwitter} target='_blank'>
-                <FontAwesomeIcon icon={faTiktok} className={classes.socialIcon} />
+                <FontAwesomeIcon icon={faTiktok} className={styles.socialIcon} />
               </a>
               <a href={URLs.xgTwitter} target='_blank'>
-                <FontAwesomeIcon icon={faXTwitter} className={classes.socialIcon} />
+                <FontAwesomeIcon icon={faXTwitter} className={styles.socialIcon} />
               </a>
             </div>
 
-            <p className={classes.socialText}>{t('Footer.Contact')}</p>
-            <div className={classes.socialGroup}>
+            <p className={styles.socialText}>{t('Footer.Contact')}</p>
+            <div className={styles.socialGroup}>
               <a href={URLs.contactBluesky} target='_blank'>
-                <FontAwesomeIcon icon={faBluesky} className={classes.socialIcon} />
+                <FontAwesomeIcon icon={faBluesky} className={styles.socialIcon} />
               </a>
               <a href={URLs.contactTwitter} target='_blank'>
-                <FontAwesomeIcon icon={faXTwitter} className={classes.socialIcon} />
+                <FontAwesomeIcon icon={faXTwitter} className={styles.socialIcon} />
               </a>
             </div>
           </Grid>
         </Grid>
       </div>
 
-      <div className={classes.languageContainer}>
-        <button className={classes.languageButton} onClick={() => toggleLanguage('pt-BR')}>
-          <p className={i18n.language === 'pt-BR' ? classes.languageTextSelected : classes.languageText}>
+      <div className={styles.languageContainer}>
+        <button className={styles.languageButton} onClick={() => toggleLanguage('pt-BR')}>
+          <p className={i18n.language === 'pt-BR' ? styles.languageTextSelected : styles.languageText}>
             Português (Brasil)
           </p>
         </button>
 
-        <span className={classes.verticalDivider} />
+        <span className={styles.verticalDivider} />
 
-        <button className={classes.languageButton} onClick={() => toggleLanguage('en-US')}>
-          <p className={i18n.language === 'en-US' ? classes.languageTextSelected : classes.languageText}>
+        <button className={styles.languageButton} onClick={() => toggleLanguage('en-US')}>
+          <p className={i18n.language === 'en-US' ? styles.languageTextSelected : styles.languageText}>
             English (USA)
           </p>
         </button>

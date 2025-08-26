@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faSpotify, faApple } from '@fortawesome/free-brands-svg-icons'
 import styles from './Album.module.css'
 
-export const Album = ({ album }) => {
+const Album = ({ album }) => {
   const { t } = useTranslation()
 
   return (
@@ -51,3 +51,5 @@ export const Album = ({ album }) => {
     </Grid>
   )
 }
+
+export default Album

@@ -5,7 +5,7 @@ import styles from './Varieties.module.css'
 import VarietyCard from './components/VarietyCard'
 import OriginalSeriesCard from './components/OriginalSeriesCard'
 import { HomepageLayout } from '../../layout'
-import { VideoCarousel } from '../../components/VideoCarousel'
+import VideoCarousel from '../../components/VideoCarousel'
 
 import realityShows from '../../mock/reality_shows.json'
 import originalSeries from '../../mock/original_series.json'
