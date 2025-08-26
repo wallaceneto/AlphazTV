@@ -1,0 +1,43 @@
+.container {
+  background-color: var(--background-color);
+}
+
+.content {
+  padding-left: 60px;
+  padding-bottom: 60px;
+}
+
+.infoContainer {
+  display: flex;
+}
+
+.image {
+  height: 507px;
+  border-radius: 10px;
+  margin-top: -70px;
+}
+
+.textContainer {
+  margin: 40px;
+}
+
+.title {
+  color: var(--text-primary-color);
+  font-size: 35px;
+}
+
+.subtitle {
+  color: var(--text-primary-color);
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 80px;
+}
+
+.text {
+  color: var(--text-primary-color);
+}
+
+.galleryContainer {
+  background-color: blue;
+  margin-block: 40px;
+}

@@ -3,38 +3,33 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import classes from './VideoCarousel.module.css'
 import Videothumb from '../Videothumb'
+import { handleSlideResize } from '../../global/lib'
 
 import { Mousewheel } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 
-export const VideoCarousel = ({ playlist, hideLabel }) => {
+const VideoCarousel = ({ playlist, hideLabel }) => {
   const { t } = useTranslation()
   const [slidePerView, setSlidePerView] = useState(3.3)
 
   useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth < 720) {
-        setSlidePerView(1.5)
-      } else if (window.innerWidth < 1100) {
-        setSlidePerView(2.5)
-      } else {
-        setSlidePerView(3.5)
-      }
-    }
+    const sm = 1.5
+    const md = 2.5
+    const xl = 3.5
 
-    handleResize()
+    handleSlideResize(setSlidePerView, sm, md, xl)
 
-    window.addEventListener("resize", handleResize)
+    window.addEventListener("resize", () => handleSlideResize(setSlidePerView, sm, md, xl))
 
-    return () => window.removeEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", () => handleSlideResize(setSlidePerView, sm, md, xl))
   }, [])
 
   return (
     <div>
       <div className={classes.textContainer}>
         <h2 className={classes.title}>
-          {playlist.name}
+          {t(playlist.name)}
         </h2>
         <Link className={classes.buttonLink}>
           {t('Show all')}
@@ -63,3 +58,5 @@ export const VideoCarousel = ({ playlist, hideLabel }) => {
     </div>
   )
 }
+
+export default VideoCarousel
