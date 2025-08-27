@@ -6,6 +6,7 @@ import Songs from '../pages/Songs'
 import Varieties from '../pages/Varieties'
 import About from '../pages/About'
 import Member from '../pages/Member'
+import Videos from '../pages/Videos'
 
 const routes = createBrowserRouter([
   { path: '/', Component: Home },
@@ -13,6 +14,7 @@ const routes = createBrowserRouter([
   { path: '/variedades', Component: Varieties },
   { path: '/sobre', Component: About },
   { path: '/member/:memberId', Component: Member },
+  { path: '/playlist/:playlistName', Component: Videos },
 ])
 
 export default routes

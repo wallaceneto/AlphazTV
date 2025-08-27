@@ -18,6 +18,13 @@ export default function Home() {
         </div>
 
         <MemberCarousel />
+
+        <div className={styles.carousel}>
+          <VideoCarousel playlist={mockvideos} />
+        </div>
+        <div className={styles.carousel}>
+          <VideoCarousel playlist={mockvideos} />
+        </div>
       </div>
     </HomepageLayout>
   )

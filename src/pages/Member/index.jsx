@@ -62,7 +62,7 @@ export default function Member() {
 
         {/* TRECHO PARA O COMPONENTE DE GALERIA */}
         <div className={styles.galleryContainer}>
-          <h2>Galeria</h2>
+          <h2 className={styles.text}>Galeria</h2>
         </div>
 
         <VideoCarousel playlist={jurin_playlist} />

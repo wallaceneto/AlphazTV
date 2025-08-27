@@ -31,7 +31,10 @@ const VideoCarousel = ({ playlist, hideLabel }) => {
         <h2 className={styles.title}>
           {t(playlist.name)}
         </h2>
-        <Link className={styles.buttonLink}>
+        <Link
+          className={styles.buttonLink}
+          to={`/playlist/${playlist.name}`}
+        >
           {t('Show all')}
         </Link>
       </div>

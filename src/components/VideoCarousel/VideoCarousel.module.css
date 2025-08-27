@@ -6,10 +6,12 @@
 
 .title {
   color: var(--text-primary-color);
+  z-index: 1;
 }
 
 .buttonLink {
   color: var(--text-primary-color);
   margin-right: 30px;
   font-weight: 500;
+  z-index: 1;
 }

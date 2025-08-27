@@ -1,9 +1,9 @@
 import React from 'react'
 import { Grid } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faSpotify, faApple } from '@fortawesome/free-brands-svg-icons'
 import styles from './Album.module.css'
+import IconButton from '../IconButton'
 
 const Album = ({ album }) => {
   const { t } = useTranslation()
@@ -33,20 +33,23 @@ const Album = ({ album }) => {
       </Grid>
 
       <Grid className={styles.rightContent}>
-        <a className={styles.linkButton} target='_blank' href={album.links.youtube}>
-          <FontAwesomeIcon icon={faYoutube} className={styles.linkIcon} />
-          <p className={styles.linkText}>Youtube</p>
-        </a>
+        <IconButton
+          text='Youtube'
+          icon={faYoutube}
+          link={album.links.youtube}
+        />
 
-        <a className={styles.linkButton} target='_blank' href={album.links.spotify} >
-          <FontAwesomeIcon icon={faSpotify} className={styles.linkIcon} />
-          <p className={styles.linkText}>Spotify</p>
-        </a>
+        <IconButton
+          text='Spotify'
+          icon={faSpotify}
+          link={album.links.spotify}
+        />
 
-        <a className={styles.linkButton} target='_blank' href={album.links.apple}>
-          <FontAwesomeIcon icon={faApple} className={styles.linkIcon} />
-          <p className={styles.linkText}>Apple Music</p>
-        </a>
+        <IconButton
+          text='Apple Music'
+          icon={faApple}
+          link={album.links.apple}
+        />
       </Grid>
     </Grid>
   )

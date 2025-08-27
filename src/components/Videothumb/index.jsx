@@ -7,15 +7,11 @@ const Videothumb = ({ videoName, videoId, videoLink, hideLabel }) => {
   const [openModal, setOpenModal] = useState(false)
   const { t } = useTranslation()
 
-  const handleVideoModal = () => {
-    setOpenModal(true)
-  }
-
   return (
     <>
       <button
         className={styles.container}
-        onClick={() => handleVideoModal(videoId)}
+        onClick={() => setOpenModal(true)}
       >
         <img
           src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`}
