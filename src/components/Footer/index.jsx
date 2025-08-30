@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faXTwitter, faTiktok, faBluesky } from '@fortawesome/free-brands-svg-icons'
 import styles from './Footer.module.css'
-import { toggleLanguage, URLs } from './lib';
+import { toggleLanguage } from './lib';
+import { URLs } from '../../global/lib/URLs';
 
 const Footer = () => {
   const { t } = useTranslation();
