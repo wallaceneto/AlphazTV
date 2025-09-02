@@ -12,7 +12,7 @@
   flex-direction: column;
 }
 
-.container_about:nth-child(3) {
+.container_about:nth-child(4) {
   flex-direction: row-reverse;
 }
 
@@ -40,4 +40,8 @@
   gap: 50px;
   align-items: center;
   list-style-type: none;
+}
+
+.galleryContainer {
+  margin-left: 40px;
 }
