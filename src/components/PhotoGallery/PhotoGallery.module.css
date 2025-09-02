@@ -1,0 +1,20 @@
+.text {
+  color: var(--text-primary-color);
+}
+
+.image {
+  height: 380px;
+  border-radius: 5px;
+}
+
+.emblaViewport {
+  overflow: hidden;
+}
+
+.emblaContainer {
+  display: flex;
+}
+
+.emblaSlide {
+  padding-right: 80px;
+}

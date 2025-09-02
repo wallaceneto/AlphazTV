@@ -9,6 +9,7 @@ import VideoCarousel from '../../components/VideoCarousel'
 
 import members from '../../mock/members.json'
 import jurin_playlist from '../../mock/jurin_playlist.json'
+import PhotoGallery from '../../components/PhotoGallery'
 
 export default function Member() {
   const { t } = useTranslation();
@@ -60,9 +61,12 @@ export default function Member() {
           </span>
         </div>
 
-        {/* TRECHO PARA O COMPONENTE DE GALERIA */}
         <div className={styles.galleryContainer}>
-          <h2 className={styles.text}>Galeria</h2>
+          <h2 className={styles.text}>{t('Gallery')}</h2>
+          <PhotoGallery
+            galleryPath={member.galleryPath}
+            galleryLength={member.galleryLength}
+          />
         </div>
 
         <VideoCarousel playlist={jurin_playlist} />
