@@ -8,7 +8,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from 'react-i18next';
 import styles from "./About.module.css";
 import { HomepageLayout } from "../../layout";
-import { URLs } from "../../global/lib/URLs";
+import { URLs } from "../../global/utils";
 import IconButton from "../../components/IconButton";
 import PhotoGallery from "../../components/PhotoGallery";
 

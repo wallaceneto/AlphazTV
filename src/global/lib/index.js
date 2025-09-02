@@ -1,2 +1,2 @@
-export * from './handleResize'
-export * from './URLs'
+export * from './localStorage';
+export * from './toggleLanguage';

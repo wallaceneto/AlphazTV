@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faXTwitter, faTiktok, faBluesky } from '@fortawesome/free-brands-svg-icons'
 import styles from './Footer.module.css'
-import { toggleLanguage } from './lib';
-import { URLs } from '../../global/lib/URLs';
+import { toggleLanguage } from '../../global/lib';
+import { URLs } from '../../global/utils';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -54,17 +54,17 @@ const Footer = () => {
       </div>
 
       <div className={styles.languageContainer}>
-        <button className={styles.languageButton} onClick={() => toggleLanguage('pt-BR')}>
-          <p className={i18n.language === 'pt-BR' ? styles.languageTextSelected : styles.languageText}>
-            Português (Brasil)
+        <button className={styles.languageButton} onClick={() => toggleLanguage('en-US')}>
+          <p className={i18n.language === 'en-US' ? styles.languageTextSelected : styles.languageText}>
+            English (USA)
           </p>
         </button>
 
         <span className={styles.verticalDivider} />
 
-        <button className={styles.languageButton} onClick={() => toggleLanguage('en-US')}>
-          <p className={i18n.language === 'en-US' ? styles.languageTextSelected : styles.languageText}>
-            English (USA)
+        <button className={styles.languageButton} onClick={() => toggleLanguage('pt-BR')}>
+          <p className={i18n.language === 'pt-BR' ? styles.languageTextSelected : styles.languageText}>
+            Português (Brasil)
           </p>
         </button>
       </div>

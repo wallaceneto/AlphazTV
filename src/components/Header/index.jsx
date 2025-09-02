@@ -4,6 +4,7 @@ import ContrastIcon from '@mui/icons-material/Contrast'
 import styles from './Header.module.css'
 import { ThemeContext } from '../../contexts'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { setItemOnStorage } from '../../global/lib'
 
 const Header = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -13,13 +14,23 @@ const Header = () => {
   const location = useLocation()
   const currentPath = location.pathname
 
+  const toggleTheme = () => {
+    if (theme === 'dark') {
+      setTheme('light');
+      setItemOnStorage('theme', 'light');
+    } else {
+      setTheme('dark');
+      setItemOnStorage('theme', 'dark');
+    }
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.background}>
         <div className={styles.content}>
           <button
             className={styles.button}
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            onClick={toggleTheme}
           >
             <ContrastIcon className={styles.icon} />
           </button>
