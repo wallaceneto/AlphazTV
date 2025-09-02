@@ -1,5 +1,13 @@
+.viewport {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 55px;
+}
+
 .container {
   display: flex;
-  margin-bottom: 55px;
-  gap: 30px;
+}
+
+.slide {
+  padding-right: 50px;
 }

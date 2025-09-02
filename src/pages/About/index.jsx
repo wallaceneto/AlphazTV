@@ -8,7 +8,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import styles from "./About.module.css";
 import { HomepageLayout } from "../../layout";
 import { about } from "../../mock/about.json";
-import { URLs } from "../../global/lib/URLs"; 
+import { URLs } from "../../global/lib/URLs";
 import IconButton from "../../components/IconButton";
 
 const socialLinks = [
@@ -23,6 +23,7 @@ function SocialLinks() {
     <ul className={styles.socialMedia}>
       {socialLinks.map(({ icon, url, label }) => (
         <IconButton
+          key={label}
           icon={icon}
           text={label}
           link={url}
@@ -36,24 +37,20 @@ export default function About() {
   return (
     <HomepageLayout>
       {about.map((section, index) => (
-        <>
-          <div key={section.title} className={styles.container_about}>
-            <img
-              src={section.image}
-              alt={section.title}
-              className={styles.image}
-            />
-            <div className={styles.content}>
-              <h1 className={styles.title}>{section.title}</h1>
-              <p className={styles.description}>{section.description}</p>
-              <div className={styles.container_socialLinks}>
-                {index === 0 && <SocialLinks />}
-              </div>
+        <div key={section.title} className={styles.container_about}>
+          <img
+            src={section.image}
+            alt={section.title}
+            className={styles.image}
+          />
+          <div className={styles.content}>
+            <h1 className={styles.title}>{section.title}</h1>
+            <p className={styles.description}>{section.description}</p>
+            <div className={styles.container_socialLinks}>
+              {index === 0 && <SocialLinks />}
             </div>
           </div>
-
-          {index === 0 && <h2>Galeria</h2>}
-        </>
+        </div>
       ))}
     </HomepageLayout>
   );

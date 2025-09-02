@@ -1,23 +1,10 @@
-.text {
-  color: var(--text-primary-color);
-}
-
-.image {
-  height: 380px;
-  border-radius: 5px;
-}
-
-.emblaViewport {
+.viewport {
   position: relative;
   overflow: hidden;
 }
 
-.emblaContainer {
+.container {
   display: flex;
-}
-
-.emblaSlide {
-  padding-right: 80px;
 }
 
 .slideButtonContainer {
@@ -30,7 +17,7 @@
   pointer-events: none;
 }
 
-.slideButton {
+.slideButtonLarge {
   height: 380px;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
@@ -39,7 +26,16 @@
   pointer-events: all;
 }
 
+.slideButtonSmall {
+  height: 185px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+  pointer-events: all;
+}
+
 .slideButtonIcon {
-  color: var(--text-primary-color);
+  color: #FFF;
   font-size: x-large;
 }

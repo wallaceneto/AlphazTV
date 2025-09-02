@@ -12,7 +12,7 @@
   flex-direction: column;
 }
 
-.container_about:nth-child(4) {
+.container_about:nth-child(3) {
   flex-direction: row-reverse;
 }
 

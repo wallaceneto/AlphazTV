@@ -34,7 +34,10 @@ export default function Videos() {
         <div className={styles.content}>
           {
             playlist.videos.map((video) =>
-              <Button onClick={() => handleOpenVideo(video.link, setCurrentLink, setOpenModal)}>
+              <Button
+                key={video.videoId}
+                onClick={() => handleOpenVideo(video.link, setCurrentLink, setOpenModal)}
+              >
                 <img
                   src={`https://img.youtube.com/vi/${video.videoId}/maxresdefault.jpg`}
                   alt="YouTube Thumbnail"

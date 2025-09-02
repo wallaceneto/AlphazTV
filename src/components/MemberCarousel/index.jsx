@@ -1,43 +1,26 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import useEmblaCarousel from 'embla-carousel-react'
 import styles from './MemberCarousel.module.css'
 import MemberCard from '../MemberCard'
-import { handleSlideResize } from '../../global/lib'
-
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
 
 import members from '../../mock/members.json';
 
 const MemberCarousel = () => {
-  const [slidePerView, setSlidePerView] = useState(4.3)
-
-  useEffect(() => {
-    const sm = 1.7
-    const md = 2.7
-    const xl = 4.3
-
-    handleSlideResize(setSlidePerView, sm, md, xl)
-
-    window.addEventListener("resize", () => handleSlideResize(setSlidePerView, sm, md, xl))
-
-    return () => window.removeEventListener("resize", () => handleSlideResize(setSlidePerView, sm, md, xl))
-  }, [])
+  const [emblaRef] = useEmblaCarousel({ align: 'start' })
 
   return (
-    <div className={styles.container}>
-      <Swiper
-        slidesPerView={slidePerView}
-      >
+    <div className={styles.viewport} ref={emblaRef}>
+      <div className={styles.container}>
         {members.map((member) =>
-          <SwiperSlide key={member.id}>
+          <div className={styles.slide} key={member.id}>
             <MemberCard
               route={`/member/${member.id}`}
               name={member.iconName}
               memberImage={`/members/${member.name}/profile.jpg`}
             />
-          </SwiperSlide>
+          </div>
         )}
-      </Swiper>
+      </div>
     </div>
   )
 }

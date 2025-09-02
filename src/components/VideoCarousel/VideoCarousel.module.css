@@ -16,14 +16,6 @@
   z-index: 1;
 }
 
-.emblaViewport {
-  overflow: hidden;
-}
-
-.emblaContainer {
-  display: flex;
-}
-
 .emblaSlide {
   padding-right: 25px;
 }
