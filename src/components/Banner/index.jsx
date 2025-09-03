@@ -20,7 +20,7 @@ const Banner = () => {
 
       <div className={styles.overlay} />
 
-      <h1 className={styles.title}>Alphaz TV+</h1>
+      {/* <h1 className={styles.title}>Alphaz TV+</h1> */}
     </div>
   )
 }

@@ -1,0 +1,56 @@
+.container {
+  position: absolute;
+  padding: 20px 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+.background {
+  background-color: var(--text-primary-color);
+  width: 80%;
+  opacity: 85%;
+  border-radius: 40px;
+  justify-self: center;
+}
+
+.mainTabContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  padding-block: 5px;
+}
+
+.icon {
+  color: var(--text-secondary-color);
+  margin-top: 5px;
+  font-size: large;
+}
+
+.title {
+  color: var(--text-secondary-color);
+  font-weight: 600;
+}
+
+/* ------ */
+
+.expandedBackground {
+  background-color: var(--text-primary-color);
+  width: 80%;
+  opacity: 85%;
+  justify-self: center;
+  border-radius: 20px;
+}
+
+.secondaryTabContainer {
+  display: flex;
+  justify-content: center;
+  padding-block: 15px;
+  cursor: pointer;
+}
+
+.divider {
+  background-color: var(--text-secondary-color);
+  height: 2px;
+  width: 100%;
+}

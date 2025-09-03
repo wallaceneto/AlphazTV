@@ -30,13 +30,6 @@
   font-weight: 600;
 }
 
-.button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
 .selectedTab {
   background-color: var(--background-color);
   display: flex;

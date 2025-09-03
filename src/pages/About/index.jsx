@@ -40,23 +40,30 @@ function SocialLinks() {
 export default function About() {
   const { t } = useTranslation();
 
-  return (
-    <HomepageLayout>
-      <div key={about[0].title} className={styles.container_about}>
+  const aboutDescription = (about, index) => {
+    return (
+      <div key={about.title} className={styles.container_about}>
         <img
-          src={about[0].image}
-          alt={about[0].title}
+          src={about.image}
+          alt={about.title}
           className={styles.image}
         />
         <div className={styles.content}>
-          <h1 className={styles.title}>{t(`AboutPage.${about[0].title}`)}</h1>
-          <p className={styles.description}>{t(`AboutPage.${about[0].description}`)}</p>
-          <div className={styles.container_socialLinks}>
-            <SocialLinks />
-          </div>
+          <h1 className={styles.title}>{t(`AboutPage.${about.title}`)}</h1>
+          <p className={styles.description}>{t(`AboutPage.${about.description}`)}</p>
+          {index === 0 &&
+            <div className={styles.container_socialLinks}>
+              <SocialLinks />
+            </div>
+          }
         </div>
       </div>
+    );
+  }
 
+  return (
+    <HomepageLayout>
+      {aboutDescription(about[0], 0)}
       <div className={styles.galleryContainer}>
         <h2 className={styles.title}>{t('Gallery')}</h2>
         <PhotoGallery
@@ -64,18 +71,7 @@ export default function About() {
           galleryLength={groupGallery.galleryLength}
         />
       </div>
-
-      <div key={about[1].title} className={styles.container_about}>
-        <img
-          src={about[1].image}
-          alt={about[1].title}
-          className={styles.image}
-        />
-        <div className={styles.content}>
-          <h1 className={styles.title}>{t(`AboutPage.${about[1].title}`)}</h1>
-          <p className={styles.description}>{t(`AboutPage.${about[1].description}`)}</p>
-        </div>
-      </div>
+      {aboutDescription(about[1], 1)}
     </HomepageLayout>
   );
 }
