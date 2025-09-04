@@ -6,7 +6,7 @@
 }
 
 .background {
-  background-color: var(--text-primary-color);
+  background-color: var(--text-secondary-color);
   width: 80%;
   opacity: 85%;
   border-radius: 40px;
@@ -22,20 +22,20 @@
 }
 
 .icon {
-  color: var(--text-secondary-color);
+  color: var(--text-primary-color);
   margin-top: 5px;
   font-size: large;
 }
 
 .title {
-  color: var(--text-secondary-color);
+  color: var(--text-primary-color);
   font-weight: 600;
 }
 
 /* ------ */
 
 .expandedBackground {
-  background-color: var(--text-primary-color);
+  background-color: var(--text-secondary-color);
   width: 80%;
   opacity: 85%;
   justify-self: center;
@@ -50,7 +50,7 @@
 }
 
 .divider {
-  background-color: var(--text-secondary-color);
+  background-color: var(--text-primary-color);
   height: 2px;
   width: 100%;
 }
