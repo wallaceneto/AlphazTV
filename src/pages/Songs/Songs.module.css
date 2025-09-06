@@ -26,13 +26,13 @@
 }
 
 .image {
-  height: 200px;
-  width: 200px;
+  height: 205px;
+  width: 205px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
 .image:hover {
-  height: 205px;
-  width: 205px;
+  height: 200px;
+  width: 200px;
 }
