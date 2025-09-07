@@ -9,6 +9,21 @@ const EmblaCarousel = ({ children, gallery }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'start' })
   const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
   const [nextBtnDisabled, setNextBtnDisabled] = useState(true)
+  const [mobileMode, setMobileMode] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 767) {
+        setMobileMode(true);
+      } else {
+        setMobileMode(false);
+      }
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])
 
   const onNextButton = useCallback(() => {
     if (!emblaApi) return
@@ -38,24 +53,26 @@ const EmblaCarousel = ({ children, gallery }) => {
         {children}
       </div>
 
-      <div className={styles.slideButtonContainer}>
-        <Button onClick={() => onPreviousButton()} disabled={prevBtnDisabled}>
-          <div className={gallery ? styles.slideButtonLarge : styles.slideButtonSmall}>
-            <FontAwesomeIcon
-              icon={faChevronLeft}
-              className={styles.slideButtonIcon}
-            />
-          </div>
-        </Button>
-        <Button onClick={() => onNextButton()} disabled={nextBtnDisabled}>
-          <div className={gallery ? styles.slideButtonLarge : styles.slideButtonSmall}>
-            <FontAwesomeIcon
-              icon={faChevronRight}
-              className={styles.slideButtonIcon}
-            />
-          </div>
-        </Button>
-      </div>
+      {!mobileMode &&
+        <div className={styles.slideButtonContainer}>
+          <Button onClick={() => onPreviousButton()} disabled={prevBtnDisabled}>
+            <div className={gallery ? styles.slideButtonLarge : styles.slideButtonSmall}>
+              <FontAwesomeIcon
+                icon={faChevronLeft}
+                className={styles.slideButtonIcon}
+              />
+            </div>
+          </Button>
+          <Button onClick={() => onNextButton()} disabled={nextBtnDisabled}>
+            <div className={gallery ? styles.slideButtonLarge : styles.slideButtonSmall}>
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                className={styles.slideButtonIcon}
+              />
+            </div>
+          </Button>
+        </div>
+      }
     </div>
   )
 }

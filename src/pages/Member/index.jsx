@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import styles from './Member.module.css'
-import { translateBirthDate, translateCuriosites } from './lib'
+import { formatLinkName, translateBirthDate, translateCuriosites } from './lib'
 import { Header } from './components/Header'
 import Footer from '../../components/Footer'
 import VideoCarousel from '../../components/VideoCarousel'
@@ -15,33 +15,35 @@ export default function Member() {
   const { t } = useTranslation();
   const { i18n } = useTranslation('Home');
   let { memberId } = useParams();
-  const [member, setMember] = useState(members[0]);
+  const member = members[memberId < 7 ? memberId : 0];
+  const [mobileMode, setMobileMode] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
-  useEffect(() => {
-    members.find(item => {
-      if (item.id === memberId) {
-        setMember(item)
-        return true
+    function handleResize() {
+      if (window.innerWidth < 767) {
+        setMobileMode(true);
+      } else {
+        setMobileMode(false);
       }
-    })
-  }, [memberId])
+    }
+
+    window.scrollTo(0, 0);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])
 
   return (
     <div className={styles.container}>
       <Header title={`This is ${member.iconName}`} />
 
       <div className={styles.content}>
-        <div className={styles.infoContainer}>
+        <div className={!mobileMode && styles.infoContainer}>
           <img
             src={`/members/${member.name}/cover.jpg`}
-            className={styles.image}
+            className={mobileMode ? styles.coverMobile : styles.cover}
             alt={member.name}
           />
-
           <span className={styles.textContainer}>
             <div>
               <h1 className={styles.title}>{member.fullName}</h1>
@@ -71,8 +73,20 @@ export default function Member() {
 
         <VideoCarousel playlist={jurin_playlist} />
 
+        <div className={styles.linksContainer}>
+          <h2 className={styles.text}>{t('Ver também')}</h2>
+          {members.map((item) =>
+            item.id !== member.id &&
+            <a
+              key={item.id}
+              href={`/member/${item.id}`}
+              className={styles.linkText}
+            >
+              {formatLinkName(item.name)}
+            </a>
+          )}
+        </div>
       </div>
-
       <Footer />
     </div>
   )

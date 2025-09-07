@@ -11,14 +11,21 @@
   display: flex;
 }
 
-.image {
+.cover {
   height: 507px;
+  border-radius: 10px;
+  margin-top: -70px;
+}
+
+.coverMobile {
+  height: 407px;
   border-radius: 10px;
   margin-top: -70px;
 }
 
 .textContainer {
   margin: 40px;
+  overflow: auto;
 }
 
 .title {
@@ -30,7 +37,7 @@
   color: var(--text-primary-color);
   font-size: 20px;
   font-style: italic;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .text {
@@ -38,5 +45,17 @@
 }
 
 .galleryContainer {
-  margin-block: 40px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.linksContainer {
+  margin-top: 40px;
+}
+
+.linkText {
+  color: var(--text-primary-color);
+  font-size: 18px;
+  font-style: italic;
+  margin-right: 10px;
 }
