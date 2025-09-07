@@ -8,14 +8,17 @@
 }
 
 .cover {
+  width: 280px;
+  height: 280px;
   margin-right: 50px;
-  width: 300px;
-  height: 300px;
   border-radius: 10px;
 }
 
-.albumInfo {
-  padding: 30px 0px;
+.coverMobile {
+  width: 200px;
+  height: 200px;
+  margin-right: 15px;
+  border-radius: 10px;
 }
 
 .albumInfoTitle {
@@ -36,36 +39,33 @@
 }
 
 .tracksContainer {
-  max-height: 120px;
-  column-width: 90px;
+  column-count: 3;
+  column-gap: 20px;
   margin-left: 10px;
+}
+
+.tracksContainerMobile {
+  column-count: 2;
+  column-gap: 20px;
+  margin-top: 20px;
 }
 
 .tracksText {
   color: var(--text-primary-color);
+  break-inside: avoid;
 }
 
-.rightContent {
+.socialsButons {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 40px;
 }
 
-.linkButton {
+.socialsButonsMobile {
   display: flex;
-  cursor: pointer;
   align-items: center;
-  text-decoration: none;
-}
-
-.linkIcon {
-  color: var(--text-primary-color);
-  margin-right: 10px;
-  font-size: 30px;
-}
-
-.linkText {
-  color: var(--text-primary-color);
-  font-weight: bold;
-  font-size: 16px;
+  justify-content: space-around;
+  margin-top: 10px;
 }
