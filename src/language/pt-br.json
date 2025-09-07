@@ -9,6 +9,24 @@
     "Close": "Fechar",
     "Video not found": "Vídeo não encontrado",
     "Date of Birth": "Nascimento:",
+    "Hometown": "Cidade natal:",
+    "Cities": {
+      "Chigasaki, Kanagawa, Japan": "Chigasaki, Kanagawa, Japão",
+      "Osaka, Japan": "Osaka, Japão",
+      "Nagooya, Aichi, Japan": "Nagooya, Aichi, Japão",
+      "Tokyo, Japan": "Tóquio, Japão",
+      "Kanto, Japan": "Kanto, Japão"
+    },
+    "Color": "Cor:",
+    "Colors": {
+      "Silver": "Prata",
+      "Yellow": "Amarelo",
+      "Blue": "Azul",
+      "Purple": "Roxo",
+      "Orange": "Laranja",
+      "Red": "Vermelho",
+      "Green": "Verde"
+    },
     "Gallery": "Galeria",
     "Videos": "Vídeos",
     "Tracks": "Faixas:",

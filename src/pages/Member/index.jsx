@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import styles from './Member.module.css'
-import { translateBirthDate } from './lib'
+import { translateBirthDate, translateCuriosites } from './lib'
 import { Header } from './components/Header'
 import Footer from '../../components/Footer'
 import VideoCarousel from '../../components/VideoCarousel'
@@ -53,7 +53,7 @@ export default function Member() {
                 <p key={index} className={styles.text}>
                   {index === 0
                     ? translateBirthDate(curiositie, t, i18n)
-                    : t(curiositie)
+                    : translateCuriosites(curiositie, t)
                   }
                 </p>
               )}
