@@ -3,6 +3,10 @@
   margin-bottom: 20px;
 }
 
+.mobileContainer {
+  margin-bottom: 40px;
+}
+
 .image {
   width: 400px;
   height: 224px;

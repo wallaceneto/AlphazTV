@@ -4,11 +4,11 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import styles from './OriginalSeriesCard.module.css'
 import IconButton from '../../../../components/IconButton'
 
-const OriginalSeriesCard = ({ cover, title, description, link }) => {
+const OriginalSeriesCard = ({ cover, title, description, link, mobileMode }) => {
   const { t } = useTranslation();
-  
+
   return (
-    <div className={styles.container}>
+    <div className={mobileMode ? styles.mobileContainer : styles.container}>
       <img src={cover} className={styles.image} alt={'Capa de ' + title} />
 
       <div className={styles.textContainer}>

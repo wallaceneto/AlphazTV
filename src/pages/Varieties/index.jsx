@@ -1,5 +1,4 @@
-import React from 'react'
-import { Grid } from '@mui/material'
+import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from './Varieties.module.css'
 import VarietyCard from './components/VarietyCard'
@@ -13,6 +12,22 @@ import mockvideos from '../../mock/mvs_playlist.json'
 
 export default function Varieties() {
   const { t } = useTranslation();
+  const [mobileMode, setMobileMode] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 767) {
+        setMobileMode(true);
+      } else {
+        setMobileMode(false);
+      }
+    }
+
+    window.scrollTo(0, 0);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])
 
   return (
     <HomepageLayout>
@@ -20,34 +35,36 @@ export default function Varieties() {
 
         <div className={styles.contentDiv}>
           <h2 className={styles.title}>{t("Reality show")}</h2>
-          <Grid container>
+          <div className={styles.realityShowContainer}>
             {realityShows.map((show, index) =>
-              <Grid key={index} size={{ xs: 12, md: 4 }}>
+              <div key={index}>
                 <VarietyCard
                   name={show.name}
                   description={t(`Realities.${show.name}`)}
                   cover={show.cover}
                   link={show.link}
+                  mobileMode={mobileMode}
                 />
-              </Grid>
+              </div>
             )}
-          </Grid>
+          </div>
         </div>
 
         <div className={styles.contentDiv}>
           <h2 className={styles.title}>{t("Original series")}</h2>
-          <Grid container>
+          <div>
             {originalSeries.map((item, index) =>
-              <Grid key={index} size={{ xs: 12 }}>
+              <div key={index}>
                 <OriginalSeriesCard
                   cover={item.cover}
                   title={item.name}
                   description={t(`Series.${item.name}`)}
                   link={item.link}
+                  mobileMode={mobileMode}
                 />
-              </Grid>
+              </div>
             )}
-          </Grid>
+          </div>
         </div>
 
         <div className={styles.contentDiv}>
