@@ -30,6 +30,10 @@ export default function Songs() {
   return (
     <HomepageLayout>
       <div className={styles.container}>
+        <div className={styles.firstCarousel}>
+          <VideoCarousel playlist={mockvideos} hideLabel isFirstCarousel />
+        </div>
+        
         {albums.map((album) =>
           <div key={album.name} className={styles.contentContainer}>
             <Album album={album} mobileMode={mobileMode} />

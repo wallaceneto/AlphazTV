@@ -5,18 +5,19 @@ import styles from './VideoCarousel.module.css'
 import Videothumb from '../Videothumb'
 import EmblaCarousel from '../EmblaCarousel'
 
-const VideoCarousel = ({ playlist, hideLabel }) => {
+const VideoCarousel = ({ playlist, hideLabel, isFirstCarousel }) => {
   const { t } = useTranslation();
 
   return (
     <div>
       <div className={styles.textContainer}>
-        <h2 className={styles.title}>
+        <h2 className={styles.title} style={isFirstCarousel && { color: '#fff' }}>
           {t(playlist.name)}
         </h2>
         <Link
           className={styles.buttonLink}
           to={`/playlist/${playlist.name}`}
+          style={isFirstCarousel && { color: '#fff' }}
         >
           {t('Show all')}
         </Link>

@@ -1,5 +1,10 @@
 .container {
-  padding-block: 55px;
+  padding-left: 40px;
+}
+
+.firstCarousel {
+  margin-top: -90px;
+  margin-bottom: 40px;
 }
 
 .title {
@@ -7,12 +12,12 @@
 }
 
 .contentContainer {
-  padding-inline: 40px;
+  padding-right: 40px;
   margin-bottom: 55px;
 }
 
 .carouselContainer {
-  padding-left: 40px;
+  padding-bottom: 40px;
 }
 
 .singleLabel {

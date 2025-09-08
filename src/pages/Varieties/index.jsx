@@ -32,6 +32,9 @@ export default function Varieties() {
   return (
     <HomepageLayout>
       <div className={styles.container}>
+        <div className={styles.firstCarousel}>
+          <VideoCarousel playlist={mockvideos} hideLabel isFirstCarousel />
+        </div>
 
         <div className={styles.contentDiv}>
           <h2 className={styles.title}>{t("Reality show")}</h2>

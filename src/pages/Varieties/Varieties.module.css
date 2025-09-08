@@ -1,6 +1,10 @@
 .container {
   padding-left: 40px;
-  padding-block: 20px;
+}
+
+.firstCarousel {
+  margin-top: -90px;
+  margin-bottom: 40px;
 }
 
 .title {
@@ -9,7 +13,7 @@
 }
 
 .contentDiv {
-  margin-block: 30px;
+  margin-bottom: 40px;
 }
 
 .realityShowContainer {

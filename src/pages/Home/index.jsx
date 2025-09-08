@@ -11,7 +11,7 @@ export default function Home() {
     <HomepageLayout>
       <div className={styles.content}>
         <div className={styles.firstCarousel}>
-          <VideoCarousel playlist={mockvideos} hideLabel />
+          <VideoCarousel playlist={mockvideos} hideLabel isFirstCarousel />
         </div>
         <div className={styles.carousel}>
           <VideoCarousel playlist={mockvideos} />
