@@ -3,6 +3,7 @@ import styles from './Songs.module.css'
 import { HomepageLayout } from '../../layout'
 import Album from '../../components/Album'
 import VideoCarousel from '../../components/VideoCarousel'
+import { MOBILE_WIDTH_BREAKPOINT } from '../../global/utils'
 
 import mockvideos from '../../mock/mvs_playlist.json'
 import albums from '../../mock/albums.json'
@@ -13,7 +14,7 @@ export default function Songs() {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth < 767) {
+      if (window.innerWidth < MOBILE_WIDTH_BREAKPOINT) {
         setMobileMode(true);
       } else {
         setMobileMode(false);

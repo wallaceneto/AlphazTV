@@ -1,15 +1,19 @@
 .container_about {
   display: flex;
-  padding-inline: 50px;
+  padding-inline: 40px;
   padding-block: 60px;
   align-items: center;
-  display: flex;
-  gap: 52px;
+}
+
+.mobileContainer_about {
+  padding-block: 60px;
+  align-items: center;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  margin-left: 40px;
 }
 
 .container_about:nth-child(4) {
@@ -25,11 +29,18 @@
   color: var(--text-primary-color);
   font-size: 18px;
   width: 80%;
+  text-align: justify;
 }
 
 .image {
   border-radius: 10px;
-  height: 400px;
+  height: 380px;
+}
+
+.mobileImage {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 300px;
 }
 
 .container_socialLinks {

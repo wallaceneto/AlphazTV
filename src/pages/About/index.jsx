@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   faYoutube,
   faSpotify,
@@ -8,7 +8,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from 'react-i18next';
 import styles from "./About.module.css";
 import { HomepageLayout } from "../../layout";
-import { URLs } from "../../global/utils";
+import { MOBILE_WIDTH_BREAKPOINT, URLs } from "../../global/utils";
 import IconButton from "../../components/IconButton";
 import PhotoGallery from "../../components/PhotoGallery";
 
@@ -22,14 +22,14 @@ const socialLinks = [
   { icon: faApple, url: URLs.xgAppleMusic, label: "Apple Music" },
 ];
 
-function SocialLinks() {
+function SocialLinks({ mobileMode }) {
   return (
     <ul className={styles.socialMedia}>
       {socialLinks.map(({ icon, url, label }) => (
         <IconButton
           key={label}
           icon={icon}
-          text={label}
+          text={!mobileMode && label}
           link={url}
         />
       ))}
@@ -39,21 +39,42 @@ function SocialLinks() {
 
 export default function About() {
   const { t } = useTranslation();
+  const [mobileMode, setMobileMode] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < MOBILE_WIDTH_BREAKPOINT) {
+        setMobileMode(true);
+      } else {
+        setMobileMode(false);
+      }
+    }
+
+    window.scrollTo(0, 0);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])
 
   const aboutDescription = (about, index) => {
     return (
-      <div key={about.title} className={styles.container_about}>
-        <img
-          src={about.image}
-          alt={about.title}
-          className={styles.image}
-        />
+      <div
+        key={about.title}
+        className={mobileMode ? styles.mobileContainer_about : styles.container_about}
+      >
+        {(!mobileMode || index !== 1) &&
+          <img
+            src={about.image}
+            alt={about.title}
+            className={mobileMode ? styles.mobileImage : styles.image}
+          />
+        }
         <div className={styles.content}>
           <h1 className={styles.title}>{t(`AboutPage.${about.title}`)}</h1>
           <p className={styles.description}>{t(`AboutPage.${about.description}`)}</p>
           {index === 0 &&
             <div className={styles.container_socialLinks}>
-              <SocialLinks />
+              <SocialLinks mobileMode={mobileMode} />
             </div>
           }
         </div>

@@ -8,8 +8,7 @@
 }
 
 .image {
-  width: 400px;
-  height: 224px;
+  width: 380px;
   border-radius: 10px;
   margin-right: 40px;
 }
@@ -27,4 +26,8 @@
 
 .description {
   color: var(--text-primary-color);
+  font-size: 18px;
+  width: 90%;
+  text-align: justify;
+  margin-bottom: 10px;
 }
