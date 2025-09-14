@@ -20,8 +20,6 @@ export default function Videos() {
   const fetchVideos = async () => {
     if (playlistItems.length === 0) {
       const data = await getPlaylistItens(playlistId);
-
-      console.log(data);
       setPlaylistName('TESTE');
       setPlaylistItems(data.items);
     }
