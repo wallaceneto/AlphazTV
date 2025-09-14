@@ -16,7 +16,7 @@ const VideoCarousel = ({ playlist, hideLabel, isFirstCarousel }) => {
         </h2>
         <Link
           className={styles.buttonLink}
-          to={`/playlist/${playlist.name}`}
+          to={`/playlist/${playlist.id}`}
           style={isFirstCarousel && { color: '#fff' }}
         >
           {t('Show all')}

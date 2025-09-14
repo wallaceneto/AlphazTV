@@ -1,22 +1,35 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import ArrowIcon from '@mui/icons-material/ArrowBack'
 import styles from './Videos.module.css'
 import { handleOpenVideo } from './lib'
 import Footer from '../../components/Footer'
 import Button from '../../components/Button'
 import YoutubeEmbedModal from '../modals/YoutubeEmbedModal'
-
-import mock_playlist from '../../mock/mvs_playlist.json'
+import { getPlaylistItens } from '../../services/getData'
 
 export default function Videos() {
-  const navigation = useNavigate()
-  const [openModal, setOpenModal] = useState()
-  const [currentLink, setCurrentLink] = useState('')
-  const playlist = mock_playlist // buscar na api
+  const navigation = useNavigate();
+  let { playlistId } = useParams();
+  const [openModal, setOpenModal] = useState();
+  const [currentLink, setCurrentLink] = useState('');
+  const [playlistName, setPlaylistName] = useState('');
+  const [playlistItems, setPlaylistItems] = useState([]);
+
+  const fetchVideos = async () => {
+    if (playlistItems.length === 0) {
+      const data = await getPlaylistItens(playlistId);
+
+      console.log(data);
+      setPlaylistName('TESTE');
+      setPlaylistItems(data.items);
+    }
+  }
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
+    fetchVideos();
   }, [])
 
   return (
@@ -27,24 +40,23 @@ export default function Videos() {
             <ArrowIcon className={styles.icon} fontSize='large' />
           </Button>
           <h2 className={styles.title}>
-            {playlist.name}
+            {playlistName}
           </h2>
         </div>
 
         <div className={styles.content}>
           {
-            playlist.videos.map((video) =>
+            playlistItems.map((video) =>
               <Button
-                key={video.videoId}
-                onClick={() => handleOpenVideo(video.link, setCurrentLink, setOpenModal)}
+                key={video.id}
+                onClick={() => handleOpenVideo(video.contentDetails.videoId, setCurrentLink, setOpenModal)}
               >
                 <img
-                  src={`https://img.youtube.com/vi/${video.videoId}/maxresdefault.jpg`}
+                  src={`https://img.youtube.com/vi/${video.contentDetails.videoId}/maxresdefault.jpg`}
                   alt="YouTube Thumbnail"
                   className={styles.thumb}
                 />
               </Button>
-
             )
           }
         </div>
