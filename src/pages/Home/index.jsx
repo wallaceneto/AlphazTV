@@ -4,7 +4,7 @@ import { HomepageLayout } from '../../layout'
 import VideoCarousel from '../../components/VideoCarousel'
 import MemberCarousel from '../../components/MemberCarousel'
 
-import homePlaylists from '../../mock/playlists/home_playlists.json'
+import homePlaylists from '../../mock/playlists/home.json'
 
 export default function Home() {
   return (
