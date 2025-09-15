@@ -14,7 +14,7 @@ export default function Home() {
           <div key={playlist.id}>
             {index === 0 ?
               <div className={styles.firstCarousel}>
-                <VideoCarousel playlist={homePlaylists[index]} hideLabel isFirstCarousel />
+                <VideoCarousel playlist={homePlaylists[index]} isFirstCarousel />
               </div>
               :
               <div className={styles.carousel}>

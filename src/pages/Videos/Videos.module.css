@@ -3,7 +3,7 @@
 }
 
 .header {
-  padding-block: 50px;
+  padding-top: 50px;
   padding-inline: 60px;
   display: flex;
 }
@@ -15,6 +15,18 @@
 
 .title {
   color: var(--text-primary-color);
+}
+
+.descriptionContainer {
+  padding-inline: 60px;
+  padding-block: 40px;
+}
+
+.description {
+  color: var(--text-primary-color);
+  font-size: 18px;
+  width: 80%;
+  text-align: justify;
 }
 
 .content {

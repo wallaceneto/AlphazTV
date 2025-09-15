@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import ArrowIcon from '@mui/icons-material/ArrowBack'
 import styles from './Videos.module.css'
 import { handleOpenVideo } from './lib'
@@ -11,18 +10,28 @@ import { getPlaylistItens } from '../../services/getData'
 
 export default function Videos() {
   const navigation = useNavigate();
+  const location = useLocation();
   let { playlistId } = useParams();
+  const playlist = location.state?.playlist;
+  const [playlistItems, setPlaylistItems] = useState([]);
   const [openModal, setOpenModal] = useState();
   const [currentLink, setCurrentLink] = useState('');
-  const [playlistName, setPlaylistName] = useState('');
-  const [playlistItems, setPlaylistItems] = useState([]);
 
   const fetchVideos = async () => {
     if (playlistItems.length === 0) {
       const data = await getPlaylistItens(playlistId);
-      setPlaylistName('TESTE');
       setPlaylistItems(data.items);
+      if (data.nextPageToken) {
+        fetchNextPage(data.items, data.nextPageToken);
+      }
     }
+  }
+
+  const fetchNextPage = async (previousPageResults, nextPageToken) => {
+    const data = await getPlaylistItens(playlistId, 50, nextPageToken);
+    const fullPlaylist = previousPageResults.concat(data.items);
+
+    setPlaylistItems(fullPlaylist);
   }
 
   useEffect(() => {
@@ -38,8 +47,14 @@ export default function Videos() {
             <ArrowIcon className={styles.icon} fontSize='large' />
           </Button>
           <h2 className={styles.title}>
-            {playlistName}
+            {playlist.name}
           </h2>
+        </div>
+
+        <div className={styles.descriptionContainer}>
+          <p className={styles.description}>
+            {playlist.description}
+          </p>
         </div>
 
         <div className={styles.content}>
