@@ -1,6 +1,6 @@
 import api from "./api";
 
-const app_key = 'AIzaSyBk_PQTX8ERN7-T5B8sT-D4-mSF--IeIN8';
+const app_key = import.meta.env.VITE_YOUTUBE_APP_KEY;
 
 const getPlaylistItens = async (playlistId, maxResults, pageToken) => {
   try {
