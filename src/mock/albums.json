@@ -38,5 +38,31 @@
       "spotify": "https://open.spotify.com/album/1eS784kXLyL0YpDz5E7AuV",
       "apple": "https://music.apple.com/album/awe/1775445626"
     }
+  },
+  {
+    "name": "XG 1st WORLD TOUR “The first HOWL” Live",
+    "order": "1",
+    "type": "live",
+    "cover": "/assets/songs/first_howl.png",
+    "tracks": [
+      "X-GENE (HESONOO)",
+      "HOWLING & GRL GVNG",
+      "UNDEFEATED",
+      "TGIF & IYKYK",
+      "Tippy Toes & SOMETHING AIN'T RIGHT & IN THE RAIN",
+      "SHOOTING STAR",
+      "WOKE UP",
+      "PUPPET SHOW",
+      "IS THIS LOVE",
+      "NEW DANCE",
+      "MILLION PLACES",
+      "WINTER WITHOUT YOU & MASCARA",
+      "LEFT RIGHT"
+    ],
+    "links": {
+      "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_lU8VQNKwRkRIDZf_zRU6t3oG1HJO57z7Q",
+      "spotify": "https://open.spotify.com/intl-pt/album/7wc6dDr4ZLv0qA2geapqTY?go=1&nd=1&dlsi=e5e55d8c3aeb412c",
+      "apple": "https://music.apple.com/album/xg-1st-world-tour-the-first-howl-live/1831297909"
+    }
   }
 ]
