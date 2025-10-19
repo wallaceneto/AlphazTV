@@ -12,7 +12,7 @@ const VideoCarousel = ({ playlist, hideLabel, isFirstCarousel }) => {
 
   const fetchVideos = async () => {
     if (playlistItems.length === 0) {
-      const data = await getPlaylistItens(playlist.id);
+      const data = await getPlaylistItens(playlist.id, 25);
       setPlaylistItems(data.items);
     }
   }
@@ -25,7 +25,7 @@ const VideoCarousel = ({ playlist, hideLabel, isFirstCarousel }) => {
     <div>
       <div className={styles.textContainer}>
         <h2 className={styles.title} style={isFirstCarousel && { color: '#fff' }}>
-          {t(playlist.name)}
+          {t("Playlist." + playlist.name)}
         </h2>
         <Link
           className={styles.buttonLink}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import ArrowIcon from '@mui/icons-material/ArrowBack'
 import styles from './Videos.module.css'
+import { useTranslation } from 'react-i18next'
 import { handleOpenVideo } from './lib'
 import Footer from '../../components/Footer'
 import Button from '../../components/Button'
@@ -10,6 +11,7 @@ import { getPlaylistItens } from '../../services/getData'
 import { ThumbImage } from '../../components/ThumbImage'
 
 export default function Videos() {
+  const { t } = useTranslation();
   const navigation = useNavigate();
   const location = useLocation();
   let { playlistId } = useParams();
@@ -48,13 +50,13 @@ export default function Videos() {
             <ArrowIcon className={styles.icon} fontSize='large' />
           </Button>
           <h2 className={styles.title}>
-            {playlist.name}
+            {t("Playlist." + playlist.name)}
           </h2>
         </div>
 
         <div className={styles.descriptionContainer}>
           <p className={styles.description}>
-            {playlist.description}
+            {t("Playlist." + playlist.description)}
           </p>
         </div>
 
