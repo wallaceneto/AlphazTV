@@ -7,6 +7,7 @@ import Footer from '../../components/Footer'
 import Button from '../../components/Button'
 import YoutubeEmbedModal from '../modals/YoutubeEmbedModal'
 import { getPlaylistItens } from '../../services/getData'
+import { ThumbImage } from '../../components/ThumbImage'
 
 export default function Videos() {
   const navigation = useNavigate();
@@ -64,11 +65,18 @@ export default function Videos() {
                 key={video.id}
                 onClick={() => handleOpenVideo(video.contentDetails.videoId, setCurrentLink, setOpenModal)}
               >
-                <img
-                  src={`https://img.youtube.com/vi/${video.contentDetails.videoId}/maxresdefault.jpg`}
-                  alt="YouTube Thumbnail"
-                  className={styles.thumb}
-                />
+                <div className={styles.thumb}>
+                  <div className={styles.overlay}>
+                    <p className={styles.label}>{video.snippet.title}</p>
+                  </div>
+
+                  <ThumbImage
+                    videoId={video.contentDetails.videoId}
+                    videoTitle={video.snippet.title}
+                    style={styles.thumbImage}
+                    highRes
+                  />
+                </div>
               </Button>
             )
           }

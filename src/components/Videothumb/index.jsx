@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from './Videothumb.module.css'
 import YoutubeEmbedModal from '../../pages/modals/YoutubeEmbedModal'
+import { ThumbImage } from '../ThumbImage'
 
 const Videothumb = ({ videoName, videoId, videoLink, hideLabel }) => {
   const [openModal, setOpenModal] = useState(false)
@@ -13,10 +14,9 @@ const Videothumb = ({ videoName, videoId, videoLink, hideLabel }) => {
         className={styles.container}
         onClick={() => setOpenModal(true)}
       >
-        <img
-          src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`}
-          alt="YouTube Thumbnail"
-          className={styles.image}
+        <ThumbImage
+          videoId={videoId}
+          style={styles.image}
         />
 
         {!hideLabel &&
