@@ -5,7 +5,7 @@ import Album from '../../components/Album'
 import VideoCarousel from '../../components/VideoCarousel'
 import { MOBILE_WIDTH_BREAKPOINT } from '../../global/utils'
 
-import mockvideos from '../../mock/mvs_playlist.json'
+import songsPlaylists from '../../mock/playlists/songs.json'
 import albums from '../../mock/albums.json'
 import singles from '../../mock/singles.json'
 
@@ -30,23 +30,31 @@ export default function Songs() {
   return (
     <HomepageLayout>
       <div className={styles.container}>
-        <div className={styles.firstCarousel}>
-          <VideoCarousel playlist={mockvideos} hideLabel isFirstCarousel />
-        </div>
-        
-        {albums.map((album) =>
-          <div key={album.name} className={styles.contentContainer}>
-            <Album album={album} mobileMode={mobileMode} />
-          </div>
-        )}
+        {
+          songsPlaylists.map((playlist, index) =>
+            <div key={playlist.id}>
+              {index === 0 ?
+                <>
+                  <div className={styles.firstCarousel}>
+                    <VideoCarousel playlist={songsPlaylists[index]} hideLabel isFirstCarousel />
+                  </div>
 
-        <div className={styles.carouselContainer}>
-          <VideoCarousel playlist={mockvideos} />
-        </div>
-
-        <div className={styles.carouselContainer}>
-          <VideoCarousel playlist={mockvideos} />
-        </div>
+                  {
+                    albums.map((album) =>
+                      <div key={album.name} className={styles.contentContainer}>
+                        <Album album={album} mobileMode={mobileMode} />
+                      </div>
+                    )
+                  }
+                </>
+                :
+                <div className={styles.carousel}>
+                  <VideoCarousel playlist={songsPlaylists[index]} />
+                </div>
+              }
+            </div>
+          )
+        }
 
         <div className={styles.contentContainer}>
           <h2 className={styles.singleLabel}>Singles</h2>

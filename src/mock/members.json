@@ -11,8 +11,24 @@
       "Color: Silver"
     ],
     "galleryPath": "/members/jurin/gallery",
-    "galleryLength": 7,
-    "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    "galleryLength": 11,
+    "playlists": [
+      {
+        "id": "PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ",
+        "name": "Videos",
+        "description": "All the solo videos from the official XG channel"
+      },
+      {
+        "id": "PLEumJlozVlzsc4a6xKnE7cxDmB1B4GFKj",
+        "name": "Covers",
+        "description": "Some solo covers apresentations in shows"
+      },
+      {
+        "id": "PLEumJlozVlztsp2Z1CyclVbml-jFx8e0x",
+        "name": "Fancam",
+        "description": "Fancam footage from some tv performances"
+      }
+    ]
   },
   {
     "id": "1",
@@ -26,8 +42,19 @@
       "Color: Yellow"
     ],
     "galleryPath": "/members/chisa/gallery",
-    "galleryLength": 3,
-    "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    "galleryLength": 11,
+    "playlists": [
+      {
+        "id": "PLEumJlozVlzsBgtLPOJN-aae_BYerz8n6",
+        "name": "Videos",
+        "description": "All the solo videos from the official XG channel"
+      },
+      {
+        "id": "PLEumJlozVlztsdMIHLnFCpQCdt-XyvOXx",
+        "name": "Fancam",
+        "description": "Fancam footage from some tv performances"
+      }
+    ]
   },
   {
     "id": "2",
@@ -41,8 +68,24 @@
       "Color: Blue"
     ],
     "galleryPath": "/members/hinata/gallery",
-    "galleryLength": 3,
-    "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    "galleryLength": 11,
+    "playlists": [
+      {
+        "id": "PLEumJlozVlztrZuxqVZkivBv4l1elKr9V",
+        "name": "Videos",
+        "description": "All the solo videos from the official XG channel"
+      },
+      {
+        "id": "PLEumJlozVlztORDMe05U6XPCbHBPYeCHO",
+        "name": "Covers",
+        "description": "Some solo covers apresentations in shows"
+      },
+      {
+        "id": "PLEumJlozVlzuTPEmE4ARHuganLFr7qz1J",
+        "name": "Fancam",
+        "description": "Fancam footage from some tv performances"
+      }
+    ]
   },
   {
     "id": "3",
@@ -56,8 +99,24 @@
       "Color: Purple"
     ],
     "galleryPath": "/members/harvey/gallery",
-    "galleryLength": 3,
-    "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    "galleryLength": 11,
+    "playlists": [
+      {
+        "id": "PLEumJlozVlzvDWAq92L5zqMDmJZHBEje0",
+        "name": "Videos",
+        "description": "All the solo videos from the official XG channel"
+      },
+      {
+        "id": "PLEumJlozVlzsP7Ns27apYdzx3OLDRlof9",
+        "name": "Covers",
+        "description": "Some solo covers apresentations in shows"
+      },
+      {
+        "id": "PLEumJlozVlztceHEXW45NUKt4BnYul7IR",
+        "name": "Fancam",
+        "description": "Fancam footage from some tv performances"
+      }
+    ]
   },
   {
     "id": "4",
@@ -71,8 +130,24 @@
       "Color: Orange"
     ],
     "galleryPath": "/members/juria/gallery",
-    "galleryLength": 3,
-    "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    "galleryLength": 11,
+    "playlists": [
+      {
+        "id": "PLEumJlozVlzvNJmTQRPPZ67btq4t6THW8",
+        "name": "Videos",
+        "description": "All the solo videos from the official XG channel"
+      },
+      {
+        "id": "PLEumJlozVlzsWdO2sEyeWVNMTn101hc3x",
+        "name": "Covers",
+        "description": "Some solo covers apresentations in shows"
+      },
+      {
+        "id": "PLEumJlozVlzsJCzSBS7_MwfL52jYO6Jr7",
+        "name": "Fancam",
+        "description": "Fancam footage from some tv performances"
+      }
+    ]
   },
   {
     "id": "5",
@@ -86,8 +161,24 @@
       "Color: Red"
     ],
     "galleryPath": "/members/maya/gallery",
-    "galleryLength": 3,
-    "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    "galleryLength": 11,
+    "playlists": [
+      {
+        "id": "PLEumJlozVlzu1dJ-p57Pa9A-oE2Ti8auQ",
+        "name": "Videos",
+        "description": "All the solo videos from the official XG channel"
+      },
+      {
+        "id": "PLEumJlozVlzvAqXqFbjKA9M6Xus5J8u02",
+        "name": "Covers",
+        "description": "Some solo covers apresentations in shows"
+      },
+      {
+        "id": "PLEumJlozVlztQqAqVm3--wACEAQm9PDWx",
+        "name": "Fancam",
+        "description": "Fancam footage from some tv performances"
+      }
+    ]
   },
   {
     "id": "6",
@@ -101,7 +192,23 @@
       "Color: Green"
     ],
     "galleryPath": "/members/cocona/gallery",
-    "galleryLength": 3,
-    "playlist": "https://youtube.com/playlist?list=PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ&si=KXS-sgwEQgaTomoE"
+    "galleryLength": 11,
+    "playlists": [
+      {
+        "id": "PLEumJlozVlzuQ_J9YjF1MgneWt9UKjDHh",
+        "name": "Videos",
+        "description": "All the solo videos from the official XG channel"
+      },
+      {
+        "id": "PLEumJlozVlzsmV5imN4ZfqQaDEhvpMsKh",
+        "name": "Covers",
+        "description": "Some solo covers apresentations in shows"
+      },
+      {
+        "id": "PLEumJlozVlztr8jxSNt_iU8fj_YYcG2D6",
+        "name": "Fancam",
+        "description": "Fancam footage from some tv performances"
+      }
+    ]
   }
 ]

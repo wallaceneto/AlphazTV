@@ -28,7 +28,6 @@
       "Green": "Verde"
     },
     "Gallery": "Galeria",
-    "Videos": "Vídeos",
     "Tracks": "Faixas:",
     "Original series": "Séries originais",
     "Watch on Youtube": "Assistir no Youtube",
@@ -51,6 +50,34 @@
       "XG-description": "XG é um grupo feminino japonês formado pela Xgalx, uma subsidiaria da Avex. O grupo é composto por sete membros: Jurin, Chisa, Hinata, Harvey, Juria, Maya e Cocona. Eles fizeram sua estreia no dia 18 de março de 2022, com o lançamento do single digital \"Tippy Toes\". O grupo é conhecido por suas coreografias complexas e habilidades de dança, além de suas canções pop e R&B com letras profundas.",
       "About website": "Sobre o site",
       "Website-description": "O Alphaz TV+ é um site feito de fã para fã, para ajudar Alphaz a encontrarem conteúdos com mais facilidade. NÂO SOMOS UMA FANSUB! Sabemos a dificuldade em encontrar vídeos e materiais espalhados por aí, então criamos este espaço para facilitar. Aqui, você será redirecionado diretamente para os links originais dos conteúdos."
+    },
+    "Playlist": {
+      "Latests": "Mais recentes",
+      "Latests videos from XG Official Channel": "Os vídeos mais recentes do canal oficial do XG",
+      "MVs": "MVs",
+      "A list with all the XGs music videos already release": "Lista de todas as músicas que o XG já lançou MV",
+      "Shows": "Shows",
+      "Full set of some XG shows worldwide": "Alguns dos shows completos do XG ao redor do mundo",
+      "Behind the scenes": "Bastidores",
+      "Behind the scenes of XG MVs and photoshoots": "Bastidores dos MVs e das sessões de fotos",
+      "Specials": "Especiais",
+      "Special videos of anniversary and some apresentation in partner channels": "Vídeos especiais de aniversários e apresentações em canais parceiros",
+      "DANCE PRACTICE": "DANCE PRACTICE",
+      "All the official dance practice of their songs": "Todos os dance practices oficiais já lançados",
+      "TV Shows": "Apresentações em TV",
+      "Some performances in korean tv shows": "Algumas apresentações em programas de tv da coreia",
+      "Interviews": "Entrevistas",
+      "Some of the interviews the girls give to diferent channels around the world": "Algumas das entrevistas das garotas para diferentes canais ao redor do mundo",
+      "XG DAYS": "XG DAYS",
+      "XG official vlog videos of they daily lives": "Vlog oficial do XG sobre o dia a dia delas",
+      "XTRA XG": "XTRA XG",
+      "XG official vlog videos of they shows, musics and commercials": "Vlog oficial do XG sobre os shows, músicas e comerciais",
+      "Videos": "Vídeos",
+      "All the solo videos from the official XG channel": "Todos os vídeos solo da integrante no canal oficial do XG",
+      "Covers": "Covers",
+      "Some solo covers apresentations in shows": "Algumas apresentações solo em shows",
+      "Fancam": "Fancam",
+      "Fancam footage from some tv performances": "Filmagem focada no integrante em apresentações em canais de tv"
     }
   }
 }

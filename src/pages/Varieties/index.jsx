@@ -8,7 +8,7 @@ import VideoCarousel from '../../components/VideoCarousel'
 
 import realityShows from '../../mock/reality_shows.json'
 import originalSeries from '../../mock/original_series.json'
-import mockvideos from '../../mock/mvs_playlist.json'
+import varietiesPlaylists from '../../mock/playlists/varieties.json'
 
 export default function Varieties() {
   const { t } = useTranslation();
@@ -33,7 +33,7 @@ export default function Varieties() {
     <HomepageLayout>
       <div className={styles.container}>
         <div className={styles.firstCarousel}>
-          <VideoCarousel playlist={mockvideos} hideLabel isFirstCarousel />
+          <VideoCarousel playlist={varietiesPlaylists[0]} isFirstCarousel />
         </div>
 
         <div className={styles.contentDiv}>
@@ -70,14 +70,13 @@ export default function Varieties() {
           </div>
         </div>
 
-        <div className={styles.contentDiv}>
-          <VideoCarousel playlist={mockvideos} />
-        </div>
-
-        <div className={styles.contentDiv}>
-          <VideoCarousel playlist={mockvideos} />
-        </div>
+        {varietiesPlaylists.map((playlist, index) =>
+          index !== 0 &&
+          <div key={playlist.id} className={styles.contentDiv}>
+            <VideoCarousel playlist={playlist} />
+          </div>
+        )}
       </div>
-    </HomepageLayout>
+    </HomepageLayout >
   )
 }

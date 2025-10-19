@@ -6,10 +6,9 @@ import { translateBirthDate, translateCuriosites } from './lib'
 import { Header } from './components/Header'
 import Footer from '../../components/Footer'
 import VideoCarousel from '../../components/VideoCarousel'
+import PhotoGallery from '../../components/PhotoGallery'
 
 import members from '../../mock/members.json'
-import jurin_playlist from '../../mock/jurin_playlist.json'
-import PhotoGallery from '../../components/PhotoGallery'
 
 export default function Member() {
   const { t } = useTranslation();
@@ -71,7 +70,9 @@ export default function Member() {
           />
         </div>
 
-        <VideoCarousel playlist={jurin_playlist} />
+        {member.playlists.map((playlist) =>
+          <VideoCarousel key={playlist.id} playlist={playlist} />
+        )}
 
         <div className={styles.linksContainer}>
           <h2 className={styles.text}>{t('Ver também')}</h2>

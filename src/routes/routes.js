@@ -14,7 +14,7 @@ const routes = createBrowserRouter([
   { path: '/variedades', Component: Varieties },
   { path: '/sobre', Component: About },
   { path: '/member/:memberId', Component: Member },
-  { path: '/playlist/:playlistName', Component: Videos },
+  { path: '/playlist/:playlistId', Component: Videos },
 ])
 
 export default routes
