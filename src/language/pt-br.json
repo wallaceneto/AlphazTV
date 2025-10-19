@@ -28,7 +28,6 @@
       "Green": "Verde"
     },
     "Gallery": "Galeria",
-    "Videos": "Vídeos",
     "Tracks": "Faixas:",
     "Original series": "Séries originais",
     "Watch on Youtube": "Assistir no Youtube",
@@ -72,7 +71,13 @@
       "XG DAYS": "XG DAYS",
       "XG official vlog videos of they daily lives": "Vlog oficial do XG sobre o dia a dia delas",
       "XTRA XG": "XTRA XG",
-      "XG official vlog videos of they shows, musics and commercials": "Vlog oficial do XG sobre os shows, músicas e comerciais"
+      "XG official vlog videos of they shows, musics and commercials": "Vlog oficial do XG sobre os shows, músicas e comerciais",
+      "Videos": "Vídeos",
+      "All the solo videos from the official XG channel": "Todos os vídeos solo da integrante no canal oficial do XG",
+      "Covers": "Covers",
+      "Some solo covers apresentations in shows": "Algumas apresentações solo em shows",
+      "Fancam": "Fancam",
+      "Fancam footage from some tv performances": "Filmagem focada no integrante em apresentações em canais de tv"
     }
   }
 }
