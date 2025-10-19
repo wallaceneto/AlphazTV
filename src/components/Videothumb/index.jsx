@@ -1,0 +1,36 @@
+import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import styles from './Videothumb.module.css'
+import YoutubeEmbedModal from '../../pages/modals/YoutubeEmbedModal'
+import { ThumbImage } from '../ThumbImage'
+
+const Videothumb = ({ videoName, videoId, videoLink, hideLabel }) => {
+  const [openModal, setOpenModal] = useState(false)
+  const { t } = useTranslation()
+
+  return (
+    <>
+      <button
+        className={styles.container}
+        onClick={() => setOpenModal(true)}
+      >
+        <ThumbImage
+          videoId={videoId}
+          style={styles.image}
+        />
+
+        {!hideLabel &&
+          <div className={styles.textBg}>
+            <p className={styles.text}>
+              {videoName || t("Video not found")}
+            </p>
+          </div>
+        }
+      </button>
+
+      <YoutubeEmbedModal openModal={openModal} setOpenModal={setOpenModal} videoLink={videoLink} />
+    </>
+  )
+}
+
+export default Videothumb

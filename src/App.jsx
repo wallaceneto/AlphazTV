@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useEffect, useState } from 'react'
+import { RouterProvider } from 'react-router-dom';
+import '../src/language/i18n'
+// eslint-disable-next-line no-unused-vars
+import i18next from 'i18next'
 import './App.css'
+import { ThemeContext } from './contexts';
+import routes from './routes/routes';
+import { getItemFromStorage } from './global/lib';
 
-function App() {
-  const [count, setCount] = useState(0)
+export const App = () => {
+  const [theme, setTheme] = useState('dark');
+
+  useEffect(() => {
+    const userTheme = getItemFromStorage('theme');
+
+    if (userTheme) {
+      setTheme(userTheme);
+    }
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <div className='App' data-theme={theme}>
+        <RouterProvider router={routes} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </ThemeContext.Provider>
   )
 }
-
-export default App

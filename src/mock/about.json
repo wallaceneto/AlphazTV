@@ -1,0 +1,14 @@
+{
+  "about": [
+    {
+      "title": "About XG",
+      "description": "XG-description",
+      "image": "/src/assets/logo_xg.png"
+    },
+    {
+      "title": "About website",
+      "description": "Website-description",
+      "image": "/src/assets/Alcateia_logo.png"
+    }
+  ]
+}

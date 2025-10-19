@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.mobileContainer {
+  margin-bottom: 40px;
+}
+
+.image {
+  width: 380px;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.title {
+  color: var(--text-primary-color);
+}
+
+.description {
+  color: var(--text-primary-color);
+  font-size: 18px;
+  width: 90%;
+  text-align: justify;
+  margin-bottom: 10px;
+}

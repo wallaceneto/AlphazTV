@@ -1,0 +1,55 @@
+.container {
+  position: relative;
+  background-color: gray;
+  height: 182px;
+  border-radius: 10px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.image {
+  width: 320px;
+  height: 182px;
+  border-radius: 10px;
+}
+
+.textBg {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+  margin-top: -50px;
+}
+
+.text {
+  color: #FFF;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+}
+
+.modalBg {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalText {
+  color: #FFF;
+  text-decoration: underline;
+  font-size: large;
+}
+
+.modalButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
