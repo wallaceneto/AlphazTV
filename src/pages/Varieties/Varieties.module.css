@@ -1,7 +1,22 @@
 .container {
-  padding: 55px 60px
+  padding-left: 40px;
+}
+
+.firstCarousel {
+  margin-top: -90px;
+  margin-bottom: 40px;
 }
 
 .title {
   color: var(--text-primary-color);
+  margin-bottom: 5px;
+}
+
+.contentDiv {
+  margin-bottom: 40px;
+}
+
+.realityShowContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 }

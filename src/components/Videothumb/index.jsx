@@ -1,31 +1,27 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import classes from './Videothumb.module.css'
+import styles from './Videothumb.module.css'
 import YoutubeEmbedModal from '../../pages/modals/YoutubeEmbedModal'
 
-export default function Videothumb({ videoName, videoId, videoLink, hideLabel }) {
+const Videothumb = ({ videoName, videoId, videoLink, hideLabel }) => {
   const [openModal, setOpenModal] = useState(false)
   const { t } = useTranslation()
-
-  const handleVideoModal = () => {
-    setOpenModal(true)
-  }
 
   return (
     <>
       <button
-        className={classes.container}
-        onClick={() => handleVideoModal(videoId)}
+        className={styles.container}
+        onClick={() => setOpenModal(true)}
       >
         <img
           src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`}
           alt="YouTube Thumbnail"
-          className={classes.image}
+          className={styles.image}
         />
 
         {!hideLabel &&
-          <div className={classes.textBg}>
-            <p className={classes.text}>
+          <div className={styles.textBg}>
+            <p className={styles.text}>
               {videoName || t("Video not found")}
             </p>
           </div>
@@ -36,3 +32,5 @@ export default function Videothumb({ videoName, videoId, videoLink, hideLabel })
     </>
   )
 }
+
+export default Videothumb

@@ -1,0 +1,17 @@
+.container {
+  background-color: var(--text-primary-color);
+  padding-left: 60px;
+  padding-top: 40px;
+  padding-bottom: 95px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: var(--text-secondary-color);
+  margin-right: 20px;
+}
+
+.text {
+  color: var(--text-secondary-color);
+}

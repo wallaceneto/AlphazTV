@@ -4,11 +4,20 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import enUs from './en-us.json'
 import ptBr from './pt-br.json'
 
-export default i18n.use(LanguageDetector).use(initReactI18next).init({
-  compatibilityJSON: 'v3',
-  lng: 'pt-BR',
-  resources: {
-    'en-US': enUs,
-    'pt-BR': ptBr,
-  },
-});
+export default i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: 'en',
+    interpolation: { escapeValue: false },
+    resources: {
+      'en': enUs,
+      'en-US': enUs,
+      'pt': ptBr,
+      'pt-BR': ptBr,
+    },
+    detection: {
+      order: ["localStorage", "navigator"],
+      caches: ["localStorage"],
+    },
+  });

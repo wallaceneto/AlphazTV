@@ -3,7 +3,7 @@
     "name": "NEW DNA",
     "order": "1",
     "type": "mini",
-    "cover": "src/assets/songs/new_dna.png",
+    "cover": "/assets/songs/new_dna.png",
     "tracks": [
       "HESONOO",
       "X-GENE",
@@ -22,13 +22,16 @@
     "name": "AWE",
     "order": "2",
     "type": "mini",
-    "cover": "src/assets/songs/awe.png",
+    "cover": "/assets/songs/awe.png",
     "tracks": [
       "HOWL",
       "HOWLING",
       "SPACE MEETING Skit",
       "IYKYK",
       "SOMETHING AIN'T RIGHT",
+      "IN THE RAIN",
+      "WOKE UP REMIXX",
+      "IS THIS LOVE",
       "IN THE RAIN",
       "WOKE UP REMIXX",
       "IS THIS LOVE"

@@ -1,0 +1,45 @@
+.text {
+  color: var(--text-primary-color);
+}
+
+.image {
+  height: 320px;
+  border-radius: 5px;
+}
+
+.emblaViewport {
+  position: relative;
+  overflow: hidden;
+}
+
+.emblaContainer {
+  display: flex;
+}
+
+.emblaSlide {
+  padding-right: 80px;
+}
+
+.slideButtonContainer {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.slideButton {
+  height: 380px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+  pointer-events: all;
+}
+
+.slideButtonIcon {
+  color: var(--text-primary-color);
+  font-size: x-large;
+}

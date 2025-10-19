@@ -1,26 +1,42 @@
-import React, { useContext } from 'react'
-import classes from './Banner.module.css'
+import React, { useContext, useEffect, useState } from 'react'
+import styles from './Banner.module.css'
 import Header from '../Header'
 import { ThemeContext } from '../../contexts'
 
-import darkBanner from '../../assets/dark_banner.png'
-import lightBanner from '../../assets/light_banner.png'
+import darkBanner from '../../assets/dark_logo_banner.png'
+import lightBanner from '../../assets/light_logo_banner.png'
+import mobileBanner from '../../assets/mobile_logo_banner.png'
 
 const Banner = () => {
   const { theme } = useContext(ThemeContext);
+  const [mobileMode, setMobileMode] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 767) {
+        setMobileMode(true);
+      } else {
+        setMobileMode(false);
+      }
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+
+  }, []);
 
   return (
-    <div className={classes.bannerContainer}>
+    <div className={styles.bannerContainer}>
       <Header />
       <img
-        src={theme === 'dark' ? darkBanner : lightBanner}
-        className={classes.image}
+        src={
+          mobileMode ? mobileBanner :
+            theme === 'dark' ? darkBanner : lightBanner
+        }
+        className={styles.image}
         alt='imagem do grupo XG'
       />
-
-      <div className={classes.overlay} />
-
-      <h1 className={classes.title}>Alphaz TV+</h1>
     </div>
   )
 }

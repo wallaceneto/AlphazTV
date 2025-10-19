@@ -8,13 +8,49 @@
     "Show all": "Show all",
     "Close": "Close",
     "Video not found": "Video not found",
+    "Date of Birth": "Date of Birth:",
+    "Hometown": "Hometown:",
+    "Cities": {
+      "Chigasaki, Kanagawa, Japan": "Chigasaki, Kanagawa, Japan",
+      "Osaka, Japan": "Osaka, Japan",
+      "Nagooya, Aichi, Japan": "Nagooya, Aichi, Japan",
+      "Tokyo, Japan": "Tokyo, Japan",
+      "Kanto, Japan": "Kanto, Japan"
+    },
+    "Color": "Color:",
+    "Colors": {
+      "Silver": "Silver",
+      "Yellow": "Yellow",
+      "Blue": "Blue",
+      "Purple": "Purple",
+      "Orange": "Orange",
+      "Red": "Red",
+      "Green": "Green"
+    },
+    "Gallery": "Gallery",
+    "Videos": "Videos",
     "Tracks": "Tracks:",
+    "Original series": "Original series",
+    "Watch on Youtube": "Watch on Youtube",
+    "Watch all episodes": "Watch all episodes",
     "Footer": {
       "Description": "Alphaz TV+ is a website made by fans with the objective to gather and share the work of XG. All content in the website respect the copyright ownership from XGALX.",
       "XG Accounts": "XG Social Network",
       "Contact": "Contact",
       "All rights reserved": "{{year}} © All rights reserved"
+    },
+    "Realities": {
+      "XG Three Meals a Day": "The girls need to prepare three meals every day. To do this, every morning they must take part in a challenge that will determine the ingredients they will have available for the rest of the day.",
+      "X OR GO": "The girls take part in challenges that will determine the experiences each of them will have to go through on this journey through the countryside of South Korea."
+    },
+    "Series": {
+      "XTRA XTRA": "A nine-episode documentary that follows the creation of XG, from the selection process to training, rehearsals, and internal conflicts."
+    },
+    "AboutPage": {
+      "About XG": "About XG",
+      "XG-description": "XG is a Japanese girl group formed by Xgalx, a subsidiary of Avex. The group consists of seven members: Jurin, Chisa, Hinata, Harvey, Juria, Maya, and Cocona. They made their debut on March 18, 2022, with the release of the digital single \"Tippy Toes.\" The group is known for its complex choreography and dance skills, as well as its pop and R&B songs with profound lyrics.",
+      "About website": "About the website",
+      "Website-description": "Alphaz TV+ is an fan-made website created to help Alphaz find content more easily. WE ARE NOT A FANSUB! We understand how difficult it can be to find videos and materials scattered around, so we created this space to make things easier. Here, you'll be redirected straight to the original links of the content."
     }
-  },
-  "Show all": ""
+  }
 }

@@ -1,13 +1,13 @@
 {
   "about": [
     {
-      "title": "Sobre o XG",
-      "description": "XG é um grupo feminino japonês. O grupo foi formado pela Xgalx, uma subsidiaria da Avex. O grupo é composto por sete membros: Jurin, Chisa, Hinata, Harvey, Juria, Maya e Cocona. Eles fizeram sua estreia no dia 18 de março de 2022, com o lançamento do single digital \"Tippy Toes\". O grupo é conhecido por suas coreografias complexas e habilidades de dança, além de suas canções pop e R&B com letras profundas.",
+      "title": "About XG",
+      "description": "XG-description",
       "image": "/src/assets/logo_xg.png"
     },
     {
-      "title": "Sobre o site",
-      "description": "O Alphaz TV+ é um site de fãs que visa criar um espaço para agrupar os principais conteúdos do XG, com intuito de divulgar e facilitar o acesso do público brasileiro. É um projeto independente, feito por entusiastas, sem vinculação com a XGALX.",
+      "title": "About website",
+      "description": "Website-description",
       "image": "/src/assets/Alcateia_logo.png"
     }
   ]

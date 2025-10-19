@@ -1,54 +1,32 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import classes from './VideoCarousel.module.css'
+import styles from './VideoCarousel.module.css'
 import Videothumb from '../Videothumb'
+import EmblaCarousel from '../EmblaCarousel'
 
-import { Mousewheel } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-
-export const VideoCarousel = ({ playlist, hideLabel }) => {
-  const { t } = useTranslation()
-  const [slidePerView, setSlidePerView] = useState(3.3)
-
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth < 720) {
-        setSlidePerView(1.5)
-      } else if (window.innerWidth < 1100) {
-        setSlidePerView(2.5)
-      } else {
-        setSlidePerView(3.5)
-      }
-    }
-
-    handleResize()
-
-    window.addEventListener("resize", handleResize)
-
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+const VideoCarousel = ({ playlist, hideLabel, isFirstCarousel }) => {
+  const { t } = useTranslation();
 
   return (
     <div>
-      <div className={classes.textContainer}>
-        <h2 className={classes.title}>
-          {playlist.name}
+      <div className={styles.textContainer}>
+        <h2 className={styles.title} style={isFirstCarousel && { color: '#fff' }}>
+          {t(playlist.name)}
         </h2>
-        <Link className={classes.buttonLink}>
+        <Link
+          className={styles.buttonLink}
+          to={`/playlist/${playlist.name}`}
+          style={isFirstCarousel && { color: '#fff' }}
+        >
           {t('Show all')}
         </Link>
       </div>
 
-      <Swiper
-        modules={[Mousewheel]}
-        slidesPerView={slidePerView}
-        mousewheel
-      >
+      <EmblaCarousel>
         {
           playlist.videos.map((video) =>
-            <SwiperSlide>
+            <div className={styles.emblaSlide} key={video.videoId}>
               <Videothumb
                 key={video.videoId}
                 videoName={video.name}
@@ -56,10 +34,12 @@ export const VideoCarousel = ({ playlist, hideLabel }) => {
                 videoLink={video.link}
                 hideLabel={hideLabel}
               />
-            </SwiperSlide>
+            </div>
           )
         }
-      </Swiper>
+      </EmblaCarousel>
     </div>
   )
 }
+
+export default VideoCarousel
