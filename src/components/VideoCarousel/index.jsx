@@ -40,15 +40,16 @@ const VideoCarousel = ({ playlist, hideLabel, isFirstCarousel }) => {
       <EmblaCarousel>
         {
           playlistItems.map((video) =>
-            <div className={styles.emblaSlide} key={video.id}>
-              <Videothumb
-                key={video.id}
-                videoName={video.snippet.title}
-                videoId={video.contentDetails.videoId}
-                videoLink={video.contentDetails.videoId}
-                hideLabel={hideLabel}
-              />
-            </div>
+            video.snippet.title === 'Private video' ? null :
+              <div className={styles.emblaSlide} key={video.id}>
+                <Videothumb
+                  key={video.id}
+                  videoName={video.snippet.title}
+                  videoId={video.contentDetails.videoId}
+                  videoLink={video.contentDetails.videoId}
+                  hideLabel={hideLabel}
+                />
+              </div>
           )
         }
       </EmblaCarousel>

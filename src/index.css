@@ -18,3 +18,13 @@
   --text-secondary-color: #FFFFFF;
   --accent-color: #FAFAFA;
 }
+
+[view-mode="web"] {
+  --default-margin-left: 40px;
+  --footer-icons-align: flex-end;
+}
+
+[view-mode="mobile"] {
+  --default-margin-left: 20px;
+  --footer-icons-align: flex-start;
+}

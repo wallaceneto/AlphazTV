@@ -1,5 +1,5 @@
 .content {
-  padding-left: 40px;
+  padding-left: var(--default-margin-left);
 }
 
 .firstCarousel {
