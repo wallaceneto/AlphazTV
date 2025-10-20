@@ -3,7 +3,12 @@
 }
 
 .content {
-  padding-left: 60px;
+  padding-left: var(--default-margin-left);
+  padding-bottom: 60px;
+}
+
+.contentMobile {
+  padding-left: 20px;
   padding-bottom: 60px;
 }
 

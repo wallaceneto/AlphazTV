@@ -9,7 +9,11 @@ const OriginalSeriesCard = ({ cover, title, description, link, mobileMode }) => 
 
   return (
     <div className={mobileMode ? styles.mobileContainer : styles.container}>
-      <img src={cover} className={styles.image} alt={'Capa de ' + title} />
+      <img
+        src={cover}
+        className={mobileMode ? styles.imageMobile : styles.image}
+        alt={'Capa de ' + title}
+      />
 
       <div className={styles.textContainer}>
         <div>

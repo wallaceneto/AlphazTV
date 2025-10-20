@@ -10,18 +10,29 @@ import { getItemFromStorage } from './global/lib';
 
 export const App = () => {
   const [theme, setTheme] = useState('dark');
+    const [viewMode, setViewMode] = useState('web');
 
   useEffect(() => {
-    const userTheme = getItemFromStorage('theme');
+    function handleResize() {
+      if (window.innerWidth < 767) {
+        setViewMode('mobile');
+      } else {
+        setViewMode('web');
+      }
+    }
 
+    const userTheme = getItemFromStorage('theme');
     if (userTheme) {
       setTheme(userTheme);
     }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className='App' data-theme={theme}>
+      <div className='App' data-theme={theme} view-mode={viewMode}>
         <RouterProvider router={routes} />
       </div>
     </ThemeContext.Provider>
