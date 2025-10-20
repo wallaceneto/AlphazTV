@@ -3,12 +3,12 @@
     {
       "title": "About XG",
       "description": "XG-description",
-      "image": "/assets/logo_xg.png"
+      "image": "/assets/about/logo_xg.png"
     },
     {
       "title": "About website",
       "description": "Website-description",
-      "image": "/assets/Alcateia_logo.png"
+      "image": "/assets/about/Alcateia_logo.png"
     }
   ]
 }
