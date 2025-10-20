@@ -36,8 +36,8 @@ export default function Member() {
     <div className={styles.container}>
       <Header title={`This is ${member.iconName}`} />
 
-      <div className={styles.content}>
-        <div className={!mobileMode && styles.infoContainer}>
+      <div className={mobileMode ? styles.contentMobile : styles.content}>
+        <div className={!mobileMode ? styles.infoContainer : undefined}>
           <img
             src={`/members/${member.name}/cover.jpg`}
             className={mobileMode ? styles.coverMobile : styles.cover}
