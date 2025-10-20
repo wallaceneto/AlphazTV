@@ -63,23 +63,24 @@ export default function Videos() {
         <div className={styles.content}>
           {
             playlistItems.map((video) =>
-              <Button
-                key={video.id}
-                onClick={() => handleOpenVideo(video.contentDetails.videoId, setCurrentLink, setOpenModal)}
-              >
-                <div className={styles.thumb}>
-                  <div className={styles.overlay}>
-                    <p className={styles.label}>{video.snippet.title}</p>
-                  </div>
+              video.snippet.title === 'Private video' ? null :
+                <Button
+                  key={video.id}
+                  onClick={() => handleOpenVideo(video.contentDetails.videoId, setCurrentLink, setOpenModal)}
+                >
+                  <div className={styles.thumb}>
+                    <div className={styles.overlay}>
+                      <p className={styles.label}>{video.snippet.title}</p>
+                    </div>
 
-                  <ThumbImage
-                    videoId={video.contentDetails.videoId}
-                    videoTitle={video.snippet.title}
-                    style={styles.thumbImage}
-                    highRes
-                  />
-                </div>
-              </Button>
+                    <ThumbImage
+                      videoId={video.contentDetails.videoId}
+                      videoTitle={video.snippet.title}
+                      style={styles.thumbImage}
+                      highRes
+                    />
+                  </div>
+                </Button>
             )
           }
         </div>
