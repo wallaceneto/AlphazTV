@@ -1,35 +1,54 @@
-.container {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .container {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+  }
 
-.textButton {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
-}
+  .videoContainer {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+  }
 
-.icon {
-  color: #FFF;
-}
+  .videoContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-.text {
-  color: #FFF;
-  text-decoration: underline;
-  font-weight: 600;
-  font-size: 24px;
-  margin-left: 10px;
-}
+  .textButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .icon {
+    color: #FFF;
+  }
+
+  .text {
+    color: #FFF;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 10px;
+  }
