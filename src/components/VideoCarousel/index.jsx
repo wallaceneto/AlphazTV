@@ -4,21 +4,18 @@ import { useTranslation } from 'react-i18next'
 import styles from './VideoCarousel.module.css'
 import Videothumb from '../Videothumb'
 import EmblaCarousel from '../EmblaCarousel'
-import { getPlaylistItens } from '../../services/getData'
+import { fetchVideos, fetchVideosWithCache } from './lib'
 
-const VideoCarousel = ({ playlist, hideLabel, isFirstCarousel }) => {
+const VideoCarousel = ({ playlist, hideLabel, isFirstCarousel, cacheKey }) => {
   const { t } = useTranslation();
   const [playlistItems, setPlaylistItems] = useState([]);
 
-  const fetchVideos = async () => {
-    if (playlistItems.length === 0) {
-      const data = await getPlaylistItens(playlist.id, 25);
-      setPlaylistItems(data.items);
-    }
-  }
-
   useEffect(() => {
-    fetchVideos();
+    if (cacheKey) {
+      fetchVideosWithCache(cacheKey, playlist.id, setPlaylistItems);
+    } else {
+      fetchVideos(playlist.id, setPlaylistItems);
+    }
   }, []);
 
   return (
