@@ -33,7 +33,7 @@ export default function Varieties() {
     <HomepageLayout>
       <div className={styles.container}>
         <div className={styles.firstCarousel}>
-          <VideoCarousel playlist={varietiesPlaylists[0]} isFirstCarousel />
+          <VideoCarousel playlist={varietiesPlaylists[0]} isFirstCarousel cacheKey={varietiesPlaylists[0].cachekey} />
         </div>
 
         <div className={styles.contentDiv}>
@@ -73,7 +73,7 @@ export default function Varieties() {
         {varietiesPlaylists.map((playlist, index) =>
           index !== 0 &&
           <div key={playlist.id} className={styles.contentDiv}>
-            <VideoCarousel playlist={playlist} />
+            <VideoCarousel playlist={playlist} cacheKey={playlist.cachekey} />
           </div>
         )}
       </div>

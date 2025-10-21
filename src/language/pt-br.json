@@ -30,6 +30,7 @@
       "Green": "Verde"
     },
     "Gallery": "Galeria",
+    "Meet the rest": "Ver também",
     "Tracks": "Faixas:",
     "Original series": "Séries originais",
     "Watch on Youtube": "Assistir no Youtube",
@@ -49,7 +50,7 @@
     },
     "AboutPage": {
       "About XG": "Sobre o XG",
-      "XG-description": "XG é um grupo feminino japonês formado pela Xgalx, uma subsidiaria da Avex. O grupo é composto por sete membros: Jurin, Chisa, Hinata, Harvey, Juria, Maya e Cocona. Eles fizeram sua estreia no dia 18 de março de 2022, com o lançamento do single digital \"Tippy Toes\". O grupo é conhecido por suas coreografias complexas e habilidades de dança, além de suas canções pop e R&B com letras profundas.",
+      "XG-description": "XG é um grupo feminino japonês formado pela Xgalx, uma subsidiária da Avex. O grupo é composto por sete membros: Jurin, Chisa, Hinata, Harvey, Juria, Maya e Cocona. Fizeram sua estreia no dia 18 de março de 2022, com o lançamento do single digital \"Tippy Toes\". O grupo é conhecido por suas coreografias complexas e habilidades de dança, além de suas canções pop e R&B com letras profundas.",
       "About website": "Sobre o site",
       "Website-description": "O Alphaz TV+ é um site feito de fã para fã, para ajudar Alphaz a encontrarem conteúdos com mais facilidade. NÃO SOMOS UMA FANSUB! Sabemos a dificuldade em encontrar vídeos e materiais espalhados por aí, então criamos este espaço para facilitar. Aqui, você será redirecionado diretamente para os links originais dos conteúdos."
     },
@@ -75,11 +76,12 @@
       "XTRA XG": "XTRA XG",
       "XG official vlog videos of they shows, musics and commercials": "Vlog oficial do XG sobre os shows, músicas e comerciais",
       "Videos": "Vídeos",
+      "All the videos from the playlist": "Todos os vídeos da playlist",
       "All the solo videos from the official XG channel": "Todos os vídeos solo da integrante no canal oficial do XG",
       "Covers": "Covers",
       "Some solo covers apresentations in shows": "Algumas apresentações solo em shows",
       "Fancam": "Fancam",
-      "Fancam footage from some tv performances": "Filmagem focada no integrante em apresentações em canais de tv"
+      "Fancam footage from some tv performances": "Filmagem focada na integrante em apresentações em canais de tv"
     }
   }
 }

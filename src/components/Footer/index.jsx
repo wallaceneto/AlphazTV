@@ -32,7 +32,7 @@ const Footer = () => {
               <a href={URLs.xgInstagram} target='_blank'>
                 <FontAwesomeIcon icon={faInstagram} className={styles.socialIcon} />
               </a>
-              <a href={URLs.xgTwitter} target='_blank'>
+              <a href={URLs.xgTiktok} target='_blank'>
                 <FontAwesomeIcon icon={faTiktok} className={styles.socialIcon} />
               </a>
               <a href={URLs.xgTwitter} target='_blank'>
