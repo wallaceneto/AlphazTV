@@ -12,9 +12,9 @@ const VideoCarousel = ({ playlist, hideLabel, isFirstCarousel, cacheKey }) => {
 
   useEffect(() => {
     if (cacheKey) {
-      fetchVideosWithCache(cacheKey, playlist.id, playlistItems, setPlaylistItems);
+      fetchVideosWithCache(cacheKey, playlist.id, setPlaylistItems);
     } else {
-      fetchVideos(playlist.id, playlistItems, setPlaylistItems);
+      fetchVideos(playlist.id, setPlaylistItems);
     }
   }, []);
 

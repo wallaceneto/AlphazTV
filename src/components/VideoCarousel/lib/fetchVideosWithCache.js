@@ -5,14 +5,12 @@ import { getPlaylistItens } from "../../../services/getData";
 const fetchVideosWithCache = async (
   cacheKey,
   playlistId,
-  playlistItems,
   setPlaylistItems
 ) => {
-  
   const dateKey = cacheKey + "Date";
   const cacheDate = getItemFromStorage(dateKey);
   const cacheItens = getItemFromStorage(cacheKey);
-  
+
   const today = new Date();
 
   if (cacheDate && cacheItens) {
@@ -20,7 +18,6 @@ const fetchVideosWithCache = async (
     const differenceInMinutes = (today.getTime() - formerDate.getTime()) / (1000 * 60);
 
     if (differenceInMinutes < CACHE_INTERVAL_MINUTES) {
-      console.log("Diferença em minutos " + differenceInMinutes);
       setPlaylistItems(cacheItens);
     } else {
       const data = await getPlaylistItens(playlistId, 25);
@@ -31,13 +28,11 @@ const fetchVideosWithCache = async (
     }
 
   } else {
-    if (playlistItems.length === 0) {
-      const data = await getPlaylistItens(playlistId, 25);
-      setPlaylistItems(data.items);
+    const data = await getPlaylistItens(playlistId, 25);
+    setPlaylistItems(data.items);
 
-      setItemOnStorage(dateKey, today);
-      setItemOnStorage(cacheKey, data.items);
-    }
+    setItemOnStorage(dateKey, today);
+    setItemOnStorage(cacheKey, data.items);
   }
 }
 
