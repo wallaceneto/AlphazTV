@@ -36,7 +36,12 @@ export default function Songs() {
               {index === 0 ?
                 <>
                   <div className={styles.firstCarousel}>
-                    <VideoCarousel playlist={songsPlaylists[index]} hideLabel isFirstCarousel />
+                    <VideoCarousel
+                      playlist={songsPlaylists[index]}
+                      hideLabel
+                      isFirstCarousel
+                      cacheKey={songsPlaylists[index].cachekey}
+                    />
                   </div>
 
                   {
@@ -49,7 +54,7 @@ export default function Songs() {
                 </>
                 :
                 <div className={styles.carousel}>
-                  <VideoCarousel playlist={songsPlaylists[index]} />
+                  <VideoCarousel playlist={songsPlaylists[index]} cacheKey={songsPlaylists[index].cachekey} />
                 </div>
               }
             </div>
