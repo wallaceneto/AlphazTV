@@ -1,30 +1,18 @@
 import React, { useEffect, useState } from "react";
-import {
-  faYoutube,
-  faSpotify,
-  faApple,
-} from "@fortawesome/free-brands-svg-icons";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from 'react-i18next';
 import styles from "./About.module.css";
 import { HomepageLayout } from "../../layout";
-import { MOBILE_WIDTH_BREAKPOINT, URLs } from "../../global/utils";
+import { MOBILE_WIDTH_BREAKPOINT } from "../../global/utils";
 import IconButton from "../../components/IconButton";
 import PhotoGallery from "../../components/PhotoGallery";
+import { socialLinks } from "./lib";
 
 import { about } from "../../mock/about.json";
 import groupGallery from '../../mock/group_gallery.json';
 
-const socialLinks = [
-  { icon: faGlobe, url: URLs.xgSite, label: "Site" },
-  { icon: faYoutube, url: URLs.xgYoutube, label: "Youtube" },
-  { icon: faSpotify, url: URLs.xgSpotify, label: "Spotify" },
-  { icon: faApple, url: URLs.xgAppleMusic, label: "Apple Music" },
-];
-
 function SocialLinks({ mobileMode }) {
   return (
-    <ul className={styles.socialMedia}>
+    <div className={styles.socialMedia}>
       {socialLinks.map(({ icon, url, label }) => (
         <IconButton
           key={label}
@@ -33,7 +21,7 @@ function SocialLinks({ mobileMode }) {
           link={url}
         />
       ))}
-    </ul>
+    </div>
   );
 }
 
@@ -56,43 +44,44 @@ export default function About() {
     return () => window.removeEventListener("resize", handleResize);
   }, [])
 
-  const aboutDescription = (about, index) => {
-    return (
-      <div
-        key={about.title}
-        className={mobileMode ? styles.mobileContainer_about : styles.container_about}
-      >
-        {(!mobileMode || index !== 1) &&
-          <img
-            src={about.image}
-            alt={about.title}
-            className={mobileMode ? styles.mobileImage : styles.image}
-          />
-        }
-        <div className={styles.content}>
-          <h1 className={styles.title}>{t(`AboutPage.${about.title}`)}</h1>
-          <p className={styles.description}>{t(`AboutPage.${about.description}`)}</p>
-          {index === 0 &&
-            <div className={styles.container_socialLinks}>
-              <SocialLinks mobileMode={mobileMode} />
-            </div>
-          }
-        </div>
-      </div>
-    );
-  }
-
   return (
     <HomepageLayout>
-      {aboutDescription(about[0], 0)}
-      <div className={styles.galleryContainer}>
+      <div className={mobileMode ? styles.mobileContainer_about : styles.container_about}>
+        <img
+          src={about[0].image}
+          alt={about[0].title}
+          className={styles.leftImage}
+        />
+
+        <div className={styles.content}>
+          <h1 className={styles.title}>{t(`AboutPage.${about[0].title}`)}</h1>
+          <p className={styles.description}>{t(`AboutPage.${about[0].description}`)}</p>
+          <SocialLinks mobileMode={mobileMode} />
+        </div>
+      </div>
+
+      <div>
         <h2 className={styles.title}>{t('Gallery')}</h2>
         <PhotoGallery
           galleryPath={groupGallery.galleryPath}
           galleryLength={groupGallery.galleryLength}
         />
       </div>
-      {aboutDescription(about[1], 1)}
+
+      <div className={mobileMode ? styles.mobileContainer_about : styles.container_about}>
+        <div className={styles.content}>
+          <h1 className={styles.title}>{t(`AboutPage.${about[1].title}`)}</h1>
+          <p className={styles.description}>{t(`AboutPage.${about[1].description}`)}</p>
+        </div>
+
+        {!mobileMode &&
+          <img
+            src={about[1].image}
+            alt={about[1].title}
+            className={styles.rightImage}
+          />
+        }
+      </div>
     </HomepageLayout>
   );
 }
