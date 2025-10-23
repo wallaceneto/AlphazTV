@@ -63,7 +63,6 @@ export default function Member() {
         </div>
 
         <div className={styles.galleryContainer}>
-          <h2 className={styles.text}>{t('Gallery')}</h2>
           <PhotoGallery
             galleryPath={member.galleryPath}
             galleryLength={member.galleryLength}
@@ -75,7 +74,7 @@ export default function Member() {
         )}
 
         <div className={styles.linksContainer}>
-          <h2 className={styles.text}>{t('Meet the rest')}</h2>
+          <h2 className={styles.text}>{t('Also meet')}</h2>
           {members.map((item) =>
             item.id !== member.id &&
             <a

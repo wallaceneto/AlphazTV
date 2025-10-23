@@ -62,7 +62,7 @@ const Footer = () => {
 
         <span className={styles.verticalDivider} />
 
-        <button className={styles.languageButton} onClick={() => toggleLanguage('es')}>
+        <button className={styles.languageButton} onClick={() => toggleLanguage('pt-BR')}>
           <p className={i18n.language === 'es' ? styles.languageTextSelected : styles.languageText}>
             Español
           </p>

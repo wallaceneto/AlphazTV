@@ -60,13 +60,10 @@ export default function About() {
         </div>
       </div>
 
-      <div>
-        <h2 className={styles.title}>{t('Gallery')}</h2>
-        <PhotoGallery
-          galleryPath={groupGallery.galleryPath}
-          galleryLength={groupGallery.galleryLength}
-        />
-      </div>
+      <PhotoGallery
+        galleryPath={groupGallery.galleryPath}
+        galleryLength={groupGallery.galleryLength}
+      />
 
       <div className={mobileMode ? styles.mobileContainer_about : styles.container_about}>
         <div className={styles.content}>

@@ -1,5 +1,11 @@
+.loading {
+  margin-left: var(--default-margin-left);
+}
+
 .text {
   color: var(--text-primary-color);
+  margin-left: var(--default-margin-left);
+  margin-bottom: 10px;
 }
 
 .image {
@@ -17,7 +23,11 @@
 }
 
 .emblaSlide {
-  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.emblaSlide:nth-child(1) {
+  padding-left: var(--default-margin-left);
 }
 
 .slideButtonContainer {

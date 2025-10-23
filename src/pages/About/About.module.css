@@ -12,7 +12,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  margin-left: var(--default-margin-left);
+  margin-left: 40px
 }
 
 .title {
