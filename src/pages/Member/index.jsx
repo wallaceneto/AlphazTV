@@ -9,12 +9,13 @@ import VideoCarousel from '../../components/VideoCarousel'
 import PhotoGallery from '../../components/PhotoGallery'
 
 import members from '../../mock/members.json'
+import jakops from '../../mock/member_easter_egg.json';
 
 export default function Member() {
   const { t } = useTranslation();
   const { i18n } = useTranslation('Home');
   let { memberId } = useParams();
-  const member = members[memberId < 7 ? memberId : 0];
+  const member = memberId < 7 ? members[Number(memberId)] : jakops;
   const [mobileMode, setMobileMode] = useState(false);
 
   useEffect(() => {
