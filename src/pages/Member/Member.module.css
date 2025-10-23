@@ -52,6 +52,7 @@
 .galleryContainer {
   margin-bottom: 40px;
   margin-top: 20px;
+  margin-left: var(--negative-margin-left);
 }
 
 .linksContainer {

@@ -21,10 +21,14 @@
 
 [view-mode="web"] {
   --default-margin-left: 40px;
+  --negative-margin-left: -40px;
   --footer-icons-align: flex-end;
+  --about-image-height: 330px;
 }
 
 [view-mode="mobile"] {
   --default-margin-left: 20px;
+  --negative-margin-left: -20px;
   --footer-icons-align: flex-start;
+  --about-image-height: 300px;
 }

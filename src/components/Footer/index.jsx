@@ -54,19 +54,28 @@ const Footer = () => {
       </div>
 
       <div className={styles.languageContainer}>
-        <button className={styles.languageButton} onClick={() => toggleLanguage('en-US')}>
-          <p className={i18n.language === 'en-US' ? styles.languageTextSelected : styles.languageText}>
-            English (USA)
+        <button className={styles.languageButton} onClick={() => toggleLanguage('pt-BR')}>
+          <p className={i18n.language === 'pt-BR' ? styles.languageTextSelected : styles.languageText}>
+            Português (Brasil)
           </p>
         </button>
 
         <span className={styles.verticalDivider} />
 
         <button className={styles.languageButton} onClick={() => toggleLanguage('pt-BR')}>
-          <p className={i18n.language === 'pt-BR' ? styles.languageTextSelected : styles.languageText}>
-            Português (Brasil)
+          <p className={i18n.language === 'es' ? styles.languageTextSelected : styles.languageText}>
+            Español
           </p>
         </button>
+
+        <span className={styles.verticalDivider} />
+
+        <button className={styles.languageButton} onClick={() => toggleLanguage('en-US')}>
+          <p className={i18n.language === 'en-US' ? styles.languageTextSelected : styles.languageText}>
+            English
+          </p>
+        </button>
+
       </div>
     </>
   )
