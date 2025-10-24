@@ -1,29 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import styles from "./About.module.css";
+import { socialLinks } from "./lib";
 import { HomepageLayout } from "../../layout";
 import { MOBILE_WIDTH_BREAKPOINT } from "../../global/utils";
 import IconButton from "../../components/IconButton";
 import PhotoGallery from "../../components/PhotoGallery";
-import { socialLinks } from "./lib";
 
-import { about } from "../../mock/about.json";
 import groupGallery from '../../mock/group_gallery.json';
-
-function SocialLinks({ mobileMode }) {
-  return (
-    <div className={styles.socialMedia}>
-      {socialLinks.map(({ icon, url, label }) => (
-        <IconButton
-          key={label}
-          icon={icon}
-          text={!mobileMode && label}
-          link={url}
-        />
-      ))}
-    </div>
-  );
-}
 
 export default function About() {
   const { t } = useTranslation();
@@ -48,15 +32,24 @@ export default function About() {
     <HomepageLayout>
       <div className={mobileMode ? styles.mobileContainer_about : styles.container_about}>
         <img
-          src={about[0].image}
-          alt={about[0].title}
+          src="/assets/about/xg.jpg"
+          alt="Foto do grupo XG"
           className={styles.leftImage}
         />
 
         <div className={styles.content}>
-          <h1 className={styles.title}>{t(`AboutPage.${about[0].title}`)}</h1>
-          <p className={styles.description}>{t(`AboutPage.${about[0].description}`)}</p>
-          <SocialLinks mobileMode={mobileMode} />
+          <h1 className={styles.title}>{t(`AboutPage.About XG`)}</h1>
+          <p className={styles.description}>{t(`AboutPage.XG-description`)}</p>
+          <div className={styles.socialMedia}>
+            {socialLinks.map(({ icon, url, label }) => (
+              <IconButton
+                key={label}
+                icon={icon}
+                text={!mobileMode && label}
+                link={url}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
@@ -67,17 +60,15 @@ export default function About() {
 
       <div className={mobileMode ? styles.mobileContainer_about : styles.container_about}>
         <div className={styles.content}>
-          <h1 className={styles.title}>{t(`AboutPage.${about[1].title}`)}</h1>
-          <p className={styles.description}>{t(`AboutPage.${about[1].description}`)}</p>
+          <h1 className={styles.title}>{t(`AboutPage.About website`)}</h1>
+          <p className={styles.description}>{t(`AboutPage.Website-description`)}</p>
         </div>
 
-        {!mobileMode &&
-          <img
-            src={about[1].image}
-            alt={about[1].title}
-            className={styles.rightImage}
-          />
-        }
+        <img
+          src={`/assets/about/lobo_preto.png`}
+          alt="Logo do site Alphaz TV"
+          className={mobileMode ? styles.rightImageMobile : styles.rightImage}
+        />
       </div>
     </HomepageLayout>
   );
