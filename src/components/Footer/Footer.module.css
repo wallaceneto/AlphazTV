@@ -47,7 +47,8 @@
 
 .languageContainer {
   background-color: #000;
-  padding: 30px 60px;
+  padding-block: 30px;
+  padding-inline: var(--default-margin-left);
   display: flex;
   gap: 10px;
 }
