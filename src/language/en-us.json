@@ -4,6 +4,8 @@
     "Songs": "Songs",
     "Varieties": "Varieties",
     "About": "About",
+    "We can't found the page you was looking for. Check the url and try again": "We can't found the page you was looking for. Check the url and try again.",
+    "Back to homepage": "Back to homepage",
     "Language": "Language",
     "Show all": "Show all",
     "Close": "Close",
@@ -15,7 +17,8 @@
       "Osaka, Japan": "Osaka, Japan",
       "Nagooya, Aichi, Japan": "Nagooya, Aichi, Japan",
       "Tokyo, Japan": "Tokyo, Japan",
-      "Kanto, Japan": "Kanto, Japan"
+      "Kanto, Japan": "Kanto, Japan",
+      "Seattle, Washington, USA": "Seattle, Washington, USA"
     },
     "Color": "Color:",
     "Colors": {
@@ -28,15 +31,15 @@
       "Green": "Green"
     },
     "Gallery": "Gallery",
+    "Also meet": "Also meet",
     "Tracks": "Tracks:",
     "Original series": "Original series",
     "Watch on Youtube": "Watch on Youtube",
     "Watch all episodes": "Watch all episodes",
     "Footer": {
-      "Description": "Alphaz TV+ is a website made by fans with the objective to gather and share the work of XG. All content in the website respect the copyright ownership from XGALX.",
+      "Description": "Alphaz TV+ is a website made by Brazilian ALPHAZ for ALPHAZ, dedicated to gather and share the works of XG. All content presented in the website respects XGALX's copyrights.",
       "XG Accounts": "XG Social Network",
-      "Contact": "Contact",
-      "All rights reserved": "{{year}} © All rights reserved"
+      "Contact": "Contact"
     },
     "Realities": {
       "XG Three Meals a Day": "The girls need to prepare three meals every day. To do this, every morning they must take part in a challenge that will determine the ingredients they will have available for the rest of the day.",
@@ -49,7 +52,7 @@
       "About XG": "About XG",
       "XG-description": "XG is a Japanese girl group formed by Xgalx, a subsidiary of Avex. The group consists of seven members: Jurin, Chisa, Hinata, Harvey, Juria, Maya, and Cocona. They made their debut on March 18, 2022, with the release of the digital single \"Tippy Toes.\" The group is known for its complex choreography and dance skills, as well as its pop and R&B songs with profound lyrics.",
       "About website": "About the website",
-      "Website-description": "Alphaz TV+ is an fan-made website created to help Alphaz find content more easily. WE ARE NOT A FANSUB! We understand how difficult it can be to find videos and materials scattered around, so we created this space to make things easier. Here, you'll be redirected straight to the original links of the content."
+      "Website-description": "Alphaz TV+ is an brazilian fan-made website created to help Alphaz find content more easily. WE ARE NOT A FANSUB! We understand how difficult it can be to find videos and materials scattered around, so we created this space to make things easier. Here, you'll be redirected straight to the original links of the content."
     },
     "Playlist": {
       "Latests": "Latests",
@@ -73,6 +76,7 @@
       "XTRA XG": "XTRA XG",
       "XG official vlog videos of they shows, musics and commercials": "XG official vlog videos of they shows, musics and commercials",
       "Videos": "Videos",
+      "All the videos from the playlist": "All the videos from the playlist",
       "All the solo videos from the official XG channel": "All the solo videos from the official XG channel",
       "Covers": "Covers",
       "Some solo covers apresentations in shows": "Some solo covers apresentations in shows",

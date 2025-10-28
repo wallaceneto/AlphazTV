@@ -4,16 +4,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import styles from './EmblaCarousel.module.css'
 import Button from '../Button'
+import { MOBILE_WIDTH_BREAKPOINT } from '../../global/utils/globalVars'
 
 const EmblaCarousel = ({ children, gallery }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'start' })
-  const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
-  const [nextBtnDisabled, setNextBtnDisabled] = useState(true)
+  const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'start' });
+  const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
+  const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
   const [mobileMode, setMobileMode] = useState(false);
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth < 767) {
+      if (window.innerWidth < MOBILE_WIDTH_BREAKPOINT) {
         setMobileMode(true);
       } else {
         setMobileMode(false);

@@ -1,0 +1,87 @@
+{
+  "translation": {
+    "Home": "Inicio",
+    "Songs": "Canciones",
+    "Varieties": "Variedades",
+    "About": "Acerca de",
+    "We can't found the page you was looking for. Check the url and try again": "No encontramos la página que estabas buscando. Verifica la URL e inténtalo otra vez.",
+    "Back to homepage": "Volver al inicio",
+    "Language": "Idioma",
+    "Show all": "Ver todo",
+    "Close": "Cerrar",
+    "Video not found": "Video no encontrado",
+    "Date of Birth": "Nacimiento:",
+    "Hometown": "Ciudad natal:",
+    "Cities": {
+      "Chigasaki, Kanagawa, Japan": "Chigasaki, Kanagawa, Japón",
+      "Osaka, Japan": "Osaka, Japón",
+      "Nagooya, Aichi, Japan": "Nagoya, Aichi, Japón",
+      "Tokyo, Japan": "Tokio, Japón",
+      "Kanto, Japan": "Kanto, Japón",
+      "Seattle, Washington, USA": "Seattle, Washington, EUA"
+    },
+    "Color": "Color:",
+    "Colors": {
+      "Silver": "Plata",
+      "Yellow": "Oro",
+      "Blue": "Azul",
+      "Purple": "Morado",
+      "Orange": "Naranja",
+      "Red": "Rojo",
+      "Green": "Verde"
+    },
+    "Gallery": "Galería",
+    "Also meet": "Ver también",
+    "Tracks": "Canciones:",
+    "Original series": "Series originales",
+    "Watch on Youtube": "Ver en YouTube",
+    "Watch all episodes": "Ver todos los episodios",
+    "Footer": {
+      "Description": "Alphaz TV+ es un website hecho por ALPHAZ brasileños para ALPHAZ, dedicado a reunir y compartir el trabajo de XG. Todo el contenido presentado en el website respeta los derechos de autor de XGALX.",
+      "XG Accounts": "Canales oficiales de XG",
+      "Contact": "Contacto"
+    },
+    "Realities": {
+      "XG Three Meals a Day": "Las chicas deben preparar tres comidas todos los días. Para lograrlo, participan de una prueba que determinará los ingredientes tendrán disponibles al resto del día.",
+      "X OR GO": "Las chicas participan de pruebas que determinarán las experiencas que cada una tendrá que vivir en este viaje por el campo de Corea del Sur."
+    },
+    "Series": {
+      "XTRA XTRA": "Un documental de 9 episodios que acompaña la creación del grupo XG, desde el proceso de selección, entrenamientos, ensayos y conflictos internos."
+    },
+    "AboutPage": {
+      "About XG": "Acerca de XG",
+      "XG-description": "XG es un grupo femenino japonés formado por XGALX, filial de AVEX. El grupo tiene siete integrantes: Jurin, Chisa, Hinata, Harvey, Juria, Maya y Cocona. Debutaron el 18 de marzo de 2022, con el lanzamiento del sencillo digital \"Tippy Toes.\". El grupo es conocido por sus complejas coreografías y habilidades de danza, así como por sus canciones pop y R&B con letras profundas.",
+      "About website": "Acerca del website",
+      "Website-description": "Alphaz TV+ es un website hecho por ALPHAZ brasileños, para ayudar ALPHAZ a encontrar contenido más fácilmente. ¡NO SOMOS FANSUB! Sabemos la dificultad en encontrar videos y materiales dispersos, así que creamos este espacio para facilitarlo. Aquí serás redirigido directamente a los links originales de los contenidos."
+    },
+    "Playlist": {
+      "Latests": "Más recientes",
+      "Latests videos from XG Official Channel": "Los videos más recientes del canal oficial de XG",
+      "MVs": "MVs",
+      "A list with all the XGs music videos already release": "Lista de todas las canciones lanzadas por XG con MVs",
+      "Shows": "Shows",
+      "Full set of some XG shows worldwide": "Algunos de los shows completos de XG alrededor del mundo",
+      "Behind the scenes": "Detrás de cámaras",
+      "Behind the scenes of XG MVs and photoshoots": "Detrás de cámaras de los MVs y sesiones de fotos",
+      "Specials": "Contenido especial",
+      "Special videos of anniversary and some apresentation in partner channels": "Videos especiales de aniversarios y algunas presentaciones en canales asociados",
+      "DANCE PRACTICE": "DANCE PRACTICE",
+      "All the official dance practice of their songs": "Todos los dance practices oficiales ya lanzados",
+      "TV Shows": "Presentaciones en TV",
+      "Some performances in korean tv shows": "Presentaciones en programas de TV coreanos",
+      "Interviews": "Entrevistas",
+      "Some of the interviews the girls give to diferent channels around the world": "Algunas de las entrevistas de las chicas para diferentes canales alrededor del mundo",
+      "XG DAYS": "XG DAYS",
+      "XG official vlog videos of they daily lives": "Vlog oficial de XG sobre su vida diaria",
+      "XTRA XG": "XTRA XG",
+      "XG official vlog videos of they shows, musics and commercials": "Vlog oficial de XG sobre shows, canciones y comerciales",
+      "Videos": "Videos",
+      "All the videos from the playlist": "Todos los videos de la playlist",
+      "All the solo videos from the official XG channel": "Todos los videos solo de la integrante en el canal oficial de XG",
+      "Covers": "Covers",
+      "Some solo covers apresentations in shows": "Algunas presentaciones y covers solo en shows",
+      "Fancam": "Fancam",
+      "Fancam footage from some tv performances": "Grabación centrada en la integrante durante presentaciones en canales de TV"
+    }
+  }
+}

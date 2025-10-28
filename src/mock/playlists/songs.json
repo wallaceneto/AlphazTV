@@ -1,16 +1,19 @@
 [
   {
     "name": "MVs",
+    "cachekey": "mvs",
     "description": "A list with all the XGs music videos already release",
     "id": "PLhwNrrS5i4uTqvtj70RrsKsSVrQTxvUx9"
   },
   {
     "name": "DANCE PRACTICE",
+    "cachekey": "dancepractice",
     "description": "All the official dance practice of their songs",
     "id": "PLEumJlozVlzskTvpl0KJJ7XXzrpHtaX20"
   },
   {
     "name": "TV Shows",
+    "cachekey": "tvshows",
     "description": "Some performances in korean tv shows",
     "id": "PLEumJlozVlzu12FwPUbc0RG-pHcRLOdxJ"
   }

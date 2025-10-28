@@ -1,6 +1,6 @@
 .container {
   background-color: var(--text-primary-color);
-  padding-left: 60px;
+  padding-left: var(--default-margin-left);
   padding-top: 40px;
   padding-bottom: 95px;
   display: flex;

@@ -4,7 +4,7 @@
 
 .header {
   padding-top: 50px;
-  padding-inline: 60px;
+  padding-inline: var(--default-margin-left);
   display: flex;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .descriptionContainer {
-  padding-inline: 60px;
+  padding-inline: var(--default-margin-left);
   padding-block: 40px;
 }
 

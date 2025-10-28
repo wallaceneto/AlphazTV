@@ -1,26 +1,31 @@
 [
   {
     "name": "Latests",
+    "cachekey": "latests",
     "description": "Latests videos from XG Official Channel",
     "id": "UU12HMtO5MYph9dCZZ7yygng"
   },
   {
     "name": "MVs",
+    "cachekey": "mvs",
     "description": "A list with all the XGs music videos already release",
     "id": "PLhwNrrS5i4uTqvtj70RrsKsSVrQTxvUx9"
   },
   {
     "name": "Shows",
+    "cachekey": "shows",
     "description": "Full set of some XG shows worldwide",
     "id": "PLEumJlozVlzt52cpk32Ch7_hme4rqNnkC"
   },
   {
     "name": "Behind the scenes",
+    "cachekey": "behindthescenes",
     "description": "Behind the scenes of XG MVs and photoshoots",
     "id": "PLEumJlozVlzvj_Ssn9xVOimaTuZWJJTLL"
   },
   {
     "name": "Specials",
+    "cachekey": "specials",
     "description": "Special videos of anniversary and some apresentation in partner channels",
     "id": "PLEumJlozVlzsK5Yf5aXM4_plPj94daA4e"
   }

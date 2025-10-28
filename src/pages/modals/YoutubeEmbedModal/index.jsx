@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Modal } from '@mui/material'
 import Close from '@mui/icons-material/Close'
 import { useTranslation } from 'react-i18next'
@@ -6,21 +6,6 @@ import styles from './YoutubeEmbedModal.module.css'
 
 export default function YoutubeEmbedModal({ openModal, setOpenModal, videoLink }) {
   const { t } = useTranslation()
-  const [mobileMode, setMobileMode] = useState(false);
-
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth < 767) {
-        setMobileMode(true)
-      } else {
-        setMobileMode(false)
-      }
-    }
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [])
 
   return (
     <Modal
@@ -29,16 +14,16 @@ export default function YoutubeEmbedModal({ openModal, setOpenModal, videoLink }
     >
       <div className={styles.container}>
         <div className={styles.content}>
-          <iframe
-            width={mobileMode ? "470" : "900"}
-            height={mobileMode ? "263" : "506"}
-            src={`https://www.youtube.com/embed/${videoLink}`}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          />
+          <div className={styles.videoContainer}>
+            <iframe
+              src={`https://www.youtube.com/embed/${videoLink}`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
 
           <button className={styles.textButton} onClick={() => setOpenModal(false)}>
             <Close className={styles.icon} fontSize='large' />

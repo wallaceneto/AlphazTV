@@ -1,16 +1,19 @@
 [
   {
     "name": "Interviews",
+    "cachekey": "interviews",
     "description": "Some of the interviews the girls give to diferent channels around the world",
     "id": "PLEumJlozVlzvUey97swBvujcj9MKDrqOc"
   },
   {
     "name": "XG DAYS",
+    "cachekey": "xgdays",
     "description": "XG official vlog videos of they daily lives",
     "id": "PLhwNrrS5i4uRWqaHaGpQdECFJzm4d1muP"
   },
   {
     "name": "XTRA XG",
+    "cachekey": "xtraxg",
     "description": "XG official vlog videos of they shows, musics and commercials",
     "id": "PLhwNrrS5i4uS3hlrqq_-I0t6tPrF7JWNe"
   }

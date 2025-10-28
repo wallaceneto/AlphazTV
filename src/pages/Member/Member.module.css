@@ -3,7 +3,12 @@
 }
 
 .content {
-  padding-left: 60px;
+  padding-left: var(--default-margin-left);
+  padding-bottom: 60px;
+}
+
+.contentMobile {
+  padding-left: 20px;
   padding-bottom: 60px;
 }
 
@@ -47,6 +52,7 @@
 .galleryContainer {
   margin-bottom: 40px;
   margin-top: 20px;
+  margin-left: var(--negative-margin-left);
 }
 
 .linksContainer {

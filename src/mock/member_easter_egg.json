@@ -1,0 +1,20 @@
+{
+  "id": "7",
+  "name": "jakops",
+  "iconName": "Jakops ♾️",
+  "fullName": "Simon Jakops",
+  "citation": "On them two letters then follow like Simon says",
+  "curiosities": [
+    "Date of Birth: 19860529",
+    "Hometown: Seattle, Washington, USA"
+  ],
+  "galleryPath": "/members/jakops/gallery",
+  "galleryLength": 8,
+  "playlists": [
+    {
+      "id": "PL1FmfWiTRu8NKKjq-Uni8GXXyhHmCGHBf",
+      "name": "Videos",
+      "description": "All the videos from the playlist"
+    }
+  ]
+}

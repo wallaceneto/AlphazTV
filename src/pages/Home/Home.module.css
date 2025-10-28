@@ -1,5 +1,5 @@
 .content {
-  padding-left: 40px;
+  padding-left: var(--default-margin-left);
 }
 
 .firstCarousel {
@@ -9,10 +9,4 @@
 
 .carousel {
   margin-bottom: 40px;
-}
-
-.memberCarousel {
-  display: flex;
-  margin-bottom: 55px;
-  gap: 30px;
 }

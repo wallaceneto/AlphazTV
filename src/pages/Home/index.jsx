@@ -14,11 +14,11 @@ export default function Home() {
           <div key={playlist.id}>
             {index === 0 ?
               <div className={styles.firstCarousel}>
-                <VideoCarousel playlist={homePlaylists[index]} isFirstCarousel />
+                <VideoCarousel playlist={playlist} isFirstCarousel cacheKey={playlist.cachekey} />
               </div>
               :
               <div className={styles.carousel}>
-                <VideoCarousel playlist={homePlaylists[index]} />
+                <VideoCarousel playlist={playlist} cacheKey={playlist.cachekey} />
               </div>
             }
             {index === 1 &&
