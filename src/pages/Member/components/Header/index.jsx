@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import styles from './Header.module.css'
 import Button from '../../../../components/Button'
 
-export const Header = ({ title, signature }) => {
+export const Header = ({ title }) => {
   const navigation = useNavigate()
 
   return (
@@ -13,14 +13,6 @@ export const Header = ({ title, signature }) => {
         <ArrowIcon className={styles.icon} fontSize='large' />
       </Button>
       <h1 className={styles.text}>{title}</h1>
-
-      {signature &&
-        <img
-          src={signature + "-light.png"}
-          className={styles.signature}
-          alt={`Assinatura da integrante`}
-        />
-      }
     </div>
   )
 }

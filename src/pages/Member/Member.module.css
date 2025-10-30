@@ -16,6 +16,10 @@
   display: flex;
 }
 
+.imageContainer {
+  position: relative;
+}
+
 .cover {
   height: 507px;
   border-radius: 10px;
@@ -28,9 +32,26 @@
   margin-top: -70px;
 }
 
+.signature {
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  left: 0;
+  top: 260px;
+}
+
+.signatureMobile {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  right: 20px;
+  bottom: 0px;
+}
+
 .textContainer {
   margin: 40px;
   overflow: auto;
+  width: 100%;
 }
 
 .title {
