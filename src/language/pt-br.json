@@ -30,6 +30,15 @@
       "Red": "Vermelho",
       "Green": "Verde"
     },
+    "Zodiac Sign": "Signo:",
+    "Zodiac": {
+      "Gemini": "Gêmeos",
+      "Capricorn": "Capricórnio",
+      "Sagitarius": "Sagitário",
+      "Lion": "Leão"
+    },
+    "Curiosities": "Curiosities:",
+    "Curiositie": {},
     "Gallery": "Galeria",
     "Also meet": "Ver também",
     "Tracks": "Faixas:",

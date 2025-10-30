@@ -35,7 +35,7 @@ export default function Member() {
 
   return (
     <div className={styles.container}>
-      <Header title={`This is ${member.iconName}`} />
+      <Header title={`This is ${member.iconName}`} signature={member.signature} />
 
       <div className={mobileMode ? styles.contentMobile : styles.content}>
         <div className={!mobileMode ? styles.infoContainer : undefined}>
@@ -47,19 +47,29 @@ export default function Member() {
           <span className={styles.textContainer}>
             <div>
               <h1 className={styles.title}>{member.fullName}</h1>
-              <p className={styles.subtitle}>"{member.citation}"</p>
             </div>
 
             <div>
-              {member.curiosities.map((curiositie, index) =>
+              {member.data.map((item, index) =>
                 <p key={index} className={styles.text}>
                   {index === 0
-                    ? translateBirthDate(curiositie, t, i18n)
-                    : translateCuriosites(curiositie, t)
+                    ? translateBirthDate(item, t, i18n)
+                    : translateCuriosites(item, t)
                   }
                 </p>
               )}
             </div>
+
+            {member.curiosities &&
+              <div>
+                <p className={styles.subtitle}>Curiosidades:</p>
+                {member.curiosities.map((curiositie, index) =>
+                  <p key={index} className={styles.text}>
+                    - {curiositie}
+                  </p>
+                )}
+              </div>
+            }
           </span>
         </div>
 
