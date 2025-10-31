@@ -3,12 +3,19 @@
     "id": "0",
     "name": "jurin",
     "iconName": "Jurin 🦋",
-    "fullName": "Asaya Jurin",
-    "citation": "J-U-R-I-N Looks deceiving what i am",
-    "curiosities": [
+    "fullName": "Asaya Jurin (朝谷樹林)",
+    "data": [
       "Date of Birth: 20020619",
       "Hometown: Chigasaki, Kanagawa, Japan",
-      "Color: Silver"
+      "Color: Silver",
+      "Zodiac Sign: Gemini"
+    ],
+    "curiosities": [
+      "Jurin começou a praticar snowboarding com 3 anos de idade, e se tornou atleta profissional do esporte aos 12 anos, ganhando diversos campeonatos.",
+      "Aos 15 anos, Jurin atuava como modelo. Ela modelou para marcas como Drop Tokyo e Popteen.",
+      "O nome de Jurin veio do personagem 'PomPomPurin', dado por sua irmã.",
+      "Jurin gosta de andar de skate e praticar surfe. Seu pai também é surfista.",
+      "Jurin gosta de escutar pop alternativo, R&B e artistas japoneses. Alguns dos seus artistas favoritos são Willow Smith e TLC. "
     ],
     "galleryPath": "/members/jurin/gallery",
     "galleryLength": 11,
@@ -34,12 +41,19 @@
     "id": "1",
     "name": "chisa",
     "iconName": "Chisa ☀️",
-    "fullName": "Kondou Chisa",
-    "citation": "Reach for the stars when you follow the light",
-    "curiosities": [
+    "fullName": "Kondou Chisa (今度 ちさ)",
+    "data": [
       "Date of Birth: 20020117",
       "Hometown: Osaka, Japan",
-      "Color: Yellow"
+      "Color: Yellow",
+      "Zodiac Sign: Capricorn"
+    ],
+    "curiosities": [
+      "Além dos vocais potentes, Chisa também toca violão.",
+      "Seus hobbies favoritos incluem cantar, maquiar e tirar selfies. Ela também participa da maquiagem das outras integrantes ocasionalmente.",
+      "Chisa participou de competições musicais, e chegou a vencer o “Tokyo Girls Audition”. Ela mencionou a artista Namie Amuro como o motivo para começar a cantar.",
+      "Chisa adora cozinhar, e seu prato favorito é spaghetti.",
+      "Chisa foi a primeira integrante do grupo a fazer uma tatuagem."
     ],
     "galleryPath": "/members/chisa/gallery",
     "galleryLength": 11,
@@ -65,12 +79,19 @@
     "id": "2",
     "name": "hinata",
     "iconName": "Hinata 💎",
-    "fullName": "Sohara Hinata",
-    "citation": "Take me to the other side",
-    "curiosities": [
+    "fullName": "Sohara Hinata (宗原ひなた)",
+    "data": [
       "Date of Birth: 20020611",
       "Hometown: Nagooya, Aichi, Japan",
-      "Color: Blue"
+      "Color: Blue",
+      "Zodiac Sign: Gemini"
+    ],
+    "curiosities": [
+      "Seus hobbies incluem desenhar bem, assistir animes e ler mangás. Alguns dos seus animes favoritos são Haikyu!! e Your Lie in April.",
+      "Antes de se tornar trainee, Hinata participou apenas de um curso de dança local. Ela foi aconselhada pela equipe da escola a participar das audições para o XG.",
+      "Alguns dos seus artistas favoritos são Kehlani e SZA.",
+      "Hinata tem avós sul-coreanos.",
+      "Hinata costumava jogar vôlei."
     ],
     "galleryPath": "/members/hinata/gallery",
     "galleryLength": 11,
@@ -96,12 +117,19 @@
     "id": "3",
     "name": "harvey",
     "iconName": "Harvey 🦄",
-    "fullName": "Amy Jannet Harvey",
-    "citation": "Amy got a flow, send a penny for your thoughts, no gimmicks",
-    "curiosities": [
+    "fullName": "Amy Jannet Harvey (ハーヴィー瑛美)",
+    "data": [
       "Date of Birth: 20021218",
       "Hometown: Tokyo, Japan",
-      "Color: Purple"
+      "Color: Purple",
+      "Zodiac Sign: Sagitarius"
+    ],
+    "curiosities": [
+      "Harvey morou na Austrália quando era mais nova. Sua mãe é japonesa e o seu pai é australiano.",
+      "Antes de se tornar trainee da XGALX, Harvey trabalhava ativamente como modelo, chegando a contracenar com JURIN em comerciais e a trabalhar para marcas como VOGUE GIRL.",
+      "Um dos seus hobbies é fotografia.",
+      "Harvey tem cachorros e um periquito de estimação. Ela descreve seus animais de estimação como irmãos, já que ela é filha única.",
+      "Seu ícone é Michael Jackson."
     ],
     "galleryPath": "/members/harvey/gallery",
     "galleryLength": 11,
@@ -127,12 +155,19 @@
     "id": "4",
     "name": "juria",
     "iconName": "Juria 🐿️",
-    "fullName": "Ueda Juria",
-    "citation": "Levitate up to the sky",
-    "curiosities": [
+    "fullName": "Ueda Juria (上田ジュリア)",
+    "data": [
       "Date of Birth: 20041128",
       "Hometown: Osaka, Japan",
-      "Color: Orange"
+      "Color: Orange",
+      "Zodiac Sign: Sagitarius"
+    ],
+    "curiosities": [
+      "Juria já participou como idol de uma dupla local e do grupo feminino juvenil: Amorecarina.",
+      "Ela tem medo de água e de montanhas-russas.",
+      "Sua mãe ama música e foi sua maior inspiração para começar a cantar.",
+      "Por se cobrar muito, Juria frequentemente se sente frustrada e ansiosa quando as coisas não vão como o planejado.",
+      "Alguns dos seus hobbies são cantar, dançar e desenhar. "
     ],
     "galleryPath": "/members/juria/gallery",
     "galleryLength": 11,
@@ -157,13 +192,20 @@
   {
     "id": "5",
     "name": "maya",
-    "iconName": "Maya 🐶",
-    "fullName": "Kawachi Maya",
-    "citation": "Maya be on the come up while they goin' down down down bad",
-    "curiosities": [
+    "iconName": "Maya 🔥",
+    "fullName": "Kawachi Maya (河地マヤ)",
+    "data": [
       "Date of Birth: 20050810",
       "Hometown: Tokyo, Japan",
-      "Color: Red"
+      "Color: Red",
+      "Zodiac Sign: Lion"
+    ],
+    "curiosities": [
+      "Maya estudou em um colégio internacional no Japão, onde aprendeu a falar inglês fluentemente. Das integrantes, ela é a que possui maior fluência no idioma.",
+      "Maya gosta de colecionar adesivos e de assistir Modern Family.",
+      "Maya tem medo de aves.",
+      "Seu emoji anterior era um cachorro, mudando para o emoji do fogo em 2025.",
+      "Maya não gosta de tomates."
     ],
     "galleryPath": "/members/maya/gallery",
     "galleryLength": 11,
@@ -189,12 +231,19 @@
     "id": "6",
     "name": "cocona",
     "iconName": "Cocona 🍄",
-    "fullName": "Akiyama Cocona",
-    "citation": "C to the O-C-O-N-A be poppin' on them 808s",
-    "curiosities": [
+    "fullName": "Akiyama Cocona (秋山心響)",
+    "data": [
       "Date of Birth: 20051206",
       "Hometown: Kanto, Japan",
-      "Color: Green"
+      "Color: Green",
+      "Zodiac Sign: Sagitarius"
+    ],
+    "curiosities": [
+      "Além do emoji de cogumelo como seu representante, Cocona também utiliza o emoji de dragão em seus textos.",
+      "Cocona tem piercings na orelha e uma tatuagem no pulso direito, escrito “Dragão” em japonês.",
+      "Em 2024, Cocona viralizou nas redes sociais por raspar todo o seu cabelo durante as gravações do clipe de WOKE UP.",
+      "Alguns dos seus hobbies incluem meditar e escrever no seu diário. Ela constantemente reflete sobre a artista que almeja ser e a influência que ela gostaria de ter sobre os outros com sua música. Seu ícone musical é Lauryn Hill.",
+      "Cocona venceu a competição musical Kira Challe 2018. Ela apresentou a música ‘Haru Haru’ do BIGBANG, grupo do qual é fã."
     ],
     "galleryPath": "/members/cocona/gallery",
     "galleryLength": 11,

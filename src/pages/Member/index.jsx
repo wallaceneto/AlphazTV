@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import styles from './Member.module.css'
 import { translateBirthDate, translateCuriosites } from './lib'
+import { ThemeContext } from '../../contexts'
 import { Header } from './components/Header'
 import Footer from '../../components/Footer'
 import VideoCarousel from '../../components/VideoCarousel'
@@ -13,6 +14,7 @@ import jakops from '../../mock/member_easter_egg.json';
 
 export default function Member() {
   const { t } = useTranslation();
+  const { theme } = useContext(ThemeContext);
   const { i18n } = useTranslation('Home');
   let { memberId } = useParams();
   const member = memberId < 7 ? members[Number(memberId)] : jakops;
@@ -39,27 +41,47 @@ export default function Member() {
 
       <div className={mobileMode ? styles.contentMobile : styles.content}>
         <div className={!mobileMode ? styles.infoContainer : undefined}>
-          <img
-            src={`/members/${member.name}/cover.jpg`}
-            className={mobileMode ? styles.coverMobile : styles.cover}
-            alt={member.name}
-          />
+          <div className={styles.imageContainer}>
+            {member.name !== 'jakops' &&
+              <img
+                src={`/members/${member.name}/signature-${mobileMode ? theme : 'dark'}.png`}
+                className={mobileMode ? styles.signatureMobile : styles.signature}
+                alt={`Assinatura da integrante`}
+              />
+            }
+            <img
+              src={`/members/${member.name}/cover.jpg`}
+              className={mobileMode ? styles.coverMobile : styles.cover}
+              alt={member.name}
+            />
+          </div>
+
           <span className={styles.textContainer}>
             <div>
               <h1 className={styles.title}>{member.fullName}</h1>
-              <p className={styles.subtitle}>"{member.citation}"</p>
             </div>
 
             <div>
-              {member.curiosities.map((curiositie, index) =>
+              {member.data.map((item, index) =>
                 <p key={index} className={styles.text}>
                   {index === 0
-                    ? translateBirthDate(curiositie, t, i18n)
-                    : translateCuriosites(curiositie, t)
+                    ? translateBirthDate(item, t, i18n)
+                    : translateCuriosites(item, t)
                   }
                 </p>
               )}
             </div>
+
+            {member.curiosities &&
+              <div>
+                <p className={styles.subtitle}>Curiosidades:</p>
+                {member.curiosities.map((curiositie, index) =>
+                  <p key={index} className={styles.text}>
+                    - {curiositie}
+                  </p>
+                )}
+              </div>
+            }
           </span>
         </div>
 

@@ -30,6 +30,15 @@
       "Red": "Red",
       "Green": "Green"
     },
+    "Zodiac Sign": "Zodiac Sign:",
+    "Zodiac": {
+      "Gemini": "Gemini",
+      "Capricorn": "Capricorn",
+      "Sagitarius": "Sagitarius",
+      "Lion": "Lion"
+    },
+    "Curiosities": "Curiosities:",
+    "Curiositie": {},
     "Gallery": "Gallery",
     "Also meet": "Also meet",
     "Tracks": "Tracks:",

@@ -1,10 +1,21 @@
 const translateCuriosites = (fullText, t) => {
   const curiositie = fullText.split(': ')
-
   const label = curiositie[0];
-  const value = label === 'Hometown' ? `Cities.${curiositie[1]}` : `Colors.${curiositie[1]}`;
 
-  return `${t(label)} ${t(value)}`
+  let translatorLabel = "";
+  switch (label) {
+    case "Hometown":
+      translatorLabel = "Cities.";
+      break;
+    case "Color":
+      translatorLabel = "Colors.";
+      break;
+    case "Zodiac Sign":
+      translatorLabel = "Zodiac.";
+      break;
+  }
+
+  return `${t(label)} ${t(translatorLabel + curiositie[1])}`
 }
 
 export { translateCuriosites }
