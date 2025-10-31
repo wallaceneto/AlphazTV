@@ -64,6 +64,8 @@ const PhotoGallery = ({ galleryPath, galleryLength }) => {
         setOpenModal={setModalVisibility}
         galleryLink={galleryPath}
         index={currentIndex}
+        setIndex={setCurrentIndex}
+        galleryLenght={gallery.length - 1}
       />
     </>
   )
