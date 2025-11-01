@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight, faLink, faDownload } from "@fortawesome/free-solid-svg-icons"
 import styles from './GalleryViewer.module.css'
-import { nextImage, prevImage } from './lib'
+import { animationVariants, nextImage, prevImage } from './lib'
 import Button from '../../../components/Button'
 import { MOBILE_WIDTH_BREAKPOINT } from '../../../global/utils'
 
@@ -19,9 +19,8 @@ export default function GalleryViewer({ openModal, setOpenModal, galleryLink, in
   //swipe logic
   const minSwipeDistance = 50;
   const [touchStartX, setTouchStartX] = useState(0);
-  const [touchEndX, setTouchEndX] = useState(0);
-
   const onTouchStart = (e) => setTouchStartX(e.touches[0].clientX);
+  const [touchEndX, setTouchEndX] = useState(0);
   const onTouchMove = (e) => setTouchEndX(e.touches[0].clientX);
   const onTouchEnd = () => {
     const distance = touchStartX - touchEndX;
@@ -29,18 +28,6 @@ export default function GalleryViewer({ openModal, setOpenModal, galleryLink, in
     else if (distance < -minSwipeDistance) prevImage(index, setIndex, setDirection);
   };
 
-  // Animation variants
-  const variants = {
-    enter: (direction) => ({
-      x: direction > 0 ? 150 : -150,
-      opacity: 0,
-    }),
-    center: { x: 0, opacity: 1 },
-    exit: (direction) => ({
-      x: direction > 0 ? -150 : 150,
-      opacity: 0,
-    }),
-  };
 
   useEffect(() => {
     function handleResize() {
@@ -101,7 +88,7 @@ export default function GalleryViewer({ openModal, setOpenModal, galleryLink, in
               src={`${galleryLink}/${index}.jpg`}
               alt={galleryLink}
               className={styles.image} custom={direction}
-              variants={variants}
+              variants={animationVariants}
               initial="enter"
               animate="center"
               exit="exit"
@@ -119,7 +106,7 @@ export default function GalleryViewer({ openModal, setOpenModal, galleryLink, in
                 className={styles.buttonIcon}
               />
               {!mobileMode &&
-                <p className={styles.buttonText}>Baixar</p>
+                <p className={styles.buttonText}>{t('Download')}</p>
               }
             </a>
 
@@ -129,7 +116,7 @@ export default function GalleryViewer({ openModal, setOpenModal, galleryLink, in
                 className={styles.buttonIcon}
               />
               {!mobileMode &&
-                <p className={styles.buttonText}>Abrir link</p>
+                <p className={styles.buttonText}>{t('Open link')}</p>
               }
             </a>
           </div>
