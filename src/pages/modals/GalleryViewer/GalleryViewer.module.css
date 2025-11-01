@@ -36,15 +36,6 @@
   max-width: 90vw;
 }
 
-.viewport {
-  position: relative;
-  overflow: hidden;
-}
-
-.emblaContainer {
-  display: flex;
-}
-
 .imageContainer {
   position: relative;
   width: 100%;

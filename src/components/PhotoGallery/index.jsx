@@ -65,7 +65,7 @@ const PhotoGallery = ({ galleryPath, galleryLength }) => {
         galleryLink={galleryPath}
         index={currentIndex}
         setIndex={setCurrentIndex}
-        galleryLenght={gallery.length - 1}
+        galleryLength={gallery.length - 1}
       />
     </>
   )
