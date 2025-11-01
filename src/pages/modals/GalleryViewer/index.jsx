@@ -3,7 +3,7 @@ import { Modal } from '@mui/material'
 import Close from '@mui/icons-material/Close'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
+import { faChevronLeft, faChevronRight, faLink, faDownload } from "@fortawesome/free-solid-svg-icons"
 import styles from './GalleryViewer.module.css'
 import { nextImage, prevImage } from './lib'
 import Button from '../../../components/Button'
@@ -12,6 +12,15 @@ import { MOBILE_WIDTH_BREAKPOINT } from '../../../global/utils'
 export default function GalleryViewer({ openModal, setOpenModal, galleryLink, index, setIndex, galleryLenght }) {
   const { t } = useTranslation();
   const [mobileMode, setMobileMode] = useState(false);
+  const [gallery, setGallery] = useState([]);
+
+  const fillGallery = () => {
+    let galleryList = []
+    for (let index = 0; index < galleryLenght; index++) {
+      galleryList.push(`${galleryLink}/${index}.jpg`);
+    }
+    return galleryList;
+  }
 
   useEffect(() => {
     function handleResize() {
@@ -25,6 +34,8 @@ export default function GalleryViewer({ openModal, setOpenModal, galleryLink, in
     window.scrollTo(0, 0);
     handleResize();
     window.addEventListener("resize", handleResize);
+
+    setGallery(fillGallery());
     return () => window.removeEventListener("resize", handleResize);
   }, [])
 
@@ -41,13 +52,13 @@ export default function GalleryViewer({ openModal, setOpenModal, galleryLink, in
           {mobileMode ?
             <FontAwesomeIcon
               icon={faChevronLeft}
-              className={styles.buttonIconMobile}
+              className={styles.slideButtonIconMobile}
             />
             :
-            <div className={styles.button}>
+            <div className={styles.slideButton}>
               <FontAwesomeIcon
                 icon={faChevronLeft}
-                className={styles.buttonIcon}
+                className={styles.slideButtonIcon}
               />
             </div>
           }
@@ -61,13 +72,33 @@ export default function GalleryViewer({ openModal, setOpenModal, galleryLink, in
             </p>
           </button>
 
-          <a target='_blank' href={`${galleryLink}/${index}.jpg`} className={styles.imageContainer}>
-            <img
-              src={`${galleryLink}/${index}.jpg`}
-              alt={galleryLink}
-              className={styles.image}
-            />
-          </a>
+          <img
+            src={`${galleryLink}/${index}.jpg`}
+            alt={galleryLink}
+            className={styles.image}
+          />
+
+          <div className={styles.buttonsContainer}>
+            <a target='_blank' href={`${galleryLink}/${index}.jpg`} className={styles.button} download>
+              <FontAwesomeIcon
+                icon={faDownload}
+                className={styles.buttonIcon}
+              />
+              {!mobileMode &&
+                <p className={styles.buttonText}>Baixar</p>
+              }
+            </a>
+
+            <a target='_blank' href={`${galleryLink}/${index}.jpg`} className={styles.button}>
+              <FontAwesomeIcon
+                icon={faLink}
+                className={styles.buttonIcon}
+              />
+              {!mobileMode &&
+                <p className={styles.buttonText}>Abrir link</p>
+              }
+            </a>
+          </div>
         </div>
 
         <Button
@@ -77,13 +108,13 @@ export default function GalleryViewer({ openModal, setOpenModal, galleryLink, in
           {mobileMode ?
             <FontAwesomeIcon
               icon={faChevronRight}
-              className={styles.buttonIconMobile}
+              className={styles.slideButtonIconMobile}
             />
             :
-            <div className={styles.button}>
+            <div className={styles.slideButton}>
               <FontAwesomeIcon
                 icon={faChevronRight}
-                className={styles.buttonIcon}
+                className={styles.slideButtonIcon}
               />
             </div>
           }
