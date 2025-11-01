@@ -1,5 +1,6 @@
-const prevImage = (index, setIndex) => {
+const prevImage = (index, setIndex, setDirection) => {
   if (index > 0) {
+    setDirection(-1);
     setIndex(index - 1);
   }
 }
