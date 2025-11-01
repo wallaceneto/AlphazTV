@@ -69,12 +69,7 @@ export default function GalleryViewer({ openModal, setOpenModal, galleryLink, in
           }
         </Button>
 
-        <div
-          className={styles.content}
-          onTouchStart={onTouchStart}
-          onTouchMove={onTouchMove}
-          onTouchEnd={onTouchEnd}
-        >
+        <div className={styles.content}>
           <button className={styles.textButton} onClick={() => setOpenModal(false)}>
             <Close className={styles.icon} fontSize='large' />
             <p className={styles.text}>
@@ -82,22 +77,28 @@ export default function GalleryViewer({ openModal, setOpenModal, galleryLink, in
             </p>
           </button>
 
-          <AnimatePresence mode="wait" custom={direction}>
-            <motion.img
-              key={index}
-              src={`${galleryLink}/${index}.jpg`}
-              alt={galleryLink}
-              className={styles.image} custom={direction}
-              variants={animationVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{
-                x: { type: 'tween', stiffness: 300, damping: 30 },
-                opacity: { duration: 0.1 },
-              }}
-            />
-          </AnimatePresence>
+          <div
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
+          >
+            <AnimatePresence mode="wait" custom={direction}>
+              <motion.img
+                key={index}
+                src={`${galleryLink}/${index}.jpg`}
+                alt={galleryLink}
+                className={styles.image} custom={direction}
+                variants={animationVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{
+                  x: { type: 'tween', stiffness: 300, damping: 30 },
+                  opacity: { duration: 0.1 },
+                }}
+              />
+            </AnimatePresence>
+          </div>
 
           <div className={styles.buttonsContainer}>
             <a target='_blank' href={`${galleryLink}/${index}.jpg`} className={styles.button} download>
@@ -121,6 +122,7 @@ export default function GalleryViewer({ openModal, setOpenModal, galleryLink, in
             </a>
           </div>
         </div>
+
 
         <Button
           onClick={() => nextImage(index, setIndex, galleryLength, setDirection)}
