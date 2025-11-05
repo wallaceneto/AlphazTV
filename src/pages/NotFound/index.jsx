@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import styles from './NotFound.module.css'
 import { HomepageLayout } from '../../layout'
-
-import notFoundGif from '/assets/notfound.gif'
 import Button from '../../components/Button'
 import { MOBILE_WIDTH_BREAKPOINT } from '../../global/utils';
+
+import notFoundGif from '/assets/notfound.gif'
 
 export default function NotFound() {
   const navigation = useNavigate();
