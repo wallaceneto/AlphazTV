@@ -77,7 +77,7 @@ export default function Member() {
                 <p className={styles.subtitle}>Curiosidades:</p>
                 {member.curiosities.map((curiositie, index) =>
                   <p key={index} className={styles.text}>
-                    - {curiositie}
+                    - {t("MemberCuriosities." + curiositie)}
                   </p>
                 )}
               </div>
