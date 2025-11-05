@@ -45,7 +45,7 @@ export default function NetlifyRedirect() {
 
           <div className={styles.textButton}>
             <p className={styles.text}>{t("Redirect.Check it out")}</p>
-            <a href='https://alphaztvplus.pages.dev/' className={styles.button}>
+            <a href='https://www.alphaztvplus.com.br' className={styles.button}>
               <h2 className={styles.link}>www.alphaztvplus.com.br</h2>
             </a>
           </div>
