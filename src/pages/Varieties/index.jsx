@@ -37,6 +37,10 @@ export default function Varieties() {
         </div>
 
         <div className={styles.contentDiv}>
+          <VideoCarousel playlist={varietiesPlaylists[1]} cacheKey={varietiesPlaylists[1].cachekey} />
+        </div>
+
+        <div className={styles.contentDiv}>
           <h2 className={styles.title}>{t("Reality show")}</h2>
           <div className={styles.realityShowContainer}>
             {realityShows.map((show, index) =>
@@ -71,7 +75,7 @@ export default function Varieties() {
         </div>
 
         {varietiesPlaylists.map((playlist, index) =>
-          index !== 0 &&
+          index !== 0 && index !== 1 &&
           <div key={playlist.id} className={styles.contentDiv}>
             <VideoCarousel playlist={playlist} cacheKey={playlist.cachekey} />
           </div>
