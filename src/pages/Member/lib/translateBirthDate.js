@@ -4,10 +4,6 @@ import 'moment/locale/es'
 
 const translateBirthDate = (birthdate, t, i18n) => {
   const birth = birthdate.split(':')
-
-  console.log(i18n.language);
-
-
   switch (i18n.language) {
     case 'en-US':
       moment.locale('en')

@@ -1,0 +1,105 @@
+.container {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.slideButton {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 80px;
+  margin-inline: 20px;
+  pointer-events: all;
+}
+
+.slideButtonIcon {
+  color: #000;
+  font-size: x-large;
+}
+
+.slideButtonIconMobile {
+  color: #FFF;
+  font-size: x-large;
+  margin-inline: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 90vw;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.textButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.icon {
+  color: #FFF;
+}
+
+.text {
+  color: #FFF;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  margin-block: 8px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #FFF;
+  border-radius: 8px;
+  padding-inline: 20px;
+  padding-block: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttonIcon {
+  color: #FFF;
+  font-size: large;
+}
+
+.buttonText {
+  color: #FFF;
+  font-size: 20px;
+}

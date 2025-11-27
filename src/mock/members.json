@@ -3,12 +3,19 @@
     "id": "0",
     "name": "jurin",
     "iconName": "Jurin 🦋",
-    "fullName": "Asaya Jurin",
-    "citation": "J-U-R-I-N Looks deceiving what i am",
-    "curiosities": [
+    "fullName": "Asaya Jurin (朝谷樹林)",
+    "data": [
       "Date of Birth: 20020619",
       "Hometown: Chigasaki, Kanagawa, Japan",
-      "Color: Silver"
+      "Color: Silver",
+      "Zodiac Sign: Gemini"
+    ],
+    "curiosities": [
+      "Jurin started snowboarding at the age of 3 and became a professional athlete at 12, winning several championships.",
+      "By fifteen, she was working as a model, collaborating with brands such as Drop Tokyo and Popteen.",
+      "Jurin enjoys skateboarding and surfing, a hobby she shares with her father, who is also a surfer.",
+      "She likes listening to alternative pop, R&B, and Japanese artists, with Willow Smith and TLC among her favorites.",
+      "Her name was inspired by the character “PomPomPurin,” given to her by her sister."
     ],
     "galleryPath": "/members/jurin/gallery",
     "galleryLength": 11,
@@ -34,12 +41,19 @@
     "id": "1",
     "name": "chisa",
     "iconName": "Chisa ☀️",
-    "fullName": "Kondou Chisa",
-    "citation": "Reach for the stars when you follow the light",
-    "curiosities": [
+    "fullName": "Kondou Chisa (今度 ちさ)",
+    "data": [
       "Date of Birth: 20020117",
       "Hometown: Osaka, Japan",
-      "Color: Yellow"
+      "Color: Yellow",
+      "Zodiac Sign: Capricorn"
+    ],
+    "curiosities": [
+      "Before the debut, Chisa worked as an actress and model under Kansai Collection Entertainment.",
+      "She took part in music competitions and even won the Tokyo Girls Audition.",
+      "Her biggest inspirations are Namie Amuro, Madonna, Beyoncé, and Rihanna.",
+      "Her hobbies include playing the guitar, cooking, and doing makeup (both for herself and for the other members).",
+      "Chisa was the first member of the group to get a tattoo."
     ],
     "galleryPath": "/members/chisa/gallery",
     "galleryLength": 11,
@@ -65,12 +79,19 @@
     "id": "2",
     "name": "hinata",
     "iconName": "Hinata 💎",
-    "fullName": "Sohara Hinata",
-    "citation": "Take me to the other side",
-    "curiosities": [
+    "fullName": "Sohara Hinata (宗原ひなた)",
+    "data": [
       "Date of Birth: 20020611",
       "Hometown: Nagooya, Aichi, Japan",
-      "Color: Blue"
+      "Color: Blue",
+      "Zodiac Sign: Gemini"
+    ],
+    "curiosities": [
+      "Hinata have Japanese and South Korean descent.",
+      "Before becoming a trainee, she attended a local dance school, where the school staff encouraged her to audition for XG.",
+      "Her hobbies include drawing, watching anime, and reading manga. Some of her favorites are Haikyu!! and Your Lie in April.",
+      "Her favorite artist is SOLE, and her inspirations include TLC, Tamia, and ZARD.",
+      "Hinata used to play volleyball."
     ],
     "galleryPath": "/members/hinata/gallery",
     "galleryLength": 11,
@@ -96,12 +117,19 @@
     "id": "3",
     "name": "harvey",
     "iconName": "Harvey 🦄",
-    "fullName": "Amy Jannet Harvey",
-    "citation": "Amy got a flow, send a penny for your thoughts, no gimmicks",
-    "curiosities": [
+    "fullName": "Amy Jannet Harvey (ハーヴィー瑛美)",
+    "data": [
       "Date of Birth: 20021218",
       "Hometown: Tokyo, Japan",
-      "Color: Purple"
+      "Color: Purple",
+      "Zodiac Sign: Sagitarius"
+    ],
+    "curiosities": [
+      "Harvey lived in Australia when she was younger. Her mother is Japanese and her father is Australian",
+      "Before becoming a trainee under XGALX, she worked as a model, appearing in commercials alongside Jurin and collaborating with brands such as VOGUE GIRL.",
+      "Her icon is Michael Jackson, having him as her inspiration, along with Doja Cat and the Spice Girls.",
+      "One of her hobbies is photography.",
+      "Harvey has a pet dog and a parakeet."
     ],
     "galleryPath": "/members/harvey/gallery",
     "galleryLength": 11,
@@ -127,12 +155,19 @@
     "id": "4",
     "name": "juria",
     "iconName": "Juria 🐿️",
-    "fullName": "Ueda Juria",
-    "citation": "Levitate up to the sky",
-    "curiosities": [
+    "fullName": "Ueda Juria (上田ジュリア)",
+    "data": [
       "Date of Birth: 20041128",
       "Hometown: Osaka, Japan",
-      "Color: Orange"
+      "Color: Orange",
+      "Zodiac Sign: Sagitarius"
+    ],
+    "curiosities": [
+      "Before the debut, Juria was already a model, child actress, and singer, and was part of the youth idol group Amorecarina.",
+      "She appeared on TV programs such as Hirunandesu, Onegai Ranking, and Piramekino, as well as in a commercial for the Nintendo 3DS - Ciao Illust Club.",
+      "She took part in competitions like Kiratto Challenge and Tokyo Girls Audition, and won the Best Performance Award (Avex VTS Best P).",
+      "Her mother inspired her artistic career, and Juria looks up to artists such as Ariana Grande, Jessie J, and Beyoncé.",
+      "She loves sweets, cute things, and amusement parks, though she's afraid of roller coasters."
     ],
     "galleryPath": "/members/juria/gallery",
     "galleryLength": 11,
@@ -157,13 +192,20 @@
   {
     "id": "5",
     "name": "maya",
-    "iconName": "Maya 🐶",
-    "fullName": "Kawachi Maya",
-    "citation": "Maya be on the come up while they goin' down down down bad",
-    "curiosities": [
+    "iconName": "Maya 🔥",
+    "fullName": "Kawachi Maya (河地マヤ)",
+    "data": [
       "Date of Birth: 20050810",
       "Hometown: Tokyo, Japan",
-      "Color: Red"
+      "Color: Red",
+      "Zodiac Sign: Lion"
+    ],
+    "curiosities": [
+      "Maya studied at an international school in Japan, where she became fluent in English, being the most fluent member of the group.",
+      "Before debuting with XG, she took part in the Tokyo Girls Audition 2017.",
+      "In 2023, she joined the Street Woman Fighter 2 (SWF2) Crew Songs project, co-writing and producing the song “Show You Can” with Cocona.",
+      "She's a fan of Silk Sonic, and her inspirations include Destiny's Child and Bruno Mars.",
+      "Enjoys collecting stickers, watching Modern Family, and is afraid of birds."
     ],
     "galleryPath": "/members/maya/gallery",
     "galleryLength": 11,
@@ -189,12 +231,19 @@
     "id": "6",
     "name": "cocona",
     "iconName": "Cocona 🍄",
-    "fullName": "Akiyama Cocona",
-    "citation": "C to the O-C-O-N-A be poppin' on them 808s",
-    "curiosities": [
+    "fullName": "Akiyama Cocona (秋山心響)",
+    "data": [
       "Date of Birth: 20051206",
       "Hometown: Kanto, Japan",
-      "Color: Green"
+      "Color: Green",
+      "Zodiac Sign: Sagitarius"
+    ],
+    "curiosities": [
+      "Cocona won the Kira Challe 2018 music competition, performing BIGBANG's “Haru Haru”, a group she's a big fan of.",
+      "In 2024, she went viral on social media after shaving her head during the filming of the “WOKE UP” music video.",
+      "Some of her hobbies include meditating and journaling. She often reflects on the kind of artist she wants to become.",
+      "Her musical icon is Lauryn Hill, along with other inspirations such as Tyler, The Creator and Keyshia Cole.",
+      "Cocona has a tattoo on her right wrist with the kanji “龍,” which means “dragon” in Japanese."
     ],
     "galleryPath": "/members/cocona/gallery",
     "galleryLength": 11,
