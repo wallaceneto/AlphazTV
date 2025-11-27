@@ -23,6 +23,7 @@ export default function NetlifyRedirect() {
     window.scrollTo(0, 0);
     handleResize();
     window.addEventListener("resize", handleResize);
+    window.open('https://www.alphaztvplus.com.br');
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
