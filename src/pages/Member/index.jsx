@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import styles from './Member.module.css'
-import { translateBirthDate, translateCuriosites } from './lib'
+import { getCuriosities, translateBirthDate, translateCuriosites } from './lib'
 import { ThemeContext } from '../../contexts'
 import { Header } from './components/Header'
 import Footer from '../../components/Footer'
@@ -19,6 +19,7 @@ export default function Member() {
   let { memberId } = useParams();
   const member = memberId < 7 ? members[Number(memberId)] : jakops;
   const [mobileMode, setMobileMode] = useState(false);
+  const [curiosities, setCuriosities] = useState([]);
 
   useEffect(() => {
     function handleResize() {
@@ -32,6 +33,10 @@ export default function Member() {
     window.scrollTo(0, 0);
     handleResize();
     window.addEventListener("resize", handleResize);
+
+    if (member.curiositiesLength > 0) {
+      getCuriosities(member.name, member.curiositiesLength, setCuriosities);
+    }
     return () => window.removeEventListener("resize", handleResize);
   }, [])
 
@@ -72,12 +77,12 @@ export default function Member() {
               )}
             </div>
 
-            {member.curiosities &&
+            {curiosities.length > 0 &&
               <div>
                 <p className={styles.subtitle}>Curiosidades:</p>
-                {member.curiosities.map((curiositie, index) =>
+                {curiosities.map((curiositie, index) =>
                   <p key={index} className={styles.text}>
-                    - {t("MemberCuriosities." + curiositie)}
+                    - {t(curiositie)}
                   </p>
                 )}
               </div>
