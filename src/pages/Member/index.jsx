@@ -49,7 +49,7 @@ export default function Member() {
           <div className={styles.imageContainer}>
             {member.name !== 'jakops' &&
               <img
-                src={`/members/${member.name}/signature-${mobileMode ? theme : 'dark'}.png`}
+                src={`/members/${member.name}/signature-${mobileMode ? theme : 'light'}.png`}
                 className={mobileMode ? styles.signatureMobile : styles.signature}
                 alt={`Assinatura da integrante`}
               />
