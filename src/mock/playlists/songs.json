@@ -16,5 +16,11 @@
     "cachekey": "tvshows",
     "description": "Some performances in korean tv shows",
     "id": "PLEumJlozVlzu12FwPUbc0RG-pHcRLOdxJ"
+  },
+  {
+    "name": "Relay Dance",
+    "cachekey": "relaydance",
+    "description": "Dance performances in Relay Dance",
+    "id": "PLEumJlozVlzuxJphtxo2rI7Z6va7vEd9I"
   }
 ]
