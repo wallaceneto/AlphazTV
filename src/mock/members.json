@@ -4,6 +4,7 @@
     "name": "jurin",
     "iconName": "Jurin 🦋",
     "fullName": "Asaya Jurin (朝谷樹林)",
+    "color": "#E5E5E5",
     "data": [
       "Date of Birth: 20020619",
       "Hometown: Chigasaki, Kanagawa, Japan",
@@ -12,7 +13,7 @@
     ],
     "curiositiesLength": 5,
     "galleryPath": "/members/jurin/gallery",
-    "galleryLength": 11,
+    "galleryLength": 12,
     "playlists": [
       {
         "id": "PLEumJlozVlzucUg0UgwIrKADGIjCkFZFJ",
@@ -36,6 +37,7 @@
     "name": "chisa",
     "iconName": "Chisa ☀️",
     "fullName": "Kondou Chisa (今度 ちさ)",
+    "color": "#F2C94C",
     "data": [
       "Date of Birth: 20020117",
       "Hometown: Osaka, Japan",
@@ -44,7 +46,7 @@
     ],
     "curiositiesLength": 5,
     "galleryPath": "/members/chisa/gallery",
-    "galleryLength": 11,
+    "galleryLength": 12,
     "playlists": [
       {
         "id": "PLEumJlozVlzsBgtLPOJN-aae_BYerz8n6",
@@ -68,6 +70,7 @@
     "name": "hinata",
     "iconName": "Hinata 💎",
     "fullName": "Sohara Hinata (宗原ひなた)",
+    "color": "#2F80ED",
     "data": [
       "Date of Birth: 20020611",
       "Hometown: Nagooya, Aichi, Japan",
@@ -76,7 +79,7 @@
     ],
     "curiositiesLength": 5,
     "galleryPath": "/members/hinata/gallery",
-    "galleryLength": 11,
+    "galleryLength": 12,
     "playlists": [
       {
         "id": "PLEumJlozVlztrZuxqVZkivBv4l1elKr9V",
@@ -100,6 +103,7 @@
     "name": "harvey",
     "iconName": "Harvey 🦄",
     "fullName": "Amy Jannet Harvey (ハーヴィー瑛美)",
+    "color": "#9B51E0",
     "data": [
       "Date of Birth: 20021218",
       "Hometown: Tokyo, Japan",
@@ -108,7 +112,7 @@
     ],
     "curiositiesLength": 5,
     "galleryPath": "/members/harvey/gallery",
-    "galleryLength": 11,
+    "galleryLength": 12,
     "playlists": [
       {
         "id": "PLEumJlozVlzvDWAq92L5zqMDmJZHBEje0",
@@ -132,6 +136,7 @@
     "name": "juria",
     "iconName": "Juria 🐿️",
     "fullName": "Ueda Juria (上田ジュリア)",
+    "color": "#F2994A",
     "data": [
       "Date of Birth: 20041128",
       "Hometown: Osaka, Japan",
@@ -140,7 +145,7 @@
     ],
     "curiositiesLength": 5,
     "galleryPath": "/members/juria/gallery",
-    "galleryLength": 11,
+    "galleryLength": 12,
     "playlists": [
       {
         "id": "PLEumJlozVlzvNJmTQRPPZ67btq4t6THW8",
@@ -164,6 +169,7 @@
     "name": "maya",
     "iconName": "Maya 🔥",
     "fullName": "Kawachi Maya (河地マヤ)",
+    "color": "#EB5757",
     "data": [
       "Date of Birth: 20050810",
       "Hometown: Tokyo, Japan",
@@ -172,7 +178,7 @@
     ],
     "curiositiesLength": 5,
     "galleryPath": "/members/maya/gallery",
-    "galleryLength": 11,
+    "galleryLength": 12,
     "playlists": [
       {
         "id": "PLEumJlozVlzu1dJ-p57Pa9A-oE2Ti8auQ",
@@ -196,6 +202,7 @@
     "name": "cocona",
     "iconName": "Cocona 🍄",
     "fullName": "Akiyama Cocona (秋山心響)",
+    "color": "#219653",
     "data": [
       "Date of Birth: 20051206",
       "Hometown: Kanto, Japan",
