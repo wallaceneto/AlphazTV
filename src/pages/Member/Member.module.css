@@ -30,6 +30,8 @@
 
 .coverMobile {
   height: 407px;
+  width: 272px;
+  object-fit: cover;
   border-radius: 10px;
   margin-top: -70px;
 }
