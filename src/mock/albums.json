@@ -64,5 +64,28 @@
       "spotify": "https://open.spotify.com/intl-pt/album/7wc6dDr4ZLv0qA2geapqTY?go=1&nd=1&dlsi=e5e55d8c3aeb412c",
       "apple": "https://music.apple.com/album/xg-1st-world-tour-the-first-howl-live/1831297909"
     }
+  },
+  {
+    "name": "THE CORE - 核",
+    "order": "1",
+    "type": "full",
+    "cover": "/assets/songs/the_core.png",
+    "tracks": [
+      "XIGNAL (The intro)",
+      "GALA",
+      "ROCK THE BOAT",
+      "TAKE MY BREATH",
+      "NO GOOD",
+      "HYPNOTIZE",
+      "UP NOW",
+      "ORB (Obviously Reads Bro)",
+      "4 SEASONS",
+      "PS118"
+    ],
+    "links": {
+      "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_kfL0rmeV0M6kdc8BDsZhYjP4guctqrkHg",
+      "spotify": "https://open.spotify.com/album/22KDw9pbkC6MYgJ8hIBSSw",
+      "apple": "https://music.apple.com/album/the-core-核/1861009513"
+    }
   }
 ]

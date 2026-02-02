@@ -1,11 +1,9 @@
 .container {
   width: 285px;
-  height: 496px;
   background-color: #FAFAFA;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border: 1px solid;
   border-color: #B3B3B3;
   filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
@@ -13,23 +11,29 @@
 }
 
 .textContainer {
-  margin-top: 25px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   margin-left: 20px;
 }
 
 .mainTitle {
   color: #1A1A1A;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .nameTitle {
   color: #1A1A1A;
+  font-size: 36px;
   margin-top: -20px;
 }
 
+.divider {
+  height: 10px;
+}
+
 .image {
-  margin-top: 25px;
   width: 283px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  object-fit: cover;
 }

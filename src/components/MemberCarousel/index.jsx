@@ -60,6 +60,7 @@ const MemberCarousel = () => {
               route={`/member/${member.id}`}
               name={member.iconName}
               memberImage={`/members/${member.name}/profile.jpg`}
+              color={member.color}
             />
           </div>
         )}
